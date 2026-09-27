@@ -1,0 +1,116 @@
+{
+  "llama7b_2k": {
+    "num_layers": 32,
+    "hidden_size": 4096,
+    "ffn_hidden_size": 11008,
+    "num_attention_heads": 32,
+    "kv_heads": 32,
+    "seq_length": 2048,
+    "global_batch_size": 256,
+    "dtype": "fp16",
+    "data_path": "dataset/llama/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/llama2-hf/tokenizer.model",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "llama/AutoPara_llama_7b.sh"
+  },
+  "llama2_7b_4k": {
+    "num_layers": 32,
+    "hidden_size": 4096,
+    "ffn_hidden_size": 11008,
+    "num_attention_heads": 32,
+    "kv_heads": 32,
+    "seq_length": 4096,
+    "global_batch_size": 256,
+    "dtype": "fp16",
+    "data_path": "dataset/llama/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/llama2-hf/tokenizer.model",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "llama/AutoPara_llama2_7b.sh"
+  },
+  "llama2_13b_4k": {
+    "num_layers": 40,
+    "hidden_size": 5120,
+    "ffn_hidden_size": 13824,
+    "num_attention_heads": 40,
+    "kv_heads": 40,
+    "seq_length": 4096,
+    "global_batch_size": 512,
+    "dtype": "fp16",
+    "data_path": "dataset/llama/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/llama2-hf/tokenizer.model",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "llama/AutoPara_llama2_13b.sh"
+  },
+  "llama3_8b_8k": {
+    "num_layers": 32,
+    "hidden_size": 4096,
+    "ffn_hidden_size": 14336,
+    "num_attention_heads": 32,
+    "kv_heads": 8,
+    "seq_length": 8192,
+    "global_batch_size": 64,
+    "dtype": "bf16",
+    "data_path": "dataset/llama3/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/llama3-hf",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "llama/AutoPara_llama3_8b.sh"
+  },
+  "qwen2_1p5b_32k": {
+    "num_layers": 28,
+    "hidden_size": 1536,
+    "ffn_hidden_size": 8960,
+    "num_attention_heads": 12,
+    "kv_heads": 2,
+    "seq_length": 32768,
+    "global_batch_size": 64,
+    "dtype": "bf16",
+    "data_path": "dataset/qwen3/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/qwen3-hf",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "qwen/AutoPara_qwen2_1.5b_32k.sh"
+  },
+  "qwen3_14b_4k": {
+    "num_layers": 40,
+    "hidden_size": 5120,
+    "ffn_hidden_size": 17408,
+    "num_attention_heads": 40,
+    "kv_heads": 8,
+    "seq_length": 4096,
+    "global_batch_size": 128,
+    "dtype": "bf16",
+    "data_path": "dataset/qwen3/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/qwen3-hf",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "qwen/AutoPara_qwen3_14b_4k.sh"
+  }
+}

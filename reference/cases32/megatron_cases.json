@@ -1,0 +1,65 @@
+{
+  "qwen2_7b_32k": {
+    "num_layers": 28,
+    "hidden_size": 3584,
+    "ffn_hidden_size": 18944,
+    "num_attention_heads": 28,
+    "kv_heads": 4,
+    "seq_length": 32768,
+    "global_batch_size": 64,
+    "dtype": "bf16",
+    "data_path": "dataset/qwen3/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/qwen3-hf",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "qwen/AutoPara_qwen2_7b_32k.sh",
+    "nodes": 4,
+    "gpus_per_node": 8
+  },
+  "qwen25_14b_8k": {
+    "num_layers": 48,
+    "hidden_size": 5120,
+    "ffn_hidden_size": 13824,
+    "num_attention_heads": 40,
+    "kv_heads": 8,
+    "seq_length": 8192,
+    "global_batch_size": 64,
+    "dtype": "bf16",
+    "data_path": "dataset/qwen3/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/qwen3-hf",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "qwen/AutoPara_qwen25_14b_8k.sh",
+    "nodes": 4,
+    "gpus_per_node": 8
+  },
+  "qwen2_1p5b_32k": {
+    "num_layers": 28,
+    "hidden_size": 1536,
+    "ffn_hidden_size": 8960,
+    "num_attention_heads": 12,
+    "kv_heads": 2,
+    "seq_length": 32768,
+    "global_batch_size": 64,
+    "dtype": "bf16",
+    "data_path": "dataset/qwen3/enwiki_text_document",
+    "tokenizer_path": "model_from_hf/qwen3-hf",
+    "mbs": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "original_launcher": "qwen/AutoPara_qwen2_1.5b_32k.sh",
+    "nodes": 4,
+    "gpus_per_node": 8
+  }
+}

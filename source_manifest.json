@@ -1,0 +1,421 @@
+{
+  "schema_version": 1,
+  "status": "historical_references_not_gpu_validated_on_h20",
+  "source_paths_relative_to": "Original local preparation workspace, not paths present on H20",
+  "files": [
+    {
+      "path": "reference/common_exact/README.md",
+      "source": "outputs/common5_exact_20260923/README.md",
+      "source_sha256": "d63bce58c7f18cb3323b3eacd61adc73a2dbb02ce11a4d7b84a591bf08ba10d1",
+      "sha256": "f4089ef4b01a37649e89821da06c0f08dde5ffe9b86b4ec70a9403d729f36237",
+      "bytes": 4446,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/galvatron/dtsir_galvatron6/cases.json",
+      "source": "outputs/common5_exact_20260923/galvatron/dtsir_galvatron6/cases.json",
+      "source_sha256": "0a264a7c7829a9c0a7bf1cd562a53647938d352a7ce32cdf16c68d1b7e372c6f",
+      "sha256": "0a264a7c7829a9c0a7bf1cd562a53647938d352a7ce32cdf16c68d1b7e372c6f",
+      "bytes": 1800,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/galvatron/dtsir_galvatron6/common5_space.py",
+      "source": "outputs/common5_exact_20260923/galvatron/dtsir_galvatron6/common5_space.py",
+      "source_sha256": "a64d9d8a5bf8070aea3d828ac1a972529672a7d4f4ea757243b7a41a1794abab",
+      "sha256": "a64d9d8a5bf8070aea3d828ac1a972529672a7d4f4ea757243b7a41a1794abab",
+      "bytes": 1523,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/galvatron/dtsir_galvatron6/run_six.py",
+      "source": "outputs/common5_exact_20260923/galvatron/dtsir_galvatron6/run_six.py",
+      "source_sha256": "a30fe789127c4c67ff56272c817d865174731d022da31377e789847901c8fea9",
+      "sha256": "a30fe789127c4c67ff56272c817d865174731d022da31377e789847901c8fea9",
+      "bytes": 33036,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/megatron/dtsir_common16/common5_space.py",
+      "source": "outputs/common5_exact_20260923/megatron/dtsir_common16/common5_space.py",
+      "source_sha256": "a64d9d8a5bf8070aea3d828ac1a972529672a7d4f4ea757243b7a41a1794abab",
+      "sha256": "a64d9d8a5bf8070aea3d828ac1a972529672a7d4f4ea757243b7a41a1794abab",
+      "bytes": 1523,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/megatron/dtsir_common16/entry.py",
+      "source": "outputs/common5_exact_20260923/megatron/dtsir_common16/entry.py",
+      "source_sha256": "8db3f8bdd59cc7bda1cc7c3083f3545897ac624a1c395c3f372bfb84a1cdefec",
+      "sha256": "8db3f8bdd59cc7bda1cc7c3083f3545897ac624a1c395c3f372bfb84a1cdefec",
+      "bytes": 6243,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/megatron/dtsir_common16/run.py",
+      "source": "outputs/common5_exact_20260923/megatron/dtsir_common16/run.py",
+      "source_sha256": "b3d3980e79831fa4c5cbeda88d231683a982f56bf2dedefd2997e8689092415d",
+      "sha256": "b3d3980e79831fa4c5cbeda88d231683a982f56bf2dedefd2997e8689092415d",
+      "bytes": 11023,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/megatron/paired16/all5_exact.sbatch",
+      "source": "outputs/common5_exact_20260923/megatron/paired16/all5_exact.sbatch",
+      "source_sha256": "5738442caa8f265c82460644e3fa9782fae1f2d3a9bf88c6e4e6762b1d2266bc",
+      "sha256": "5738442caa8f265c82460644e3fa9782fae1f2d3a9bf88c6e4e6762b1d2266bc",
+      "bytes": 2584,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/megatron/paired16/collect_exact.py",
+      "source": "outputs/common5_exact_20260923/megatron/paired16/collect_exact.py",
+      "source_sha256": "63ff31ad77c03199a8b16a0dabedc2eb3d9580256b55915df790bb82dd0200a5",
+      "sha256": "ec6f8167b2a3a054dded316d671ea58be93a5ac2bc3b160e67a1d36f3c1ba999",
+      "bytes": 3491,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/megatron/paired16/preflight_exact.py",
+      "source": "outputs/common5_exact_20260923/megatron/paired16/preflight_exact.py",
+      "source_sha256": "10c45f91af88e7332c86c1362a3ba447c084771a7d76a0323ee0c047cebce9f8",
+      "sha256": "75a27308f3b0ec6acfd9d89cacffe3c3106b50378e00a2e5f261a4ef0766cc5f",
+      "bytes": 3916,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/common_exact/megatron/paired16/submit_exact.sh",
+      "source": "outputs/common5_exact_20260923/megatron/paired16/submit_exact.sh",
+      "source_sha256": "42a949060aed482c4bc84c6cf32501f9bd09f2bf4d7c6e2f07e036d0ba3afd33",
+      "sha256": "b6160dfcdc525a774dd89bf190f1577eecb179a5234e8e1efce8201770afb108",
+      "bytes": 1803,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/env.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/env.sh",
+      "source_sha256": "49d25edf58f397ed8fa52be883edc37a9827efd785eaf5a1d857e362962b44cf",
+      "sha256": "49d25edf58f397ed8fa52be883edc37a9827efd785eaf5a1d857e362962b44cf",
+      "bytes": 744,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/worker.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/worker.sh",
+      "source_sha256": "5af1a04a751d0a815340e9a075c9fb070ceb59d57a7268642ac3ef8292022672",
+      "sha256": "5af1a04a751d0a815340e9a075c9fb070ceb59d57a7268642ac3ef8292022672",
+      "bytes": 1505,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/cases.json",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/cases.json",
+      "source_sha256": "c57ca1ad4f68600e83bc55dfa2a09c3e0d53c207d504187117a9a50d7abde7d9",
+      "sha256": "c57ca1ad4f68600e83bc55dfa2a09c3e0d53c207d504187117a9a50d7abde7d9",
+      "bytes": 2704,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/launchers/llama2_13b_4k.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/launchers/llama2_13b_4k.sh",
+      "source_sha256": "e8c74c2494eeff251ff52568521eaa4d0418378037e72521bfde5d146d435ec2",
+      "sha256": "e8c74c2494eeff251ff52568521eaa4d0418378037e72521bfde5d146d435ec2",
+      "bytes": 2094,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/launchers/llama2_7b_4k.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/launchers/llama2_7b_4k.sh",
+      "source_sha256": "b6d9d0e2149e49e0079911c5051861e3cf312706a8779842d56309e910fba126",
+      "sha256": "b6d9d0e2149e49e0079911c5051861e3cf312706a8779842d56309e910fba126",
+      "bytes": 2129,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/launchers/llama3_8b_8k.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/launchers/llama3_8b_8k.sh",
+      "source_sha256": "96ffa085a783929264b82152d89685ef29a63a44abe4017540bea92cebbb0598",
+      "sha256": "96ffa085a783929264b82152d89685ef29a63a44abe4017540bea92cebbb0598",
+      "bytes": 2285,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/launchers/llama7b_2k.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/launchers/llama7b_2k.sh",
+      "source_sha256": "a6a58222705bc818d2d31080fe0d74d2e503e8a1cafc024ccc7a210543122761",
+      "sha256": "a6a58222705bc818d2d31080fe0d74d2e503e8a1cafc024ccc7a210543122761",
+      "bytes": 2364,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/launchers/qwen2_1p5b_32k.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/launchers/qwen2_1p5b_32k.sh",
+      "source_sha256": "00facf2bb1c1196f4599b0de9a6ae3e371f430f4ab9518fb76f53a7ce28b1e48",
+      "sha256": "00facf2bb1c1196f4599b0de9a6ae3e371f430f4ab9518fb76f53a7ce28b1e48",
+      "bytes": 2473,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/dtsir_common16/launchers/qwen3_14b_4k.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_common16/launchers/qwen3_14b_4k.sh",
+      "source_sha256": "aa03530a643f8a5de371e4df62ff54285691ecaf411b1334a531fa554d4beed4",
+      "sha256": "aa03530a643f8a5de371e4df62ff54285691ecaf411b1334a531fa554d4beed4",
+      "bytes": 2638,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/galvatron/dtsir_galvatron6/env.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_galvatron6/env.sh",
+      "source_sha256": "00d7900c11be62340145bf9f091d8cd1e80d0fcbeec2bb9bc238b998dec3c88c",
+      "sha256": "023a22ed1a713d114608ff9670124c9b5135bf559b68651ae610285592622f83",
+      "bytes": 697,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/galvatron/dtsir_galvatron6/worker.sh",
+      "source": "outputs/common5_run_audit_20260923/dtsir_galvatron6/worker.sh",
+      "source_sha256": "b999bbbbadf2225f120ae49eb7d3c16240b29a60540f2c9179909d7f094c0232",
+      "sha256": "b999bbbbadf2225f120ae49eb7d3c16240b29a60540f2c9179909d7f094c0232",
+      "bytes": 466,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/paired16/network.py",
+      "source": "outputs/common5_run_audit_20260923/paired16/network.py",
+      "source_sha256": "670ad68d8ffa948b4fe06f7fea61a3896c457f8249a971a4860ff9edcad4319d",
+      "sha256": "670ad68d8ffa948b4fe06f7fea61a3896c457f8249a971a4860ff9edcad4319d",
+      "bytes": 2840,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/paired16/probe.py",
+      "source": "outputs/common5_run_audit_20260923/paired16/probe.py",
+      "source_sha256": "c5b656fce294332ba6f129d1c724e4001f0dada5e5e356b6349f3288cfc06a40",
+      "sha256": "c5b656fce294332ba6f129d1c724e4001f0dada5e5e356b6349f3288cfc06a40",
+      "bytes": 1409,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/legacy_support/megatron/paired16/probe_worker.sh",
+      "source": "outputs/common5_run_audit_20260923/paired16/probe_worker.sh",
+      "source_sha256": "80e5b7d28b24fca128019f2dca516c157f7adf5dc57fa7bde685382f17c2ac77",
+      "sha256": "80e5b7d28b24fca128019f2dca516c157f7adf5dc57fa7bde685382f17c2ac77",
+      "bytes": 568,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/qwen3_vocab_fix/qwen3_14b_4k.sh",
+      "source": "outputs/common5_resume_20260923/qwen3_14b_4k.sh",
+      "source_sha256": "be7aaabf864abe6a6d5940981ceb1ee70764565816412fa53fc45b864feb27e8",
+      "sha256": "be7aaabf864abe6a6d5940981ceb1ee70764565816412fa53fc45b864feb27e8",
+      "bytes": 2671,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/cases32/megatron_cases.json",
+      "source": "outputs/paired32_three_cases_2026-09-22/dtsir_common32/cases.json",
+      "source_sha256": "f1ee965567e25d34a77f9b7962f3eac64a5f618a8bb3bee0f22779b76d67c8b8",
+      "sha256": "f1ee965567e25d34a77f9b7962f3eac64a5f618a8bb3bee0f22779b76d67c8b8",
+      "bytes": 1453,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/cases32/galvatron_cases.json",
+      "source": "outputs/paired32_three_cases_2026-09-22/dtsir_galvatron32/cases.json",
+      "source_sha256": "c9cdcf5c67e89a0b018b58f31c032218cc979cb71fce850d676fc8585ba24a3c",
+      "sha256": "c9cdcf5c67e89a0b018b58f31c032218cc979cb71fce850d676fc8585ba24a3c",
+      "bytes": 1237,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/cases32/launchers/qwen2_1p5b_32k.sh",
+      "source": "outputs/paired32_three_cases_2026-09-22/dtsir_common32/launchers/qwen2_1p5b_32k.sh",
+      "source_sha256": "1d1182d045ec3d777755f8f51e2b55db548d525472045622cadebc90f48d50eb",
+      "sha256": "1d1182d045ec3d777755f8f51e2b55db548d525472045622cadebc90f48d50eb",
+      "bytes": 2473,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/cases32/launchers/qwen2_7b_32k.sh",
+      "source": "outputs/paired32_three_cases_2026-09-22/dtsir_common32/launchers/qwen2_7b_32k.sh",
+      "source_sha256": "20dbc2951782a7f1a7b4c955d2def0b2481797bd43a7a544acbf67658379499f",
+      "sha256": "20dbc2951782a7f1a7b4c955d2def0b2481797bd43a7a544acbf67658379499f",
+      "bytes": 2343,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/cases32/launchers/qwen25_14b_8k.sh",
+      "source": "outputs/paired32_three_cases_2026-09-22/dtsir_common32/launchers/qwen25_14b_8k.sh",
+      "source_sha256": "32a324f016fe561d8f6eb28aaa1141659aac4fa2dcbd65d66c05641eb9d5253b",
+      "sha256": "32a324f016fe561d8f6eb28aaa1141659aac4fa2dcbd65d66c05641eb9d5253b",
+      "bytes": 2561,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/project_custom_snapshot/test_parallel_model.py",
+      "source": "outputs/common5_audit_20260923/common5_protocol_audit_20260923_005050_670649/megatron/test_parallel_model.py",
+      "source_sha256": "c2e1e88830f5482885c2daa627a3e4b4555218ebf5bbe79ab5cb1ad1386c004a",
+      "sha256": "c2e1e88830f5482885c2daa627a3e4b4555218ebf5bbe79ab5cb1ad1386c004a",
+      "bytes": 303094,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/project_custom_snapshot/dtsir_collect.py",
+      "source": "outputs/common5_audit_20260923/common5_protocol_audit_20260923_005050_670649/megatron/dtsir_collect.py",
+      "source_sha256": "ae531ef9cf72611bd74a80851b7aa65a19b1bd380406f63c53ae50b0d8fa48fe",
+      "sha256": "ae531ef9cf72611bd74a80851b7aa65a19b1bd380406f63c53ae50b0d8fa48fe",
+      "bytes": 8393,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/project_custom_snapshot/megatron/training/initialize.py",
+      "source": "outputs/common5_audit_20260923/common5_protocol_audit_20260923_005050_670649/megatron/megatron/training/initialize.py",
+      "source_sha256": "8c34c5cbe2366c108ddd173e5cd322af06fcc05f4b004139f656337e39351e61",
+      "sha256": "c3f0de064cd862981912a97363bbb0c258f8a62780cd42775683e9c4a328a394",
+      "bytes": 26865,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/space_ladder/RUN_GUIDE_CN.md",
+      "source": "outputs/DTSIR_space_ladder_kit_2026-09-20/RUN_GUIDE_CN.md",
+      "source_sha256": "4a67f461aada26f926357aa2e7b9f9738b8b8b317d508500719a59df3d2b0c7f",
+      "sha256": "4a67f461aada26f926357aa2e7b9f9738b8b8b317d508500719a59df3d2b0c7f",
+      "bytes": 4474,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/space_ladder/run_ladder.py",
+      "source": "outputs/DTSIR_space_ladder_kit_2026-09-20/run_ladder.py",
+      "source_sha256": "b2d44e49e0705269cd47a71f3ed7207d3c256eb563fe79c6279356df1d2a63d7",
+      "sha256": "b2d44e49e0705269cd47a71f3ed7207d3c256eb563fe79c6279356df1d2a63d7",
+      "bytes": 10636,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/space_ladder/space_entry.py",
+      "source": "outputs/DTSIR_space_ladder_kit_2026-09-20/space_entry.py",
+      "source_sha256": "33840aae0e7809c91c5229597329d50b06147887e8aad09750c458e675ac1b83",
+      "sha256": "33840aae0e7809c91c5229597329d50b06147887e8aad09750c458e675ac1b83",
+      "bytes": 5823,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/space_ladder/test_ladder.py",
+      "source": "outputs/DTSIR_space_ladder_kit_2026-09-20/test_ladder.py",
+      "source_sha256": "393a3678553943d1b817e9aa741e2cc661d1f204a813cc1c1ba72bbb4a3c6d99",
+      "sha256": "393a3678553943d1b817e9aa741e2cc661d1f204a813cc1c1ba72bbb4a3c6d99",
+      "bytes": 2031,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/a100/a100_env.sh",
+      "source": "outputs/a100_setup_20260924/a100_env.sh",
+      "source_sha256": "1c0e138548879824a6284edd3ba9c9b522a9e5ebc98736e6e7f2b9a827293bca",
+      "sha256": "28935dc38855c0522f6fd9d94dff92963f118e3da909aa5084b02406e8da1f73",
+      "bytes": 3167,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/a100/a100_training_smoke.py",
+      "source": "outputs/a100_setup_20260924/a100_training_smoke.py",
+      "source_sha256": "71039b841b72c3f2d0fd3d0c067ba4520ba4a688dc406c4c49be6c66a474bc39",
+      "sha256": "71039b841b72c3f2d0fd3d0c067ba4520ba4a688dc406c4c49be6c66a474bc39",
+      "bytes": 10249,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/a100/check_a100_gpu.py",
+      "source": "outputs/a100_setup_20260924/check_a100_gpu.py",
+      "source_sha256": "45a5ecb009dc5fed56bdbc517b09d6110933703854942a02bd99f841335c9132",
+      "sha256": "45a5ecb009dc5fed56bdbc517b09d6110933703854942a02bd99f841335c9132",
+      "bytes": 3919,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/a100/check_a100_sources.py",
+      "source": "outputs/a100_setup_20260924/check_a100_sources.py",
+      "source_sha256": "ac3b21006eadc971879e9c730fbf910eacb8e4d23007d75222ca23516f1c1679",
+      "sha256": "ac3b21006eadc971879e9c730fbf910eacb8e4d23007d75222ca23516f1c1679",
+      "bytes": 5767,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/a100/check_a100_nccl4.py",
+      "source": "outputs/a100_setup_20260924/check_a100_nccl4.py",
+      "source_sha256": "d9bcf3b48b0d28746c5bcba03d2e44d5ac3d16cb28f497a14ffad9fa50790bed",
+      "sha256": "d9bcf3b48b0d28746c5bcba03d2e44d5ac3d16cb28f497a14ffad9fa50790bed",
+      "bytes": 3736,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/a100_comm/a100_comm.py",
+      "source": "outputs/a100_comm_20260925/a100_comm.py",
+      "source_sha256": "34168360f0604217c9e6f3d4e22ecefc4b1814d7b932844406f10feadebbb45f",
+      "sha256": "34168360f0604217c9e6f3d4e22ecefc4b1814d7b932844406f10feadebbb45f",
+      "bytes": 17109,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/a100_comm/prepare_a100_comm.sh",
+      "source": "outputs/a100_comm_20260925/prepare_a100_comm.sh",
+      "source_sha256": "754d081b4d4f67e2309fd77b9b379cfd6405fb07ea1d51b70f9d7220d630c8d8",
+      "sha256": "754d081b4d4f67e2309fd77b9b379cfd6405fb07ea1d51b70f9d7220d630c8d8",
+      "bytes": 1071,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    },
+    {
+      "path": "reference/runtime_checks/check_galvatron_dependencies.py",
+      "source": "outputs/galvatron_dependency_audit_2026-09-22/check_galvatron_dependencies.py",
+      "source_sha256": "8acf91023f762db168d3cd7d86d26c0834b2ad607d82fa27f03b882db51cf0fd",
+      "sha256": "8acf91023f762db168d3cd7d86d26c0834b2ad607d82fa27f03b882db51cf0fd",
+      "bytes": 6357,
+      "purpose": "reference_only_not_h20_entry",
+      "transformed": "Historical user/host identifiers replaced with LEGACY placeholders; logic otherwise unchanged."
+    }
+  ]
+}
