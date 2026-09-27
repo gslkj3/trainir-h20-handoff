@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-27",
+  "source_files": 2331,
+  "received_archive_sha256": "4ce02a89c80caadf96eea1c41e40284b5384e6ab1da9df65b927432268cdbc5e",
+  "source_hash_checks": "PASS",
+  "tokenizer_files_verified": 16,
+  "dataset_files_verified": 6,
+  "dataset_archive_sha256": "745267ff68b68c8940b32935357eb2f45e1775b269ab1040e1053445708ed170",
+  "dataset_status": "PASS: all six dataset files match the current input manifest",
+  "dataset_verification_note": "Final data verification completed after source archive creation. This external review supersedes the pending dataset status inside the source archive; source bytes are unchanged.",
+  "manual_false_positives": [
+    {
+      "path": "Megatron-LM/tools/checkpoint/schema_hf.py",
+      "lines": [
+        64,
+        133
+      ],
+      "sha256": "a467ee96d9490a03be1ece3abc8626270bf059a6dd96d15777d2c1062613e63b",
+      "reason": "class_token checkpoint parameter-name mappings, not credentials"
+    }
+  ],
+  "export_changes": [
+    "Megatron-LM/run.sh",
+    "Megatron-LM/test1.sh"
+  ],
+  "private_inputs_published": false,
+  "validation_scope": "Manifest integrity, source scan and manual flagged-line review, license preservation. No H20 execution validation.",
+  "upstream_provenance": {
+    "Megatron-LM": {
+      "git_available": true,
+      "head": "1f6cde85d23ff0c307a47bbdd8bfd778b95a161f",
+      "dirty": true
+    },
+    "Hetu-Galvatron-dtsir": {
+      "git_available": true,
+      "head": "cea12ffb146a220643c8f99f9cb84294755d29f8",
+      "dirty": true
+    }
+  },
+  "source_archive": {
+    "path": "sources/h20_sources_20260927.tar.gz",
+    "bytes": 4989092,
+    "sha256": "649f9ab881662500ed069317a6c74ff9ab2662dcf975a2f3449ca507cc57766c"
+  }
+}

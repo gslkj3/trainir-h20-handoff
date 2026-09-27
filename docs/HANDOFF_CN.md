@@ -19,11 +19,11 @@
 - 用户提供的机器输出为 8 张 H20，每卡 `97871 MiB`，GPU 对之间标记 `NV18`。实际运行时仍记录 GPU UUID、显存和拓扑，不能假设租用机器永远不变。
 - 旧 5090 环境：Python 3.12、PyTorch 2.9.0+cu128、FlashAttention 2.8.1，Galvatron 2.4.1，Galvatron 基准 commit `cea12ffb146a220643c8f99f9cb84294755d29f8`。这些是可参考的旧环境，不是 H20 已验证环境。
 - A100 使用过 aarch64/Python 3.10/Torch 2.5.1+cu121；该环境和 `.so` 不能直接复制到可能为 x86_64 的 H20 主机。
-- 本地只具有项目自定义核心文件、补丁和测试脚本快照。`reference/` 保留这些来源和哈希。
+- 已收到原服务器修改版源码快照，共 2,331 个文件，保存在 `sources/h20_sources_20260927.tar.gz`。SHA256 及审查范围见 `sources/review.json`；`reference/` 仍是历史参考，不覆盖更新的源码。
 
 ### 尚未完成
 
-- 未取得当前服务器完整修改版源码、tokenizer、预分词数据；不能用未修改的上游 Megatron 替代项目源码。
+- tokenizer 已在本地收到但不公开；数据包状态见 `sources/review.json`。H20 主机仍需接收并核对六个数据文件和三套 tokenizer。源码是带未提交修改的工作区快照，不是仅按上游 commit 可复原的版本；不能用上游源码替代。
 - 未检测 H20 CPU 架构、容器/conda、CUDA toolkit、实际加载 NCCL、torch/TE/FA/Apex 兼容性。
 - 旧公共空间脚本固定 16 卡、2×8、28 GiB 预算；旧完整空间 ladder 固定 4 卡、八层、SP off、3 次训练。**它们都不是 H20 入口。**
 - 三个历史受限用例未经 common5 同等级的模型等价审计，Qwen2 的 norm epsilon 和 RoPE scaling 仍需核对。不得跳过检查直接宣称完全对齐。

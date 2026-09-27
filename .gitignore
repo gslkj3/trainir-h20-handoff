@@ -16,6 +16,7 @@ dist/
 *.pth
 *.ckpt
 *.tar.gz
+!sources/h20_sources_20260927.tar.gz
 *.zip
 private_inputs/
 datasets/

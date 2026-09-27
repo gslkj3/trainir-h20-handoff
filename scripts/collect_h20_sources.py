@@ -6,6 +6,7 @@ written only after all checks pass; private_inputs must not be committed to Git.
 Passing the scan does not authorize public redistribution of source or inputs.
 """
 import argparse
+import ast
 from datetime import datetime, timezone
 import hashlib
 import json
@@ -58,6 +59,64 @@ SECRET_RULES = (
     ('literal_secret', re.compile(
         r'''(?im)^\s*(?:export\s+)?["']?(?:[A-Z0-9_]*(?:TOKEN|PASSWORD|SECRET|API_KEY|ACCESS_KEY))["']?\s*[:=]\s*["']?([A-Za-z0-9_./+!@=-]{12,})''')),
 )
+URL_USERINFO = re.compile(r'(https?://)([^\s/:@]+):([^\s/@]+)@')
+ENV_REFERENCE = re.compile(r'(?:\$[A-Za-z_][A-Za-z_0-9]*|\$\{[A-Za-z_][A-Za-z_0-9]*\}|\$\{\{\s*[^{}\r\n]+\s*\}\})')
+SECRET_NAME = re.compile(r'(?:.*_)?(?:token|password|secret|api_key|access_key)$', re.I)
+
+
+def python_literal_findings(content, relative):
+    """Inspect literal values, not the spelling of Python expressions."""
+    try:
+        tree = ast.parse(content)
+    except (SyntaxError, ValueError):
+        # Keep conservative behavior for syntax this Python cannot parse.
+        pattern = dict(SECRET_RULES)['literal_secret']
+        return [{'path': relative, 'line': content.count('\n', 0, m.start()) + 1,
+                 'rule': 'python_literal_scan_unparsed'} for m in pattern.finditer(content)]
+
+    def target_name(node):
+        if isinstance(node, ast.Name):
+            return node.id
+        if isinstance(node, ast.Attribute):
+            return node.attr
+        if isinstance(node, ast.Subscript) and isinstance(node.slice, ast.Constant):
+            return node.slice.value if isinstance(node.slice.value, str) else ''
+        return ''
+
+    def literal_parts(node):
+        if isinstance(node, ast.Constant) and isinstance(node.value, (str, bytes)):
+            return [node.value]
+        if isinstance(node, (ast.BinOp, ast.JoinedStr)):
+            return [n.value for n in ast.walk(node) if isinstance(n, ast.Constant)
+                    and isinstance(n.value, (str, bytes))]
+        return []
+
+    pairs = []
+    for node in ast.walk(tree):
+        if isinstance(node, ast.Assign):
+            pairs.extend((target_name(t), node.value, node.lineno) for t in node.targets)
+        elif isinstance(node, (ast.AnnAssign, ast.NamedExpr)):
+            pairs.append((target_name(node.target), node.value, node.lineno))
+        elif isinstance(node, ast.keyword):
+            pairs.append((node.arg or '', node.value, node.lineno))
+        elif isinstance(node, ast.Dict):
+            for key, value in zip(node.keys, node.values):
+                if isinstance(key, ast.Constant) and isinstance(key.value, str):
+                    pairs.append((key.value, value, key.lineno))
+    findings = []
+    for name, value, line in pairs:
+        if not SECRET_NAME.fullmatch(name):
+            continue
+        parts = literal_parts(value)
+        # Include split/f-string literals without treating tensor arithmetic as credentials.
+        if sum(len(p) for p in parts) >= 12:
+            findings.append({'path': relative, 'line': line, 'rule': 'literal_secret'})
+    return [dict(t) for t in sorted({tuple(sorted(row.items())) for row in findings})]
+
+
+def redact_url_userinfo(content):
+    # Replacements are confined to explicit caller-selected exported files.
+    return URL_USERINFO.subn(lambda m: m.group(1) + '${H20_URL_USER}:${H20_URL_PASSWORD}@', content)
 
 
 class CollectionError(RuntimeError):
@@ -164,7 +223,14 @@ def source_files(root, label, git_info):
 def secret_findings(content, relative):
     findings = []
     for name, pattern in SECRET_RULES:
+        if name == 'literal_secret' and relative.endswith('.py'):
+            findings.extend(python_literal_findings(content, relative))
+            continue
         for match in pattern.finditer(content):
+            if name == 'credential_in_url':
+                parsed = URL_USERINFO.fullmatch(match.group(0))
+                if parsed and ENV_REFERENCE.fullmatch(parsed.group(3)):
+                    continue  # Reference only; generic key/token patterns still run.
             if name == 'literal_secret':
                 value = match.group(1).lower()
                 if value.startswith(('example', 'placeholder', 'your_', 'replace_', 'dummy', 'changeme')):
@@ -214,9 +280,14 @@ def input_files(megatron, cases):
     return {'tokenizers': sorted(tokenizer_files), 'datasets': sorted(data_files)}
 
 
-def collect(megatron, galvatron, out_parent, cases_path, with_inputs=False, with_data=False):
+def collect(megatron, galvatron, out_parent, cases_path, with_inputs=False, with_data=False,
+            redact_url_files=(), local_transfer=False):
     roots = {'Megatron-LM': Path(megatron).resolve(), 'Hetu-Galvatron-dtsir': Path(galvatron).resolve()}
     parent = Path(out_parent).resolve()
+    requested_redactions = set(redact_url_files)
+    allowed_redactions = {'Megatron-LM/run.sh', 'Megatron-LM/test1.sh'}
+    if requested_redactions - allowed_redactions:
+        raise CollectionError('URL redaction is only supported for the two audited auxiliary scripts')
     if not parent.is_dir():
         raise CollectionError('--out-parent must be an existing directory')
     for root in roots.values():
@@ -228,6 +299,7 @@ def collect(megatron, galvatron, out_parent, cases_path, with_inputs=False, with
     dest = Path(tempfile.mkdtemp(prefix='h20_sources_' + datetime.now(timezone.utc).strftime('%Y%m%d_%H%M%S') + '_', dir=parent))
     print('OUTPUT: ' + str(dest), flush=True)
     findings, oversized, source_manifest, inputs_manifest = [], [], [], []
+    transformations, matched_redactions = [], set()
     try:
         for label, root in roots.items():
             if not root.is_dir():
@@ -254,23 +326,45 @@ def collect(megatron, galvatron, out_parent, cases_path, with_inputs=False, with
                     raise CollectionError('Source file is not UTF-8 text; review before publication: ' + rel) from None
                 if '\0' in decoded:
                     raise CollectionError('Binary content in source file: ' + rel)
+                export_content = content
+                if rel in requested_redactions:
+                    matched_redactions.add(rel)
+                    decoded, count = redact_url_userinfo(decoded)
+                    export_content = decoded.encode('utf-8')
+                    transformations.append({'path': rel, 'operation': 'replace_url_userinfo_with_environment_references',
+                                            'url_count': count, 'original_source_modified': False})
                 findings.extend(secret_findings(decoded, rel))
-                planned.append((p, root, rel, size, hashlib.sha256(content).hexdigest()))
+                planned.append((p, root, rel, size, hashlib.sha256(content).hexdigest(), export_content))
+        if requested_redactions != matched_redactions:
+            raise CollectionError('An explicitly selected URL-redaction source file was not collected')
         scan = {'status': 'blocked' if findings or oversized else 'passed',
                 'suspected_secrets': findings, 'oversized_source_files': oversized,
+                'export_transformations': transformations,
+                'transfer_mode': 'private_local_review' if local_transfer else 'strict',
+                'public_upload_allowed': False,
                 'scope': 'Pattern scan only; manual license/privacy review is still required.'}
         save(dest/'scan_report.json', scan)
-        if findings or oversized:
+        if oversized or (findings and not local_transfer):
             raise CollectionError('Source audit blocked collection; inspect scan_report.json (secret values omitted)')
-        for p, root, rel, size, digest in planned:
+        if local_transfer:
+            save(dest/'PRIVATE_REVIEW_REQUIRED.json', {
+                'public_upload_allowed': False, 'unresolved_findings': len(findings),
+                'instruction': 'Private local review only. Do not upload this archive or its unreviewed source to GitHub. '
+                               'Review every finding and exclude private_inputs before any public publication.'})
+        for p, root, rel, size, digest, export_content in planned:
             output = dest/'source_payload'/rel
             output.parent.mkdir(parents=True, exist_ok=True)
-            shutil.copyfile(checked(p, root), output)
-            if sha256(output) != digest:
+            if sha256(checked(p, root)) != digest:
                 raise CollectionError('Source changed during collection: ' + rel)
+            output.write_bytes(export_content)
+            exported_digest = hashlib.sha256(export_content).hexdigest()
+            if sha256(output) != exported_digest:
+                raise CollectionError('Export copy verification failed: ' + rel)
             if p.suffix in ('.sh', '.sbatch'):
                 output.chmod(0o755)
-            source_manifest.append({'path': rel, 'bytes': size, 'sha256': digest})
+            source_manifest.append({'path': rel, 'bytes': len(export_content), 'sha256': exported_digest,
+                                    'original_bytes': size, 'original_sha256': digest,
+                                    'transformed': exported_digest != digest})
         for kind, paths in inputs.items():
             include = with_inputs if kind == 'tokenizers' else with_data
             for p in paths:
@@ -289,7 +383,8 @@ def collect(megatron, galvatron, out_parent, cases_path, with_inputs=False, with
         save(dest/'source_manifest.json', source_manifest)
         save(dest/'input_manifest.json', inputs_manifest)
         save(dest/'provenance.json', records)
-        save(dest/'READY.json', {'status': 'collected', 'source_files': len(source_manifest),
+        save(dest/'READY.json', {'status': 'collected_for_private_review' if local_transfer else 'collected',
+             'public_upload_allowed': False, 'source_files': len(source_manifest),
              'cases': len(rows), 'tokenizer_files': len(inputs['tokenizers']),
              'dataset_files': len(inputs['datasets']), 'with_inputs': with_inputs,
              'with_data': with_data, 'case_manifest_sha256': sha256(Path(cases_path)),
@@ -312,9 +407,15 @@ def main():
     parser.add_argument('--cases', default=str(Path(__file__).resolve().parents[1]/'config/cases8.json'))
     parser.add_argument('--with-inputs', action='store_true', help='Copy tokenizer bytes to private_inputs (otherwise inventory only).')
     parser.add_argument('--with-data', action='store_true', help='Copy dataset .bin/.idx bytes to private_inputs (otherwise inventory only).')
+    parser.add_argument('--local-transfer', action='store_true',
+                        help='Explicit private local review mode: retain suspected-secret findings without blocking collection; never approves public upload.')
+    parser.add_argument('--redact-url-file', action='append', default=[],
+                        choices=['Megatron-LM/run.sh', 'Megatron-LM/test1.sh'],
+                        help='Replace URL credentials in this exported auxiliary script only; original stays unchanged.')
     args = parser.parse_args()
     try:
-        dest = collect(args.megatron, args.galvatron, args.out_parent, args.cases, args.with_inputs, args.with_data)
+        dest = collect(args.megatron, args.galvatron, args.out_parent, args.cases, args.with_inputs, args.with_data,
+                       args.redact_url_file, args.local_transfer)
     except CollectionError as exc:
         print('COLLECTION FAILED: ' + str(exc), file=sys.stderr)
         return 1

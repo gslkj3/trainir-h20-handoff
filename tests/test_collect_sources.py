@@ -155,6 +155,91 @@ class CollectorTests(unittest.TestCase):
         with self.assertRaises(collector.CollectionError):
             collector.collect(self.meg, self.gal, self.meg, self.cases)
 
+    def test_python_nonliteral_expressions_are_not_credentials(self):
+        source = '''token = tokenizer.encode(text)
+token = request["token"]
+token = model.token
+token = current_token + offset
+f(token=some_tensor, access_token=os.environ.get("ACCESS_TOKEN"))
+payload = {"token": request.token}
+'''
+        self.assertEqual(collector.secret_findings(source, 'Megatron-LM/model.py'), [])
+
+    def test_python_literals_still_block(self):
+        for source in ('token = "sensitive_demo_12345"',
+                       'token: str = "sensitive_demo_12345"',
+                       'client(token="sensitive_demo_12345")',
+                       'config = {"password": "sensitive_demo_12345"}',
+                       'token = "sensitive_" + "demo_12345"',
+                       'token = f"sensitive_demo_12345{suffix}"'):
+            findings = collector.secret_findings(source, 'Megatron-LM/local.py')
+            self.assertTrue(findings, source)
+            self.assertNotIn('sensitive_demo_12345', json.dumps(findings))
+
+    def test_url_variable_reference_is_not_literal_password(self):
+        for value in ('$CI_JOB_TOKEN', '${CI_JOB_TOKEN}', '${H20_URL_PASSWORD}'):
+            text = 'url = "https://gitlab-ci-token:' + value + '@example.invalid/repo"'
+            self.assertEqual(collector.secret_findings(text, 'Megatron-LM/ci.yml'), [])
+        for value in ('literal_demo_password', '${PASSWORD:-literal_default}', 'prefix${PASSWORD}'):
+            self.assertTrue(collector.secret_findings('https://user:' + value + '@example.invalid', 'local.sh'))
+
+    def test_url_redaction_preserves_original_and_records_export(self):
+        source = '#!/bin/bash\nexport HTTPS_PROXY="https://demo_user:literal_demo_password@example.invalid:80"\n'
+        path = self.meg/'run.sh'
+        path.write_text(source, encoding='utf-8')
+        dest = self.run_collect(redact_url_files=['Megatron-LM/run.sh'])
+        self.assertEqual(path.read_text(encoding='utf-8'), source)
+        exported = (dest/'source_payload/Megatron-LM/run.sh').read_text(encoding='utf-8')
+        self.assertTrue(exported.startswith('#!/bin/bash\n'))
+        self.assertIn('${H20_URL_USER}:${H20_URL_PASSWORD}', exported)
+        self.assertNotIn('literal_demo_password', exported)
+        self.assertNotIn('demo_user', exported)
+        row = next(r for r in json.loads((dest/'source_manifest.json').read_text()) if r['path'].endswith('/run.sh'))
+        self.assertTrue(row['transformed'])
+        self.assertNotEqual(row['sha256'], row['original_sha256'])
+        scan = json.loads((dest/'scan_report.json').read_text())
+        self.assertEqual(scan['export_transformations'][0]['url_count'], 1)
+        self.assertNotIn('literal_demo_password', json.dumps(scan))
+
+    def test_no_automatic_redaction_or_bypass_of_other_secrets(self):
+        path = self.meg/'run.sh'
+        path.write_text('export HTTPS_PROXY="https://demo:literal_demo_password@example.invalid"\n')
+        with self.assertRaises(collector.CollectionError):
+            self.run_collect()
+        path.write_text(path.read_text() + 'export PASSWORD="another_literal_demo_password"\n')
+        with self.assertRaises(collector.CollectionError):
+            self.run_collect(redact_url_files=['Megatron-LM/run.sh'])
+
+    def test_redaction_target_must_be_present_and_allowlisted(self):
+        for target in ('Megatron-LM/missing.sh', 'Megatron-LM/run.sh', '../../outside.sh'):
+            with self.assertRaises(collector.CollectionError):
+                self.run_collect(redact_url_files=[target])
+
+    def test_unparseable_python_not_silently_approved(self):
+        findings = collector.secret_findings('token = "long_literal_demo"\nif broken syntax\n', 'bad.py')
+        self.assertTrue(findings)
+        self.assertEqual(findings[0]['rule'], 'python_literal_scan_unparsed')
+
+    def test_local_transfer_retains_findings_without_public_approval(self):
+        (self.meg/'local.py').write_text('token = "sensitive_demo_12345"\n')
+        dest = self.run_collect(local_transfer=True)
+        report = json.loads((dest/'scan_report.json').read_text())
+        self.assertEqual(report['status'], 'blocked')
+        self.assertTrue(report['suspected_secrets'])
+        self.assertFalse(report['public_upload_allowed'])
+        self.assertNotIn('sensitive_demo_12345', json.dumps(report))
+        ready = json.loads((dest/'READY.json').read_text())
+        self.assertEqual(ready['status'], 'collected_for_private_review')
+        self.assertFalse(ready['public_upload_allowed'])
+        self.assertTrue((dest/'PRIVATE_REVIEW_REQUIRED.json').exists())
+        self.assertTrue((dest/'source_payload/Megatron-LM/local.py').exists())
+
+    def test_local_transfer_still_blocks_external_input(self):
+        self.cases.write_text(json.dumps({'cases': [{'id': 'bad',
+            'data_path': '../outside/train', 'tokenizer_path': 'model_from_hf/test'}]}))
+        with self.assertRaises(collector.CollectionError):
+            self.run_collect(local_transfer=True)
+
 
 if __name__ == '__main__':
     unittest.main()

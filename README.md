@@ -2,12 +2,12 @@
 
 目标：在**同一台单节点 8×H20 96GB** 上，先验证 Devastator/Megatron 与 Galvatron 的八卡训练，再以固定的八个完整模型运行公共空间和完整空间实验。
 
-**当前交付是交接资料、可复用源码片段和 CPU 检查工具，不是已经在 H20 验收的一键训练包。** 完整修改版 Megatron/Galvatron 源码、tokenizer 和数据仍需从原服务器补齐。不要直接运行 `reference/` 下的旧 Slurm/训练脚本。
+**现已包含原服务器修改版 Megatron/Galvatron 的源码快照（2,331 文件），但不是已经在 H20 验收的一键训练包。** 见 [源码接收与使用](docs/SOURCE_RECEIPT_CN.md)。tokenizer 和训练数据通过私有渠道传输，不在公开仓库。不要直接运行 `reference/` 或源码里的旧 Slurm/训练脚本。
 
 ## 接手顺序
 
 1. 阅读 [交接文档](docs/HANDOFF_CN.md) 和 [H20 agent 首条任务](docs/AGENT_START_CN.md)。
-2. 核对 [八模型清单](config/cases8.json)、本仓库 `source_manifest.json`，补齐 [材料清单](docs/MATERIALS_CN.md)。
+2. 核对 [八模型清单](config/cases8.json)，用 `python scripts/unpack_h20_sources.py --out work/runtime` 解包经校验的源码；按 [材料清单](docs/MATERIALS_CN.md) 补齐私有输入。本仓库原有 `source_manifest.json` 仍只对应 reference 文件，源码快照使用包内独立清单。
 3. 在 CPU 上执行 `python -m unittest discover -s tests -v`；生成八卡公共候选清单 `python scripts/common_space.py --out work/common8_manifest`（输出目录必须不存在）。
 4. 在 H20 适配环境和启动器；先训练验证，再公共空间，最后完整空间。实际完成条件见交接文档，不以退出码 0 替代训练证据。
 

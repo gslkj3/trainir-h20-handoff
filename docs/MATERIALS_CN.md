@@ -2,6 +2,7 @@
 
 ## 仓库已包含的类别
 
+- `sources/h20_sources_20260927.tar.gz`：2026-09-27 从原服务器收到的修改版 Megatron/Galvatron 源码快照，2,331 文件；完整 LICENSE 保留。使用方法和审查范围见 [SOURCE_RECEIPT_CN.md](SOURCE_RECEIPT_CN.md)。
 - 中文交接、八模型参数、公共空间 CPU 枚举工具、标准库测试。
 - `reference/common_exact/`：2026-09-23 修订后的公共空间评估/原生 Galvatron Profile/搜索适配逻辑。
 - `reference/legacy_support/`：上述框架调用的旧 worker/env/launcher/probe 参考；含旧站点路径，**不可直接在 H20 执行**。
@@ -14,12 +15,10 @@
 
 旧文档/注释描述的是旧实验，当前执行规则以本仓库 HANDOFF 和八模型配置为准。不要执行旧说明里的 sbatch、conda install 或覆盖命令。
 
-## 仍缺的必需材料
+## H20 主机仍需接收的私有输入
 
-1. 用户在 5090 实际运行的完整修改版 Megatron-LM，尤其 `pretrain_gpt.py`、整个 `megatron/` 及项目自定义模块。
-2. Galvatron 固定版本及用户实际修改，扩展源码/许可证；本地编译二进制不迁移。
-3. 三套 tokenizer 目录：`model_from_hf/llama2-hf`、`llama3-hf`、`qwen3-hf`。
-4. 三组预分词数据：`dataset/{llama,llama3,qwen3}/enwiki_text_document.bin` 和 `.idx`。
+1. 三套 tokenizer 目录：`model_from_hf/llama2-hf`、`llama3-hf`、`qwen3-hf`。本地已核对16文件，单独私有传输。
+2. 三组预分词数据：`dataset/{llama,llama3,qwen3}/enwiki_text_document.bin` 和 `.idx`。预期 hash 见 sources/input_manifest.json，本地数据包验证状态见 sources/review.json。
 
 不需要完整预训练权重；这是随机初始化的性能训练。原数据约1.49 GiB，不应直接提交普通 Git。tokenizer/数据的再分发权限需用户确认；默认单独传到受控 H20 工作目录，GitHub 只留清单和 hash。
 
@@ -30,7 +29,7 @@
 ~/run/wjy/a100_migration_20260924_160432_p3rv8ih0/a100_training_data.tar.gz
 ```
 
-这些包未提供到当前本地交接工作区；不得写成已上传 GitHub。它们虽然叫 a100，内含源码而非 ARM 环境。原收集器按 common5 收集，八例 launcher 及完整空间模块需额外核对，不能把包名当作完整性证明。
+旧 a100_sources 不再作为本次主源码，优先使用新 H20 快照。a100_training_data 可以在六个文件 hash 一致后复用；没有上传 GitHub。包名不能作为完整性证明。
 
 ## 原服务器重新收集（可选，不压缩、不训练）
 
