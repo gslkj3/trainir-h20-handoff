@@ -8,7 +8,7 @@
 
 1. **两系统八卡训练验证**：确认真实模型前向、反向、optimizer update、TP/SP 和 PP 能工作。
 2. **公共空间实验**：Devastator/Megatron 和 Galvatron 搜索完全相同的结构合法候选集合，各自选优后训练。
-3. **完整空间实验**：两系统分别使用其实现支持的完整、语义保持搜索空间，记录搜索成本和选中配置质量；另以 Devastator 公共/完整空间构成内部空间扩大对照。
+3. **完整空间实验**：两系统分别使用其实现支持的完整搜索空间；Devastator 按用户修订包含 GQA 结构搜索，记录搜索成本和选中配置质量；另以 Devastator 公共/完整空间构成内部空间扩大对照。
 
 “完整”指原始层数的模型、完整搜索和获选配置短程性能训练，不是训练至收敛，不是继续增加到 10 万候选，也不是保证八例全部通过。该平台提供单节点 NVLink 证据，不代表跨节点扩展性。
 
@@ -106,7 +106,9 @@ command -v conda && conda env list
 
 ### 6.1 定义与实现检查
 
-保持同一模型、精度、数据、GBS 和原生 KV heads。Devastator 在公共空间上扩展代码已实现且后端可执行的语义保持策略：recompute、distributed optimizer、合法 VPP，并核对当前源码 CP 等并行维度的实现和 lowering。GPU Ulysses 在现有枚举里固定1，offload 也未确认有可搜索实现，不能凭论文讨论把它们标成已实现。
+保持同一基准模型、精度、数据和 GBS。2026-09-27 用户修订：Devastator 完整空间开放 CP、UP 和 GQA；GQA 最小可选 KV heads 为 `min(8, 脚本原生 KV heads)`，最大为完整 MHA heads（Q heads），在区间中枚举整除 Q heads 且满足 TP/UP 后端约束的值。该范围允许改变注意力结构，结果必须保存实际 KV heads，不能将全部收益称为同模型语义保持的并行优化收益。公共空间继续固定原生 KV heads。
+
+Devastator 在公共空间上扩展 recompute、distributed optimizer、合法 VPP、CP、UP 和上述 GQA。GPU 并行满足 `DP×PP×TP×CP×UP=8`；UP 不再固定 1，Q/KV 头数须满足 TP×UP 切分，序列须满足原生 CP 两块分割要求。GPU 训练入口将纯 CP 映射为 TE p2p、纯 UP 映射为 a2a、混合映射为 a2a+p2p（层级顺序 `[UP, CP]`）。offload 仍未确认有可搜索实现。
 
 参考 ladder 提供 P0→recompute→distributed optimizer→VPP 的旧实现，但仅是四卡八层先导，需参数化为八卡/八模型，SP=TP、MBS保留四值、1×10后五步。不要无意保留旧的 3 次重复、warm seed 或只测 MLP 的假“全 recompute”描述。
 
@@ -114,7 +116,7 @@ Galvatron 完整空间另走其原生支持的搜索维度和策略组合；公�
 
 每个系统输出 `space_definition.json`：全部维度、取值、固定项、约束、未实现项和后端不支持项。不允许把实际未启用的优化写进完整空间。完整空间候选数可以不同，应称原生/扩展空间系统级对比，不能称同空间机制消融。
 
-GQA/KV heads 搜索会改变模型；本轮固定模型性能比较不开放这维。若要测试该维的 IR 表达能力，另列结构变换验证，不混入八模型的同任务吞吐比值。
+GQA/KV heads 搜索按用户修订纳入 Devastator 完整空间；公共空间仍固定原生 KV heads。完整空间结果记录结构变化，不从 10 步训练推断模型质量等价。Galvatron 的结构搜索能力不因该修订自动假定存在。
 
 ### 6.2 推荐运行与汇总
 

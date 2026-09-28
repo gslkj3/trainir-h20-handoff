@@ -2,6 +2,8 @@
 
 目标：在**同一台单节点 8×H20 96GB** 上，先验证 Devastator/Megatron 与 Galvatron 的八卡训练，再以固定的八个完整模型运行公共空间和完整空间实验。
 
+**2026-09-28 实验已完成：** [八模型公共/完整空间结果与复现入口](reports/h20-eight-models-20260928/README.md)。32 行正式结果均已验收：30 项原设置训练成功，1 项原获选配置 OOM 经分配器调整后十步成功，1 项搜索无可行候选。原始失败和修复后数据分别留存，详见 [中文报告](reports/h20-eight-models-20260928/REPORT_CN.md) 和 [结果 CSV](reports/h20-eight-models-20260928/results.csv)。本轮使用官方 Galvatron v2.4.1（`cea12ffb146a220643c8f99f9cb84294755d29f8`）；下述源码包说明描述原始交接材料，实际 H20 环境见 [运行说明](docs/H20_CAMPAIGN_CN.md)。
+
 **现已包含原服务器修改版 Megatron/Galvatron 的源码快照（2,331 文件），但不是已经在 H20 验收的一键训练包。** 见 [源码接收与使用](docs/SOURCE_RECEIPT_CN.md)。tokenizer 和训练数据通过私有渠道传输，不在公开仓库。不要直接运行 `reference/` 或源码里的旧 Slurm/训练脚本。
 
 ## 接手顺序
@@ -32,7 +34,7 @@
 - 通信硬件预先测量，双方均不计入搜索耗时；计算/内存 Profile、处理和搜索实测墙钟计入，细项分别保存。
 - H20 重新采集性能证据；不复用 5090/A100 Profile 数值，也不重跑或改写旧结果。
 - 公共空间候选相同；完整空间保留各系统支持的优化，明确报告空间差异，不能称完全相同空间。
-- 固定原生 GQA/KV heads；不通过改变模型结构获取“同模型吞吐提升”。
+- 公共空间固定原生 GQA/KV heads。按 2026-09-27 用户修订，Devastator 完整空间开放 CP、UP 和 GQA，KV heads 下界为 `min(8, 脚本原生 KV heads)`；记录结构变化，不把结构搜索收益称为同模型吞吐提升。见 [修订与验证](docs/H20_CP_UP_UPDATE_CN.md)。
 - 失败也保留在八例表中，区分配置/依赖错误、Profile 失败、无可行候选、选中配置 OOM 和训练成功。
 
 ## 仓库与凭证

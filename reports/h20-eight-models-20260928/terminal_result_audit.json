@@ -1,0 +1,53 @@
+{
+  "records": [
+    {
+      "case": "qwen2_7b_32k",
+      "system": "devastator",
+      "space": "common",
+      "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/devastator/common/01",
+      "verified": true,
+      "rejected_candidates": 32,
+      "reason_counts": {
+        "predicted_oom": 32
+      },
+      "interpretation": "Native search rejected every declared candidate. This is a cost-model outcome, not proof that every configuration physically OOMs.",
+      "search_e2e_seconds": 18.758099137805402
+    },
+    {
+      "case": "qwen3_14b_4k",
+      "system": "devastator",
+      "space": "full",
+      "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen3_14b_4k/devastator/full/01",
+      "verified": true,
+      "classification": "selected_training_cuda_oom",
+      "completed_steps_per_rank": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "failed_iteration": 3,
+      "search_e2e_seconds": 204.71868251357228,
+      "selected_config_sha256": "26695d0e7e896e7fe26b05c17850bfe1eb878a5268ab416f715887c191d8da18",
+      "failure_log_sha256": "dbb4bd517856295b06ad4bdcbe5a60d61bb5cf244489c15a78d48732373afcac",
+      "oom_memory_report": {
+        "source": "PyTorch CUDA OOM exception; rounded GiB values reported by runtime, not exact byte counters",
+        "unit": "GiB",
+        "device": 0,
+        "requested_allocation": 1.45,
+        "device_total_capacity": 95.07,
+        "device_free": 1.4,
+        "process_memory_including_non_pytorch": 93.66,
+        "pytorch_allocated": 76.5,
+        "pytorch_reserved_but_unallocated": 12.91,
+        "raw_exception": "[rank0]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.45 GiB. GPU 0 has a total capacity of 95.07 GiB of which 1.40 GiB is free. Including non-PyTorch memory, this process has 93.66 GiB memory in use. Of the allocated memory 76.50 GiB is allocated by PyTorch, and 12.91 GiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)"
+      },
+      "interpretation": "Native selected winner OOMed during real training under the fixed campaign runtime. No ten-step performance result. This does not prove all full-space configurations are infeasible; fragmentation is possible but not established by this log."
+    }
+  ],
+  "note": "Verifies explicit native no-candidate or selected-training OOM outcomes; does not substitute for successful training or complete the campaign."
+}

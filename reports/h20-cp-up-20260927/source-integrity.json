@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "verified_files": 2331,
+  "expected_modified_files": [
+    "Megatron-LM/test_parallel_model.py"
+  ],
+  "patch": "patches/h20/20260927-cp-up/cp-up.patch"
+}

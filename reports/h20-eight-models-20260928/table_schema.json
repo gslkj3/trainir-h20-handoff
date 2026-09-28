@@ -1,0 +1,56 @@
+{
+  "results.csv": {
+    "grain": "one row per workload/system/space, latest attempt and selected successful training retry",
+    "mean_iteration_s": "Mean of max-over-ranks CUDA-synchronized step duration, steps 6..10. Batch preparation, forward/backward, optimizer and zero_grad included; post-step logging excluded.",
+    "peak_allocated_bytes": "Peak live Torch allocator bytes over eight ranks.",
+    "peak_reserved_bytes": "Peak reserved Torch allocator bytes over eight ranks; includes cache.",
+    "peak_nvml_mib": "Maximum of one-second whole-device memory samples; includes CUDA/NCCL context and allocator cache; sampling may miss transients.",
+    "kv_heads": "Actual selected attention KV head count. Full Devastator may change it; no claim of model quality equivalence.",
+    "search_e2e_seconds": "Primary fair-comparison metric: all workflow time from driver launch through selected config preparation. Excludes pre-collected communication and selected training. Read search_timing_method for original clock vs historical reconstruction.",
+    "measured_stage_sum_s": "Diagnostic stage subtotal only; excludes some wrapper preparation overhead and must not be used as total search cost.",
+    "search_cumulative_e2e_seconds": "Sum of E2E search time across all formal attempts for this case/system/space, including failed attempts. Null if any attempt timing is missing or still running. Excludes training retries and standalone diagnostic replays.",
+    "search_attempts_recorded_seconds": "Partial sum of recorded formal attempt timing; consult completeness flag.",
+    "search_attempts_timing_complete": "True only when every formal attempt has search E2E timing.",
+    "search_attempt_count": "Number of formal workflow attempts; excludes training-only retries.",
+    "oom_*_gib": "Original selected-training CUDA OOM exception memory figures, rounded GiB, including allocated, reserved-unallocated, free, requested and total. Historical OOM remains even if separate allocator diagnostic succeeds.",
+    "oom_attribution": "Verified causal classification from separate allocator-only replay. memory_management means unchanged selected workload passed ten steps after allocator setting change; formal original OOM status remains retained."
+  },
+  "candidates.csv": {
+    "grain": "Devastator evaluated or rejected structural+strategy candidate, or Galvatron native search task",
+    "predicted_cost": "Read predicted_cost_unit; Devastator native microseconds, Galvatron seconds. Empty means not evaluated/infeasible, never replace by zero.",
+    "memory_mib": "Galvatron predicted memory by pipeline stage, not measured NVML memory.",
+    "predicted_peak_bytes": "Native Devastator rejected-candidate memory; absent for feasible candidates in original collector."
+  },
+  "profile_accounting.csv": {
+    "grain": "Native Devastator profile counters/timings or Galvatron Profile launch",
+    "warning": "Internal timings overlap; do not add all *_seconds fields. Use results.csv search_e2e_seconds for the full search cost."
+  },
+  "steps.csv": "Selected completed training, per-iteration max over ranks; measured flag marks 6..10.",
+  "rank_steps.csv": "Per-rank raw step observations; loss can be null on pipeline ranks without loss.",
+  "attempts.csv": "All main attempts and training retries, including failed integration runs.",
+  "completion_audit.json": "Evidence gates for completed successful rows; incomplete/failed rows require investigation or explicit evidence-based terminal failure classification.",
+  "paired_results.csv": {
+    "grain": "Eight cases by two spaces; one row per paired system comparison. Missing measurements remain empty.",
+    "devastator_training_speedup_vs_galvatron": "Galvatron measured step time divided by Devastator measured step time, only when both trainings completed. Greater than one favors Devastator.",
+    "galvatron_over_devastator_search_time": "Galvatron end-to-end search time divided by Devastator end-to-end search time. Communication calibration excluded on both sides.",
+    "same_kv_heads": "False means selected attention structures differ; a throughput ratio is not evidence of equal model quality.",
+    "galvatron_over_devastator_cumulative_search_time": "Ratio of cumulative search E2E time including failed formal attempts, when both trainings completed and all attempt timings are available."
+  },
+  "terminal_result_audit.json": "Verified native no-feasible and selected-training CUDA OOM outcomes; distinct from successful training. Verifies original evidence, does not infer all candidates physically infeasible.",
+  "common_phase_audit.json": "Eight per-model common-space paired outcome audits: actual candidate equality, latest workflow and training-retry outcome, and successful-training or native-no-candidate evidence. Does not imply full-space completion.",
+  "galvatron_selected_layers.csv": {
+    "grain": "One row per layer of the latest selected Galvatron configuration, with source configuration SHA256 and outcome status. Configured layout, not measured execution evidence.",
+    "layer_index": "Zero-based global transformer layer index.",
+    "pipeline_stage_index": "Zero-based pipeline stage index from native pp_division.",
+    "ulysses": "Independent native use_sp sequence parallel degree; distinct from tensor-parallel sequence_parallel. TP and Ulysses are mutually exclusive here.",
+    "implied_micro_batch_size": "global_batch_size / (layer DP degree * chunks); derived configured batch size, not measured. Consult integral_micro_batch.",
+    "cp": "Fixed to one under the audited native serializer limitation.",
+    "vocab_zero3": "Selected embedding/lmhead sharding flag, propagated to runtime vocab_sdp."
+  },
+  "replay_index.json": "32 workload/system/space rows, all preserved attempts and training retries, original stage commands/environment/cwd, source snapshots, logs and configuration hashes. Index only; do not execute recorded output paths in place. Running-stage hashes may be absent.",
+  "full_phase_audit.json": "Eight full-space paired outcome audits referencing verified successful-training or terminal-failure evidence; no claim of equal full spaces.",
+  "oom_incidents.json/csv": "Historical actual OOM incidents including repaired profile failures, counted once per workflow not once per rank or diagnostic replay. Possible fragmentation is heuristic, not causal proof.",
+  "oom_reporting_policy.json": "Primary OOM metric counts selected-configuration formal training only. Profile failures and predicted infeasibility are separate.",
+  "allocator_diagnostic_audit.json": "Independent evidence audit of original-source allocator-only replays; passing may classify OOM as memory-management sensitive, not proof of exact fragmentation mechanism.",
+  "allocator_diagnostic_metrics.csv/json": "Only independently verified completed allocator diagnostic training, explicitly labelled allocator and not merged with default-allocator formal results."
+}

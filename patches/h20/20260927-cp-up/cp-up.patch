@@ -1,0 +1,68 @@
+--- a/Megatron-LM/test_parallel_model.py
++++ b/Megatron-LM/test_parallel_model.py
+@@ -3000,13 +3000,13 @@
+                 for cp_size in range(1, max_cp_size + 1):
+                     if self.world_size % (pp * tp * cp_size) != 0 or self.gbs % (self.world_size // (pp * tp * cp_size)) != 0:
+                         continue
+-                    # GPU path: ulysses is currently fixed to one, matching the original code.
+-                    for ulyp in range(1, 2):
++                    # Split total context parallelism into ring CP and all-to-all UP.
++                    for ulyp in range(1, cp_size + 1):
+                         if cp_size % ulyp != 0:
+                             continue
+                         cp = cp_size // ulyp
+                         head, remainder = divmod(self.head, ulyp * tp)
+-                        if (head < 1 or remainder != 0) or (self.seq % (2 * cp) != 0) or (self.group > 1 and self.group % (ulyp * tp) != 0):
++                        if (head < 1 or remainder != 0) or (self.seq % (2 * cp * ulyp) != 0) or (self.group > 1 and self.group % (ulyp * tp) != 0) or (ulyp > 1 and self.group % (ulyp * tp) != 0):
+                             continue
+                         dp = self.world_size // (pp * tp * cp_size)
+                         dp_group_batch_size = self.gbs // dp
+@@ -4355,7 +4355,7 @@
+         # self.W.append({"opera":"alt","name": "Wk","idx":1, "old_shape": "hidden", "shape": "(hidden*k/a)"})
+         # self.W.append({"opera":"alt","name": "Wv","idx":1, "old_shape": "hidden", "shape": "(hidden*k/a)"})
+     def set_valuerange(self,num_attention_heads:int):
+-        self.value_range=[8,num_attention_heads]#最低G=8，再低的话，就不符合实际应用了
++        self.value_range=[min(8, num_attention_heads),num_attention_heads]  # Caller lowers the floor to scripted native KV heads when smaller.
+         return [self.value_type,self.value_range]    
+ 
+ @dataclass
+@@ -5032,9 +5032,23 @@
+     if int(sp) not in (1, int(tp)):
+         raise ValueError('Dense TP sequence-parallel degree must be 1 or TP.')
+     args.sequence_parallel = int(sp) > 1
+-    if int(cp) != 1 or int(ulyp) != 1 or int(ep) != 1:
+-        raise ValueError('This controlled IR kit supports dense TP/PP/DP only; CP/UP/EP require separate validation.')
+-    expected_world = int(dp) * int(pp) * int(tp)
++    if int(ep) != 1:
++        raise ValueError('This measurement adapter supports dense models only; EP must be 1.')
++    if int(cp) > 1 or int(ulyp) > 1:
++        if getattr(args, 'transformer_impl', None) != 'transformer_engine':
++            raise ValueError('GPU CP/UP requires the validated Transformer Engine backend.')
++        if int(args.seq_length) % (2 * int(cp) * int(ulyp)):
++            raise ValueError('Sequence length must divide evenly into the native CP two-chunk layout.')
++    # TE hierarchical groups are ordered [all-to-all, point-to-point].
++    args.hierarchical_context_parallel_sizes = None
++    if int(ulyp) > 1 and int(cp) > 1:
++        args.cp_comm_type = ['a2a+p2p']
++        args.hierarchical_context_parallel_sizes = [int(ulyp), int(cp)]
++    elif int(ulyp) > 1:
++        args.cp_comm_type = ['a2a']
++    else:
++        args.cp_comm_type = ['p2p']
++    expected_world = int(dp) * int(pp) * int(tp) * int(cp) * int(ulyp)
+     actual_world = int(os.getenv('WORLD_SIZE', expected_world))
+     if actual_world != expected_world:
+         raise ValueError(f'Candidate world size {expected_world} != launcher {actual_world}')
+@@ -5050,6 +5064,12 @@
+         args.group_query_attention = bool(gqa[0])
+         if gqa[1] is not None:
+             args.num_query_groups = int(gqa[1])
++
++    kv_heads = int(args.num_query_groups if args.group_query_attention else args.num_attention_heads)
++    if int(args.num_attention_heads) % kv_heads:
++        raise ValueError('KV heads must divide query heads.')
++    if int(ulyp) > 1 and (int(args.num_attention_heads) % (int(tp) * int(ulyp)) or kv_heads % (int(tp) * int(ulyp))):
++        raise ValueError('UP requires Q and KV heads divisible by TP times UP.')
+ 
+     recompute = strategy.get("ReCompute", [None, None])
+     if isinstance(recompute, (list, tuple)) and len(recompute) >= 2:

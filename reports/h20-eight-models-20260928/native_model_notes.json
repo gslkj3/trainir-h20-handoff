@@ -1,0 +1,15 @@
+{
+  "devastator": {
+    "operator_profile_precision": "Native Calc_Matmul/Calc_SDPA and other operator probes allocate torch.float16; this is retained for BF16 workloads as well.",
+    "normalization_probe": "Native Calc_LayerNorm profiles torch.nn.LayerNorm. Actual training model uses audited RMSNorm.",
+    "communication": "Native single operation/message-size communication fit from 8-GPU NCCL-tests; retain native formula and topology approximation.",
+    "training": "Real training dtype, dimensions and normalization are audited independently; predictions remain native approximations.",
+    "source": "/opt/hbv/trainir-h20-runtime/Megatron-LM/test_parallel_model.py",
+    "source_sha256": "1cb9bc29946d33ecc56e8cf72002710285acf58f528a4f2e37d150569d8b1062"
+  },
+  "galvatron": {
+    "profile_precision": "Native model profiler uses workload mixed_precision.",
+    "cp": "Native search serializer drops CP: fixed to 1 for native full search; roundtrip evidence stored separately.",
+    "embedding_sdp": "Selected embed_sdp mapped explicitly to existing runtime vocab_sdp field."
+  }
+}

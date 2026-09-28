@@ -5,3 +5,5 @@
 *.json text eol=lf
 *.md text eol=lf
 *.tar.gz -text
+# Preserve published experiment bytes so recorded SHA256 values remain valid.
+reports/h20-eight-models-20260928/** -text

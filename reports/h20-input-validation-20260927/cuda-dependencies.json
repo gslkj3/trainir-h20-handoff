@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "torch": "2.9.0+cu128",
+  "flash_attention": "2.8.3",
+  "transformer_engine": "2.9.0",
+  "apex_path": "/opt/hbv/venv-megatron-h20/lib/python3.10/site-packages/apex/__init__.py",
+  "gpu": "_CudaDeviceProperties(name='NVIDIA H20', major=9, minor=0, total_memory=97348MB, multi_processor_count=78, uuid=4617106e-a09a-7d36-5817-1592f8590c39, pci_bus_id=24, pci_device_id=0, pci_domain_id=0, L2_cache_size=60MB)",
+  "checks": [
+    {
+      "kernel": "apex_rms",
+      "dtype": "torch.float16",
+      "passed": true
+    },
+    {
+      "kernel": "apex_layer",
+      "dtype": "torch.float16",
+      "passed": true
+    },
+    {
+      "kernel": "te_rms",
+      "dtype": "torch.float16",
+      "passed": true
+    },
+    {
+      "kernel": "te_layer",
+      "dtype": "torch.float16",
+      "passed": true
+    },
+    {
+      "kernel": "flash_attention_gqa",
+      "dtype": "torch.float16",
+      "passed": true
+    },
+    {
+      "kernel": "apex_rms",
+      "dtype": "torch.bfloat16",
+      "passed": true
+    },
+    {
+      "kernel": "apex_layer",
+      "dtype": "torch.bfloat16",
+      "passed": true
+    },
+    {
+      "kernel": "te_rms",
+      "dtype": "torch.bfloat16",
+      "passed": true
+    },
+    {
+      "kernel": "te_layer",
+      "dtype": "torch.bfloat16",
+      "passed": true
+    },
+    {
+      "kernel": "flash_attention_gqa",
+      "dtype": "torch.bfloat16",
+      "passed": true
+    },
+    {
+      "kernel": "apex_fused_adam_10_updates",
+      "dtype": "float32",
+      "passed": true
+    }
+  ]
+}

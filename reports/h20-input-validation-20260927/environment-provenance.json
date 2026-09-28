@@ -1,0 +1,24 @@
+{
+  "galvatron_env": "/opt/hbv/venv-galvatron-h20",
+  "megatron_env": "/opt/hbv/venv-megatron-h20",
+  "shared_base_pth": "/opt/hbv/venv-megatron-h20/lib/python3.10/site-packages/h20_shared_cuda_base.pth",
+  "torch": "2.9.0+cu128",
+  "flash_attention": "2.8.3",
+  "transformer_engine": "2.9.0",
+  "apex_commit": "8a6508aaad6e75a2b939e33f308cd63d745d97f1",
+  "apex_build_env": {
+    "CUDA_HOME": "/usr/local/cuda",
+    "TORCH_CUDA_ARCH_LIST": "9.0",
+    "APEX_CPP_EXT": "1",
+    "APEX_CUDA_EXT": "1"
+  },
+  "te_build_extra_env": {
+    "CPLUS_INCLUDE_PATH": "/opt/hbv/venv-galvatron-h20/lib/python3.10/site-packages/nvidia/cudnn/include"
+  },
+  "wheels_sha256": {
+    "apex-0.1-cp310-cp310-linux_x86_64.whl": "887303539609f8113b42c7a79ce0943f5b158f5a139ad9fc25e73125f76a474b",
+    "transformer_engine_torch-2.9.0-cp310-cp310-linux_x86_64.whl": "6c8126ff43579e063e12b61eb9e03149f4d62bc09fae6aab356a36b4e902d756"
+  },
+  "galvatron_apex_required": false,
+  "galvatron_environment_reinstalled": false
+}

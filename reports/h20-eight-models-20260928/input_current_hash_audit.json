@@ -1,0 +1,139 @@
+{
+  "scope": "All installed private input files from input_receipt.json, including dataset bin/idx; no private contents exported",
+  "passed": true,
+  "count": 22,
+  "files": [
+    {
+      "path": "Megatron-LM/model_from_hf/llama2-hf/config.json",
+      "receipt_sha256": "1082e380db4b029fd59565c448c2cebc843dd5365b30a9afe0b9a636abb3445a",
+      "current_sha256": "1082e380db4b029fd59565c448c2cebc843dd5365b30a9afe0b9a636abb3445a",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama2-hf/generation_config.json",
+      "receipt_sha256": "02121f5384f8b5f6c7272d65eb9048b94f1a05c5f0406e8e8a3f3297ea9a3ca2",
+      "current_sha256": "02121f5384f8b5f6c7272d65eb9048b94f1a05c5f0406e8e8a3f3297ea9a3ca2",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama2-hf/special_tokens_map.json",
+      "receipt_sha256": "ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531",
+      "current_sha256": "ff3b4a612c4e447acb02d40071bddd989fe0da87eb5b7fe0dbadfc4f74de7531",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama2-hf/tokenizer.json",
+      "receipt_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+      "current_sha256": "bcd04f0eadf90287bd26e1a183ac487d8a141b09b06aecb7725bbdd343640f2e",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama2-hf/tokenizer.model",
+      "receipt_sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+      "current_sha256": "9e556afd44213b6bd1be2b850ebbbd98f5481437a8021afaf58ee7fb1818d347",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama2-hf/tokenizer_config.json",
+      "receipt_sha256": "7bf90263772db1fa8e7dc3f075f99181358940528b7d19ed8a3b07f2d4a05aa3",
+      "current_sha256": "7bf90263772db1fa8e7dc3f075f99181358940528b7d19ed8a3b07f2d4a05aa3",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama3-hf/original/tokenizer.model",
+      "receipt_sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
+      "current_sha256": "82e9d31979e92ab929cd544440f129d9ecd797b69e327f80f17e1c50d5551b55",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama3-hf/tokenizer.json",
+      "receipt_sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+      "current_sha256": "e134af98b985517b4f068e3755ae90d4e9cd2d45d328325dc503f1c6b2d06cc7",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/llama3-hf/tokenizer_config.json",
+      "receipt_sha256": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e",
+      "current_sha256": "690727b4fed286383df1c7ca5e805124cb70c6eb4529f807c7b2e60ff741da7e",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/qwen3-hf/config.json",
+      "receipt_sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "current_sha256": "f7c4eadfbbf522470667b797a3c89be2524832d2d599797248dc304fff447c30",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/qwen3-hf/configuration.json",
+      "receipt_sha256": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9",
+      "current_sha256": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/qwen3-hf/generation_config.json",
+      "receipt_sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+      "current_sha256": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/qwen3-hf/merges.txt",
+      "receipt_sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "current_sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/qwen3-hf/tokenizer.json",
+      "receipt_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "current_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/qwen3-hf/tokenizer_config.json",
+      "receipt_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "current_sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/model_from_hf/qwen3-hf/vocab.json",
+      "receipt_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "current_sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/dataset/llama/enwiki_text_document.bin",
+      "receipt_sha256": "58e7b11323be55ae6fc14944426dabada0dd80b7a8e5e80d00a8b0d55469ab87",
+      "current_sha256": "58e7b11323be55ae6fc14944426dabada0dd80b7a8e5e80d00a8b0d55469ab87",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/dataset/llama/enwiki_text_document.idx",
+      "receipt_sha256": "3ea1bae60bb922711c6cdffa8fa59b4db77ee5c90a4c22792d02f9ed8273e93d",
+      "current_sha256": "3ea1bae60bb922711c6cdffa8fa59b4db77ee5c90a4c22792d02f9ed8273e93d",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/dataset/llama3/enwiki_text_document.bin",
+      "receipt_sha256": "e411783a186495b8b8bdae68ac0286e276d475f12ef296f5f43308c444dc9143",
+      "current_sha256": "e411783a186495b8b8bdae68ac0286e276d475f12ef296f5f43308c444dc9143",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/dataset/llama3/enwiki_text_document.idx",
+      "receipt_sha256": "558fec133bea5d526023f8bcf1053af2de3f42d90f57020afb244402b7932583",
+      "current_sha256": "558fec133bea5d526023f8bcf1053af2de3f42d90f57020afb244402b7932583",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/dataset/qwen3/enwiki_text_document.bin",
+      "receipt_sha256": "f024051670f60e9eb68c8f82fcab072fc1bc3f47f2b9dee7b3ed52b848c7434b",
+      "current_sha256": "f024051670f60e9eb68c8f82fcab072fc1bc3f47f2b9dee7b3ed52b848c7434b",
+      "passed": true
+    },
+    {
+      "path": "Megatron-LM/dataset/qwen3/enwiki_text_document.idx",
+      "receipt_sha256": "ac46491859d92009819bfe4414d9d31fb670a5f2f785aa5f210afc3c4eda66a5",
+      "current_sha256": "ac46491859d92009819bfe4414d9d31fb670a5f2f785aa5f210afc3c4eda66a5",
+      "passed": true
+    }
+  ]
+}

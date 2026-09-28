@@ -1,0 +1,142 @@
+{
+  "passed": true,
+  "scope": "Small integration model only, not full eight-workload parity.",
+  "checks": [
+    {
+      "run": "galvatron-llama-tp2-fp16-01",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 32000,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 10000,
+        "qk_layernorm": false
+      }
+    },
+    {
+      "run": "galvatron-llama-tp4-fp16-01",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 32000,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 10000,
+        "qk_layernorm": false
+      }
+    },
+    {
+      "run": "galvatron-llama3-tp4-bf16-02",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 128256,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 500000,
+        "qk_layernorm": false
+      }
+    },
+    {
+      "run": "galvatron-qwen3-tp2-bf16-02",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 151936,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 1000000,
+        "qk_layernorm": true
+      }
+    },
+    {
+      "run": "megatron-llama-tp2-fp16-01",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 32000,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 10000,
+        "qk_layernorm": false
+      }
+    },
+    {
+      "run": "megatron-llama-tp4-fp16-01",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 32000,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 10000,
+        "qk_layernorm": false
+      }
+    },
+    {
+      "run": "megatron-llama3-tp4-bf16-01",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 128256,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 500000,
+        "qk_layernorm": false
+      }
+    },
+    {
+      "run": "megatron-qwen3-tp2-bf16-01",
+      "ranks_verified": 8,
+      "expected": {
+        "num_layers": 4,
+        "hidden_size": 512,
+        "ffn_hidden_size": 1376,
+        "num_attention_heads": 8,
+        "num_query_groups": 4,
+        "kv_channels": 64,
+        "padded_vocab_size": 151936,
+        "normalization": "RMSNorm",
+        "norm_epsilon": 1e-05,
+        "rotary_base": 1000000,
+        "qk_layernorm": true
+      }
+    }
+  ]
+}

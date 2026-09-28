@@ -1,0 +1,2 @@
+case,system,space,allocator,mean_iteration_s,tokens_per_second,peak_allocated_bytes,peak_reserved_bytes,evidence,formal_default_allocator_result
+qwen3_14b_4k,devastator,full,expandable_segments:True,61.74001591783017,8491.866939227473,84083923456,97484013568,/opt/hbv/trainir-h20-experiments/20260927-v1/diagnostics/allocator-expandable-01/megatron_selected_training,False

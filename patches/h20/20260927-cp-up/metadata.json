@@ -1,0 +1,8 @@
+{
+  "source_snapshot_sha256": "649f9ab881662500ed069317a6c74ff9ab2662dcf975a2f3449ca507cc57766c",
+  "original_sha256": "c2e1e88830f5482885c2daa627a3e4b4555218ebf5bbe79ab5cb1ad1386c004a",
+  "patched_sha256": "1cb9bc29946d33ecc56e8cf72002710285acf58f528a4f2e37d150569d8b1062",
+  "gqa_floor": "min(8, scripted_native_kv_heads)",
+  "up": "Enumerate divisors of total context degree; map to TE a2a or a2a+p2p.",
+  "validation_status": "Four native eight-GPU BF16 runs passed, ten updates per rank; CP, UP, CP+UP, UP+DP. Static common candidate set equality passed (296 rows)."
+}

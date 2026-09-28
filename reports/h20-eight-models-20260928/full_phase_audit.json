@@ -1,0 +1,196 @@
+{
+  "all_eight_pairs_verified": true,
+  "verified_pairs": 8,
+  "pairs": [
+    {
+      "case": "llama7b_2k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama7b_2k/devastator/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 195.8269351311028,
+          "kv_heads": 8
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama7b_2k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 1376.7221306432039,
+          "kv_heads": 32
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "llama2_7b_4k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_7b_4k/devastator/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 257.1685906276107,
+          "kv_heads": 8
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_7b_4k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 1426.4308670731261,
+          "kv_heads": 32
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "llama2_13b_4k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_13b_4k/devastator/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 236.74187028594315,
+          "kv_heads": 8
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_13b_4k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 1673.4371223887429,
+          "kv_heads": 40
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "llama3_8b_8k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama3_8b_8k/devastator/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 309.5076353829354,
+          "kv_heads": 8
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama3_8b_8k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 1706.5256958268583,
+          "kv_heads": 8
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen2_1p5b_32k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_1p5b_32k/devastator/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 341.72529695089906,
+          "kv_heads": 2
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_1p5b_32k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 833.8990761237219,
+          "kv_heads": 2
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen2_7b_32k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/devastator/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 260.46533209085464,
+          "kv_heads": 4
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 963.9062643488869,
+          "kv_heads": 4
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen25_14b_8k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen25_14b_8k/devastator/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 185.20786019507796,
+          "kv_heads": 8
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen25_14b_8k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 1357.3151785824448,
+          "kv_heads": 8
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen3_14b_4k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen3_14b_4k/devastator/full/01",
+          "status": "failed",
+          "classification": "selected_training_cuda_oom",
+          "measured_training": false,
+          "search_e2e_seconds": 204.71868251357228,
+          "kv_heads": 8
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen3_14b_4k/galvatron/full/01",
+          "status": "completed",
+          "classification": null,
+          "measured_training": true,
+          "search_e2e_seconds": 1796.0248638195917,
+          "kv_heads": 8
+        }
+      },
+      "issues": []
+    }
+  ],
+  "audit_inputs": {
+    "results.json": "2a0e0b538470336dcae6d8d8b314c9df527e5f00d044bfae2ac48773da94a913",
+    "completion_audit.json": "f29964cea370ac900392137c4b1b512bc55be122994f13a08192814990ce0a93",
+    "terminal_result_audit.json": "62fc319043fee6b03d01d88ed61528daa31661cfcae3e88d41c621dda14f73d5"
+  },
+  "note": "Paired outcome audit, not a claim of all successful training or equal full spaces. Allocator diagnostics remain separately labelled. Underlying row audits validate actual spaces, selected configs, timing and execution evidence."
+}

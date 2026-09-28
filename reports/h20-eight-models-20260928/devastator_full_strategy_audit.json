@@ -1,0 +1,152 @@
+[
+  {
+    "case": "llama7b_2k",
+    "gqa_values": [
+      8,
+      16,
+      32
+    ],
+    "strategy_count": 72,
+    "vpp_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "common_strategy_included": true
+  },
+  {
+    "case": "llama2_7b_4k",
+    "gqa_values": [
+      8,
+      16,
+      32
+    ],
+    "strategy_count": 72,
+    "vpp_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "common_strategy_included": true
+  },
+  {
+    "case": "llama2_13b_4k",
+    "gqa_values": [
+      8,
+      10,
+      20,
+      40
+    ],
+    "strategy_count": 128,
+    "vpp_values": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      10,
+      20
+    ],
+    "common_strategy_included": true
+  },
+  {
+    "case": "llama3_8b_8k",
+    "gqa_values": [
+      8,
+      16,
+      32
+    ],
+    "strategy_count": 72,
+    "vpp_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "common_strategy_included": true
+  },
+  {
+    "case": "qwen2_1p5b_32k",
+    "gqa_values": [
+      2,
+      3,
+      4,
+      6,
+      12
+    ],
+    "strategy_count": 120,
+    "vpp_values": [
+      1,
+      2,
+      4,
+      7,
+      14
+    ],
+    "common_strategy_included": true
+  },
+  {
+    "case": "qwen2_7b_32k",
+    "gqa_values": [
+      4,
+      7,
+      14,
+      28
+    ],
+    "strategy_count": 96,
+    "vpp_values": [
+      1,
+      2,
+      4,
+      7,
+      14
+    ],
+    "common_strategy_included": true
+  },
+  {
+    "case": "qwen25_14b_8k",
+    "gqa_values": [
+      8,
+      10,
+      20,
+      40
+    ],
+    "strategy_count": 160,
+    "vpp_values": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24
+    ],
+    "common_strategy_included": true
+  },
+  {
+    "case": "qwen3_14b_4k",
+    "gqa_values": [
+      8,
+      10,
+      20,
+      40
+    ],
+    "strategy_count": 128,
+    "vpp_values": [
+      1,
+      2,
+      4,
+      5,
+      8,
+      10,
+      20
+    ],
+    "common_strategy_included": true
+  }
+]

@@ -1,0 +1,159 @@
+{
+  "all_eight_pairs_verified": true,
+  "verified_pairs": 8,
+  "pairs": [
+    {
+      "case": "llama7b_2k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama7b_2k/devastator/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama7b_2k/galvatron/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "llama2_7b_4k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_7b_4k/devastator/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_7b_4k/galvatron/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "llama2_13b_4k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_13b_4k/devastator/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama2_13b_4k/galvatron/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "llama3_8b_8k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama3_8b_8k/devastator/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama3_8b_8k/galvatron/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen2_1p5b_32k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_1p5b_32k/devastator/common/01",
+          "status": "completed",
+          "candidate_count": 24,
+          "candidate_sha256": "de68b0de0b52e0eb41eda41bc0fdf92b29e1737d9a1d7b7a14b95010dfd5c864"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_1p5b_32k/galvatron/common/02",
+          "status": "completed",
+          "candidate_count": 24,
+          "candidate_sha256": "de68b0de0b52e0eb41eda41bc0fdf92b29e1737d9a1d7b7a14b95010dfd5c864"
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen2_7b_32k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/devastator/common/01",
+          "status": "no_feasible_candidate",
+          "candidate_count": 32,
+          "candidate_sha256": "6079cdbf54d01a136b23f33ba20e6f88f2247e8105502a2cba743cd8288ebf45"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02",
+          "status": "completed",
+          "candidate_count": 32,
+          "candidate_sha256": "6079cdbf54d01a136b23f33ba20e6f88f2247e8105502a2cba743cd8288ebf45"
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen25_14b_8k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen25_14b_8k/devastator/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen25_14b_8k/galvatron/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        }
+      },
+      "issues": []
+    },
+    {
+      "case": "qwen3_14b_4k",
+      "verified": true,
+      "systems": {
+        "devastator": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen3_14b_4k/devastator/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        },
+        "galvatron": {
+          "run": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen3_14b_4k/galvatron/common/01",
+          "status": "completed",
+          "candidate_count": 40,
+          "candidate_sha256": "25b1066b1a7f70c31c591716431d4a53b817dc07ce84641f22878fb7519b481f"
+        }
+      },
+      "issues": []
+    }
+  ],
+  "note": "A native no-feasible result is distinct from successful training and from physical infeasibility. Full-space work is audited separately."
+}

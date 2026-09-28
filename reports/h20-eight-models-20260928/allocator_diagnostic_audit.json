@@ -1,0 +1,24 @@
+{
+  "records": [
+    {
+      "diagnostic": "megatron_selected_training",
+      "verified": true,
+      "status": "passed",
+      "evidence": "/opt/hbv/trainir-h20-experiments/20260927-v1/diagnostics/allocator-expandable-01/megatron_selected_training",
+      "classification": "memory_management_sensitive_oom",
+      "log_sha256": "809d2b6a35215a79faed5a09d0ec80c7d9567bc69c570e8cadcb1042885781fb",
+      "exact_fragmentation_mechanism_proven": false
+    },
+    {
+      "diagnostic": "galvatron_memory_001",
+      "verified": true,
+      "status": "passed",
+      "evidence": "/opt/hbv/trainir-h20-experiments/20260927-v1/diagnostics/allocator-expandable-01/galvatron_memory_001",
+      "classification": "memory_management_sensitive_oom",
+      "log_sha256": "01c57aaa93376ab5857294705020bcee47d7792ca94453cfa291166202d32156",
+      "exact_fragmentation_mechanism_proven": false
+    }
+  ],
+  "all_diagnostics_verified": true,
+  "note": "A pass demonstrates allocator-sensitive feasibility for the unchanged workload. It does not prove exact fragmentation mechanism or global memory-predictor accuracy. Original OOM remains recorded."
+}
