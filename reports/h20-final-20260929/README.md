@@ -4,6 +4,8 @@
 
 经验成本参数 `BAND_WIDTH_MEMORY_TRANS=30*1024**3` 字节/秒，即 30 GiB/s（32.21225472 GB/s），不是实测 HBM 带宽。固定候选与已有算子 profile 完成全部候选重新评分；选中配置匹配已有训练证据后复用，不声称新增了 16 次独立训练。
 
+建模灵感来源：NVIDIA 在 [CUDA C++ Best Practices Guide 的有效带宽定义](https://docs.nvidia.com/cuda/cuda-c-best-practices-guide/#effective-bandwidth-calculation)中，以对应活动的读写字节量除以耗时计算有效带宽，即 `B_eff = (B_read + B_write) / t`（换算为 GB/s 时再除以 10⁹）。这一“数据量与时间通过等效速率关联”的思路，是本模型原始 20 GiB/s 参数（代码为 `20*1024**3` 字节/秒）的建模灵感来源。将其用于建模算子间的数据相关等待，是本工作的经验建模选择；NVIDIA 资料并未给出 20 GiB/s 这一取值，也未将该公式定义为训练算子间等待的统一速率。本报告仍采用上文的 30 GiB/s 参数版本。
+
 | 模型 | 公共 Devastator / Galvatron（秒/步） | 完整 Devastator / Galvatron（秒/步） |
 |---|---:|---:|
 | llama7b_2k | 25.679 / 26.517 | 22.064 / 25.050 |
