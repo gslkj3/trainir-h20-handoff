@@ -1,0 +1,594 @@
+[
+  {
+    "case": "llama7b_2k",
+    "space": "common",
+    "devastator_iteration_s": 25.67906915601343,
+    "galvatron_iteration_s": 26.516551399044694,
+    "devastator_native_samples_per_second": 9.228609800000001,
+    "devastator_synchronized_samples_per_second": 9.969208714095886,
+    "galvatron_synchronized_samples_per_second": 9.654347435587828,
+    "speedup": 1.0326134190434682,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "llama7b_2k/devastator/common",
+    "galvatron_evidence_id": "llama7b_2k/galvatron/common",
+    "devastator_parallel": [
+      4,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      4,
+      16
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        false,
+        32
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"16,16\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 1, \"world_size\": 8}"
+  },
+  {
+    "case": "llama7b_2k",
+    "space": "full",
+    "devastator_iteration_s": 22.064122847281396,
+    "galvatron_iteration_s": 25.05044274982065,
+    "devastator_native_samples_per_second": 10.6816858,
+    "devastator_synchronized_samples_per_second": 11.602545987072526,
+    "galvatron_synchronized_samples_per_second": 10.21938025434033,
+    "speedup": 1.1353473203176627,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "llama7b_2k/devastator/full",
+    "galvatron_evidence_id": "llama7b_2k/galvatron/full",
+    "devastator_parallel": [
+      4,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      8,
+      8
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": true,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 8, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0\", \"embed_sdp\": 1, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 1, \"world_size\": 8}"
+  },
+  {
+    "case": "llama2_7b_4k",
+    "space": "common",
+    "devastator_iteration_s": 54.2905615599826,
+    "galvatron_iteration_s": 55.7239267680794,
+    "devastator_native_samples_per_second": 4.5433344,
+    "devastator_synchronized_samples_per_second": 4.715368429504269,
+    "galvatron_synchronized_samples_per_second": 4.59407681489248,
+    "speedup": 1.0264017384773807,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "llama2_7b_4k/devastator/common",
+    "galvatron_evidence_id": "llama2_7b_4k/galvatron/common",
+    "devastator_parallel": [
+      4,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      32
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        false,
+        32
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}"
+  },
+  {
+    "case": "llama2_7b_4k",
+    "space": "full",
+    "devastator_iteration_s": 47.10260754264891,
+    "galvatron_iteration_s": 53.062438604421914,
+    "devastator_native_samples_per_second": 5.2196886000000005,
+    "devastator_synchronized_samples_per_second": 5.434943272900669,
+    "galvatron_synchronized_samples_per_second": 4.824504993230116,
+    "speedup": 1.1265286864719048,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "llama2_7b_4k/devastator/full",
+    "galvatron_evidence_id": "llama2_7b_4k/galvatron/full",
+    "devastator_parallel": [
+      4,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      4,
+      16
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": true,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0\", \"embed_sdp\": 1, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 1, \"world_size\": 8}"
+  },
+  {
+    "case": "llama2_13b_4k",
+    "space": "common",
+    "devastator_iteration_s": 201.2106111424044,
+    "galvatron_iteration_s": 204.2979553198442,
+    "devastator_native_samples_per_second": 2.5199708,
+    "devastator_synchronized_samples_per_second": 2.5445974101119258,
+    "galvatron_synchronized_samples_per_second": 2.506143535300804,
+    "speedup": 1.0153438437461668,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "llama2_13b_4k/devastator/common",
+    "galvatron_evidence_id": "llama2_13b_4k/galvatron/common",
+    "devastator_parallel": [
+      1,
+      4,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      256
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        false,
+        40
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 256, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 512, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"20,20\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}"
+  },
+  {
+    "case": "llama2_13b_4k",
+    "space": "full",
+    "devastator_iteration_s": 177.1413581032306,
+    "galvatron_iteration_s": 205.02307811081408,
+    "devastator_native_samples_per_second": 2.8576842,
+    "devastator_synchronized_samples_per_second": 2.8903470396880877,
+    "galvatron_synchronized_samples_per_second": 2.497279841458951,
+    "speedup": 1.1573981384479122,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "llama2_13b_4k/devastator/full",
+    "galvatron_evidence_id": "llama2_13b_4k/galvatron/full",
+    "devastator_parallel": [
+      4,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      2,
+      64
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": true,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 256, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 512, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"20,20\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 1, \"vtp\": 2, \"world_size\": 8}"
+  },
+  {
+    "case": "llama3_8b_8k",
+    "space": "common",
+    "devastator_iteration_s": 33.65453603155911,
+    "galvatron_iteration_s": 33.65453603155911,
+    "devastator_native_samples_per_second": null,
+    "devastator_synchronized_samples_per_second": 1.901675302847284,
+    "galvatron_synchronized_samples_per_second": 1.901675302847284,
+    "speedup": 1.0,
+    "equal_by_reuse": true,
+    "devastator_evidence_id": "llama3_8b_8k/devastator/common",
+    "galvatron_evidence_id": "llama3_8b_8k/devastator/common",
+    "devastator_parallel": [
+      2,
+      1,
+      1,
+      1,
+      4,
+      4,
+      1,
+      2,
+      16
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}"
+  },
+  {
+    "case": "llama3_8b_8k",
+    "space": "full",
+    "devastator_iteration_s": 32.791448493674395,
+    "galvatron_iteration_s": 32.88683075197041,
+    "devastator_native_samples_per_second": 1.8474668,
+    "devastator_synchronized_samples_per_second": 1.9517283602871602,
+    "galvatron_synchronized_samples_per_second": 1.9460677279207104,
+    "speedup": 1.0029087540403838,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "llama3_8b_8k/devastator/full",
+    "galvatron_evidence_id": "llama3_8b_8k/galvatron/full",
+    "devastator_parallel": [
+      4,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      16
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": true,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen2_1p5b_32k",
+    "space": "common",
+    "devastator_iteration_s": 56.462342873960736,
+    "galvatron_iteration_s": 56.462342873960736,
+    "devastator_native_samples_per_second": null,
+    "devastator_synchronized_samples_per_second": 1.133498837320041,
+    "galvatron_synchronized_samples_per_second": 1.133498837320041,
+    "speedup": 1.0,
+    "equal_by_reuse": true,
+    "devastator_evidence_id": "qwen2_1p5b_32k/devastator/common",
+    "galvatron_evidence_id": "qwen2_1p5b_32k/devastator/common",
+    "devastator_parallel": [
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      32
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        2
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 32, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"14,14\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen2_1p5b_32k",
+    "space": "full",
+    "devastator_iteration_s": 55.766935465484856,
+    "galvatron_iteration_s": 57.34203636310995,
+    "devastator_native_samples_per_second": 1.11135,
+    "devastator_synchronized_samples_per_second": 1.1476334402418569,
+    "galvatron_synchronized_samples_per_second": 1.116109647636674,
+    "speedup": 1.0282443509667112,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "qwen2_1p5b_32k/devastator/full",
+    "galvatron_evidence_id": "qwen2_1p5b_32k/galvatron/full",
+    "devastator_parallel": [
+      4,
+      1,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      16
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": true,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        2
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"28\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1\", \"vsp\": 1, \"vtp\": 2, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen2_7b_32k",
+    "space": "common",
+    "devastator_iteration_s": 169.360142641142,
+    "galvatron_iteration_s": 169.360142641142,
+    "devastator_native_samples_per_second": null,
+    "devastator_synchronized_samples_per_second": 0.3778929268830973,
+    "galvatron_synchronized_samples_per_second": 0.3778929268830973,
+    "speedup": 1.0,
+    "equal_by_reuse": true,
+    "devastator_evidence_id": "qwen2_7b_32k/devastator/common",
+    "galvatron_evidence_id": "qwen2_7b_32k/devastator/common",
+    "devastator_parallel": [
+      1,
+      2,
+      1,
+      1,
+      4,
+      4,
+      1,
+      1,
+      64
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        4
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"14,14\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen2_7b_32k",
+    "space": "full",
+    "devastator_iteration_s": 168.10166017543526,
+    "galvatron_iteration_s": 173.82577414754778,
+    "devastator_native_samples_per_second": 0.3763644,
+    "devastator_synchronized_samples_per_second": 0.3807219984217166,
+    "galvatron_synchronized_samples_per_second": 0.3681847546134048,
+    "speedup": 1.0340515017290055,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "qwen2_7b_32k/devastator/full",
+    "galvatron_evidence_id": "qwen2_7b_32k/galvatron/full",
+    "devastator_parallel": [
+      1,
+      2,
+      1,
+      2,
+      2,
+      2,
+      1,
+      1,
+      64
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        4
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 32, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"28\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 1, \"vtp\": 4, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen25_14b_8k",
+    "space": "common",
+    "devastator_iteration_s": 61.409741680882874,
+    "galvatron_iteration_s": 62.3346570532769,
+    "devastator_native_samples_per_second": 1.010111,
+    "devastator_synchronized_samples_per_second": 1.0421799253378636,
+    "galvatron_synchronized_samples_per_second": 1.0267161644171676,
+    "speedup": 1.0150613786522726,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "qwen25_14b_8k/devastator/common",
+    "galvatron_evidence_id": "qwen25_14b_8k/galvatron/common",
+    "devastator_parallel": [
+      1,
+      2,
+      1,
+      1,
+      4,
+      4,
+      1,
+      2,
+      32
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"24,24\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen25_14b_8k",
+    "space": "full",
+    "devastator_iteration_s": 60.08490251451731,
+    "galvatron_iteration_s": 67.59095558952541,
+    "devastator_native_samples_per_second": 1.0302078,
+    "devastator_synchronized_samples_per_second": 1.0651594214459572,
+    "galvatron_synchronized_samples_per_second": 0.9468722470601985,
+    "speedup": 1.124924111729973,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "qwen25_14b_8k/devastator/full",
+    "galvatron_evidence_id": "qwen25_14b_8k/galvatron/full",
+    "devastator_parallel": [
+      2,
+      2,
+      1,
+      1,
+      2,
+      2,
+      1,
+      1,
+      32
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": true,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 32, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"48\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen3_14b_4k",
+    "space": "common",
+    "devastator_iteration_s": 54.139609378948805,
+    "galvatron_iteration_s": 58.16075293458998,
+    "devastator_native_samples_per_second": 2.2842726,
+    "devastator_synchronized_samples_per_second": 2.364257915199707,
+    "galvatron_synchronized_samples_per_second": 2.2007968181559505,
+    "speedup": 1.0742735974967104,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "qwen3_14b_4k/devastator/common",
+    "galvatron_evidence_id": "qwen3_14b_4k/galvatron/common",
+    "devastator_parallel": [
+      1,
+      2,
+      1,
+      1,
+      4,
+      4,
+      1,
+      4,
+      32
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": false,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 128, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"40\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}"
+  },
+  {
+    "case": "qwen3_14b_4k",
+    "space": "full",
+    "devastator_iteration_s": 56.153087445348504,
+    "galvatron_iteration_s": 55.10340958554298,
+    "devastator_native_samples_per_second": 2.2027,
+    "devastator_synchronized_samples_per_second": 2.2794828534508835,
+    "galvatron_synchronized_samples_per_second": 2.322905260540943,
+    "speedup": 0.9813068540384866,
+    "equal_by_reuse": false,
+    "devastator_evidence_id": "qwen3_14b_4k/devastator/full",
+    "galvatron_evidence_id": "qwen3_14b_4k/galvatron/full",
+    "devastator_parallel": [
+      2,
+      1,
+      1,
+      1,
+      4,
+      4,
+      1,
+      2,
+      32
+    ],
+    "devastator_strategy": {
+      "ReCompute": [
+        null,
+        null
+      ],
+      "DistributedOptimizer": true,
+      "VirtualPipe": null,
+      "Hybrid_MHA_MQA": [
+        true,
+        8
+      ]
+    },
+    "galvatron_selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 128, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"20,20\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 1, \"vtp\": 2, \"world_size\": 8}"
+  }
+]

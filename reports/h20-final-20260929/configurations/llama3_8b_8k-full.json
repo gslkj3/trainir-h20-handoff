@@ -1,0 +1,32 @@
+{
+  "case": "llama3_8b_8k",
+  "space": "full",
+  "parallel": [
+    4,
+    1,
+    1,
+    1,
+    2,
+    2,
+    1,
+    1,
+    16
+  ],
+  "strategy": {
+    "ReCompute": [
+      null,
+      null
+    ],
+    "DistributedOptimizer": true,
+    "VirtualPipe": null,
+    "Hybrid_MHA_MQA": [
+      true,
+      8
+    ]
+  },
+  "predicted_seconds": 89.81583006829123,
+  "candidates": 1554,
+  "source_sha256": "9811c5eab8fe8f75d0fb008942db5825f3af4cbc96143fcb65ce2961280b71e6",
+  "input_sha256": "7614392455333753ea62d79dc50761f51f483dc5fba0dc04592036bd4e2283c2",
+  "profile_sha256": "e460def8b0fc5350244eabb1ab9f115c9099116c4e584b3b4731999e130c3de3"
+}

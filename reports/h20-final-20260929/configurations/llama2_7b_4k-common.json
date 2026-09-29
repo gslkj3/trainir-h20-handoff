@@ -1,0 +1,32 @@
+{
+  "case": "llama2_7b_4k",
+  "space": "common",
+  "parallel": [
+    4,
+    1,
+    1,
+    1,
+    2,
+    2,
+    1,
+    2,
+    32
+  ],
+  "strategy": {
+    "ReCompute": [
+      null,
+      null
+    ],
+    "DistributedOptimizer": false,
+    "VirtualPipe": null,
+    "Hybrid_MHA_MQA": [
+      false,
+      32
+    ]
+  },
+  "predicted_seconds": 157.38120222032268,
+  "candidates": 25,
+  "source_sha256": "9811c5eab8fe8f75d0fb008942db5825f3af4cbc96143fcb65ce2961280b71e6",
+  "input_sha256": "b1dce5a26b4f414a1315de726fd4e7854806aa479fb8cf2608b2dfd649664904",
+  "profile_sha256": "e28199ac6a5771e2c743e9b7840fcc96d11a31ffec1560b31afe330c19b01947"
+}

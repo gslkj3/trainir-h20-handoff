@@ -1,0 +1,1670 @@
+[
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/candidate_evaluations.json",
+    "sha256": "1d95c7bf6ab49719c009899f8b1a2aba81e772b48133a49fe92f1be85c6c1199",
+    "bytes": 19082,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/candidate_evaluations.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/computation_jobs.json",
+    "sha256": "01f43f97d9804bd20f84bd4fbab66d76f408ff53256647af3b17cfd54a5295c4",
+    "bytes": 2743,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_jobs.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/computation_processing.json",
+    "sha256": "ca3b9a926d7dec8106c31cb812af77e566a7407cfcd1223aa73dd02f72f41197",
+    "bytes": 40,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_processing.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/computation_profiler_args.json",
+    "sha256": "197c4de66de530176b9a5ac71e00ac0d7ee2712e5e2985773839484a0c8f71a8",
+    "bytes": 3273,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_profiler_args.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/computation_runtime.yaml",
+    "sha256": "63532ace80892ccc66c1276eb19986dccf42f44de55d53044a54053c1bb3fa26",
+    "bytes": 5236,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_runtime.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/contract.json",
+    "sha256": "9368a533ae953fc32e2b866102aa2df4cbfebf86c74a69df3845d66c6518b86e",
+    "bytes": 14594,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/contract.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/gpt/configs/computation_profiling_bf16_qwen2_all.json",
+    "sha256": "92b353ceb616dc1eb0cbbdafc828211df4e8be01aaabbf224e562f6dc6c15a1b",
+    "bytes": 211,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/gpt/configs/computation_profiling_bf16_qwen2_all.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/gpt/configs/memory_profiling_bf16_qwen2_all.json",
+    "sha256": "41e60d0b0b6acf531dce683cec8cfb98c3b60d0f5004f892bc738cdb189afbc9",
+    "bytes": 11917,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/gpt/configs/memory_profiling_bf16_qwen2_all.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/memory_jobs.json",
+    "sha256": "03d7408e29039b032c0a58fd3306b3a2f31b095e5b1bf2a138698ee33d3e2534",
+    "bytes": 23457,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_jobs.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/memory_processing.json",
+    "sha256": "5908353fbedc51f38f6705b9aeda8b0feddd11752b7d691bd9f87faab879723c",
+    "bytes": 39,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_processing.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/memory_profiler_args.json",
+    "sha256": "b1b61064a1ead2c12ba6d4feba49f47fa9b54de10bf66aed7fe88d602726b386",
+    "bytes": 3265,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_profiler_args.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/memory_runtime.yaml",
+    "sha256": "63532ace80892ccc66c1276eb19986dccf42f44de55d53044a54053c1bb3fa26",
+    "bytes": 5236,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_runtime.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/model_template.yaml",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "bytes": 3,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_template.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/native_selected_result.json",
+    "sha256": "072c4cd74c92e11730dbc20a8431dae0b96ab532a3298dcec19ba35607916250",
+    "bytes": 3748,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/native_selected_result.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/search_args.json",
+    "sha256": "a3497566ae2d040c8a9bff22545fcf85b4c7939144745b402a8f4ca7b1ac790f",
+    "bytes": 6167,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/search_args.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/search_summary.json",
+    "sha256": "e3bd592863098edf13756f8bfd37984ed09e7af811d070f22aded1c460cc99a2",
+    "bytes": 77,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/search_summary.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/search_timing.json",
+    "sha256": "1fe4ee844fd7bbe08acdb3c1399d9827272949c31e3837ab1232754b0b9d21d9",
+    "bytes": 635,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/search_timing.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/selected/galvatron_config_qwen2_1nodes_8gpus_per_node_85GB_bf16_bsz64_[fsdp_ckpt_off].json",
+    "sha256": "6c36c14ea9ea2ad3c1dd648e5662d908832008ee86f80fddeaaa20cb981888b5",
+    "bytes": 621,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/selected/galvatron_config_qwen2_1nodes_8gpus_per_node_85GB_bf16_bsz64_[fsdp_ckpt_off].json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/selected_candidate.json",
+    "sha256": "6d408a6dc23434cf3411fbe8413ba0965cf103e547c4397e4ff41cbc9e1a1b4b",
+    "bytes": 149,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/selected_candidate.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/selected_runtime.yaml",
+    "sha256": "1160bc0ae3546ddf167a4a7d4ef31abfc659fbedd20a5bdcf5810db94ee6bdfb",
+    "bytes": 5308,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/selected_runtime.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/common/space_definition.json",
+    "sha256": "21fcacd1d922d4ec8f18402a9b315d916633f0144577c04781f942eaa60b034f",
+    "bytes": 9063,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/space_definition.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/computation_jobs.json",
+    "sha256": "4b7f7a1454145ba9592d062c38c6d7b75b8c21d763f86b7e9183e851ffc5e85c",
+    "bytes": 2735,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_jobs.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/computation_processing.json",
+    "sha256": "ee020192e44862ebb74b4db5c604f44459beed320b7813d4dc774ff351668859",
+    "bytes": 40,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_processing.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/computation_profiler_args.json",
+    "sha256": "de9712f4999639f4c411490769a7571f3122462396605f59c4c27b247d41e783",
+    "bytes": 3269,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_profiler_args.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/computation_runtime.yaml",
+    "sha256": "6e7202d8bcd290fc558892e055bd50b699b547c571812b5be5ff526d453872fb",
+    "bytes": 5232,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_runtime.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/contract.json",
+    "sha256": "5fe3f85ad094f8af5464db6100f3af6076e94f12e98e14910ad58c295fcb4acf",
+    "bytes": 14996,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/contract.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/gpt/configs/computation_profiling_bf16_qwen2_all.json",
+    "sha256": "655b9697b53c2da291e3da1a290cb50b6475e1ba803725bebf4475b3f5ac10f6",
+    "bytes": 211,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/gpt/configs/computation_profiling_bf16_qwen2_all.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/gpt/configs/memory_profiling_bf16_qwen2_all.json",
+    "sha256": "41e60d0b0b6acf531dce683cec8cfb98c3b60d0f5004f892bc738cdb189afbc9",
+    "bytes": 11917,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/gpt/configs/memory_profiling_bf16_qwen2_all.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/memory_jobs.json",
+    "sha256": "d54655ffce182ccd38b71ed93934a7441a6d5a84ffc2e7b4863e9a91121571a9",
+    "bytes": 23385,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_jobs.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/memory_processing.json",
+    "sha256": "61b39b8dde079be03f241e5ba5a121a369804207cb18908a66433112d1942ec3",
+    "bytes": 38,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_processing.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/memory_profiler_args.json",
+    "sha256": "e3cee998f1548a2b21c51eb29d9dd6e769732a098419d1c15c019a57c5a07ff5",
+    "bytes": 3261,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_profiler_args.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/memory_runtime.yaml",
+    "sha256": "6e7202d8bcd290fc558892e055bd50b699b547c571812b5be5ff526d453872fb",
+    "bytes": 5232,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_runtime.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/model_template.yaml",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "bytes": 3,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_template.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/native_selected_result.json",
+    "sha256": "83a013fab333603f3f61511dfee64772cba21d5d09a54f8ef7a93587524ba744",
+    "bytes": 3757,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/native_selected_result.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/rope_dispatch.json",
+    "sha256": "6aff649809dad60b86d6409ff70fce5ed127a171c77a9924c9ff6a49589f560a",
+    "bytes": 37,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rope_dispatch.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/search_args.json",
+    "sha256": "ed24bb25acd45adc996607416d59e61ef801af20b6712bb35977695f515f2701",
+    "bytes": 6159,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/search_args.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/search_summary.json",
+    "sha256": "0128dae7f5f3c7c5f81acb5483df308b8bef2c6ccf185bbb7825e2eb5599bc03",
+    "bytes": 77,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/search_summary.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/search_timing.json",
+    "sha256": "b21f9e9769cdfd7388b781bac940c8767407ac9b8960e826902f0fa40b16cb06",
+    "bytes": 636,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/search_timing.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/selected/galvatron_config_qwen2_1nodes_8gpus_per_node_85GB_bf16_bsz64.json",
+    "sha256": "0572256476bbcfa9790d50d4f324834d0faad76957acaeca25ebd9eec2e9a97b",
+    "bytes": 618,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/selected/galvatron_config_qwen2_1nodes_8gpus_per_node_85GB_bf16_bsz64.json"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/selected_runtime.yaml",
+    "sha256": "bd2e235cab73b7de85c4fd4c573c5e421fad070812814c585425c8a929f4531c",
+    "bytes": 5288,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/selected_runtime.yaml"
+  },
+  {
+    "path": "galvatron_selection/qwen2_7b_32k/full/space_definition.json",
+    "sha256": "ba85ff692e2e8d7a87e36325fb5ef33147464c69165a6977a6c6d1c91e33e436",
+    "bytes": 14915,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/space_definition.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/candidate_evaluations.json",
+    "sha256": "1d95c7bf6ab49719c009899f8b1a2aba81e772b48133a49fe92f1be85c6c1199",
+    "bytes": 19082,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/candidate_evaluations.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/computation_jobs.json",
+    "sha256": "01f43f97d9804bd20f84bd4fbab66d76f408ff53256647af3b17cfd54a5295c4",
+    "bytes": 2743,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_jobs.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/computation_processing.json",
+    "sha256": "ca3b9a926d7dec8106c31cb812af77e566a7407cfcd1223aa73dd02f72f41197",
+    "bytes": 40,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_processing.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/computation_profiler_args.json",
+    "sha256": "197c4de66de530176b9a5ac71e00ac0d7ee2712e5e2985773839484a0c8f71a8",
+    "bytes": 3273,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_profiler_args.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/computation_runtime.yaml",
+    "sha256": "63532ace80892ccc66c1276eb19986dccf42f44de55d53044a54053c1bb3fa26",
+    "bytes": 5236,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/computation_runtime.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/contract.json",
+    "sha256": "9368a533ae953fc32e2b866102aa2df4cbfebf86c74a69df3845d66c6518b86e",
+    "bytes": 14594,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/contract.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/memory_jobs.json",
+    "sha256": "03d7408e29039b032c0a58fd3306b3a2f31b095e5b1bf2a138698ee33d3e2534",
+    "bytes": 23457,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_jobs.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/memory_processing.json",
+    "sha256": "5908353fbedc51f38f6705b9aeda8b0feddd11752b7d691bd9f87faab879723c",
+    "bytes": 39,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_processing.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/memory_profiler_args.json",
+    "sha256": "b1b61064a1ead2c12ba6d4feba49f47fa9b54de10bf66aed7fe88d602726b386",
+    "bytes": 3265,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_profiler_args.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/memory_runtime.yaml",
+    "sha256": "63532ace80892ccc66c1276eb19986dccf42f44de55d53044a54053c1bb3fa26",
+    "bytes": 5236,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/memory_runtime.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank0.json",
+    "sha256": "4198e1357fead7d62badbe07aa320088f4bc2701410c80f95883dc8587311784",
+    "bytes": 298,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank0.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank1.json",
+    "sha256": "4198e1357fead7d62badbe07aa320088f4bc2701410c80f95883dc8587311784",
+    "bytes": 298,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank1.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank2.json",
+    "sha256": "4198e1357fead7d62badbe07aa320088f4bc2701410c80f95883dc8587311784",
+    "bytes": 298,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank2.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank3.json",
+    "sha256": "4198e1357fead7d62badbe07aa320088f4bc2701410c80f95883dc8587311784",
+    "bytes": 298,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank3.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank4.json",
+    "sha256": "2f6582add3b59b183b6cb7b021079e14a18f3e43ecd27fd60cc8dd7bcea72512",
+    "bytes": 1006,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank4.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank5.json",
+    "sha256": "2f6582add3b59b183b6cb7b021079e14a18f3e43ecd27fd60cc8dd7bcea72512",
+    "bytes": 1006,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank5.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank6.json",
+    "sha256": "2f6582add3b59b183b6cb7b021079e14a18f3e43ecd27fd60cc8dd7bcea72512",
+    "bytes": 1006,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank6.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_rank7.json",
+    "sha256": "2f6582add3b59b183b6cb7b021079e14a18f3e43ecd27fd60cc8dd7bcea72512",
+    "bytes": 1006,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_rank7.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/model_template.yaml",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "bytes": 3,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/model_template.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/native_selected_result.json",
+    "sha256": "072c4cd74c92e11730dbc20a8431dae0b96ab532a3298dcec19ba35607916250",
+    "bytes": 3748,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/native_selected_result.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank0.json",
+    "sha256": "747b1ef0723f44b51b389c0b4f06e92d083224fe076d3651e8e6928af32a8488",
+    "bytes": 9479,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank0.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank0.jsonl",
+    "sha256": "989ec8cc3780bc9be1546885c3713fc4b0515279128fa3c4c99195ab1b10578a",
+    "bytes": 2133,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank0.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank1.json",
+    "sha256": "f69fbffbfa5d64e94e2960620d687168547c80845e1731d72aeaea99ae908290",
+    "bytes": 9479,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank1.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank1.jsonl",
+    "sha256": "e912bba5c20876849bd0dd3ade9a4db3918438288741b7e66634c81c935907f6",
+    "bytes": 2133,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank1.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank2.json",
+    "sha256": "72225637d14a5549cd2b11ac21f11430950750250a68dbd9a7697f36c06b9db3",
+    "bytes": 9478,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank2.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank2.jsonl",
+    "sha256": "f63b4fcf5591a949fcc0297c65b0c629ec749f725ac85c11dacf50c7a426a59c",
+    "bytes": 2132,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank2.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank3.json",
+    "sha256": "c3bab9baea9cb4a7a59b1fb419b8c5606b6c8d7116ec249b76ef55c7baafae00",
+    "bytes": 9473,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank3.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank3.jsonl",
+    "sha256": "74054dbbf758f9458959602dceaeb45504a2536185b676a498ca5c128cba6546",
+    "bytes": 2127,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank3.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank4.json",
+    "sha256": "4608222b5ca1378ffb7e20e8eb391675b2d5e3cdedfcf27cddd86c2f09f8ba45",
+    "bytes": 9618,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank4.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank4.jsonl",
+    "sha256": "d1d581a4a276f929b7631aa9d2dc51b0d710ee55b06c7f913d4c340f9bde9b71",
+    "bytes": 2270,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank4.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank5.json",
+    "sha256": "6fb26c1f35d8fe5a6ba0b49957056d29b8c3c38fff81b7420a3161f4ae5a078f",
+    "bytes": 9616,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank5.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank5.jsonl",
+    "sha256": "4af8bd21a2be2a20d35bfaa4f7444a9540b64db33dd959721217437b961257b7",
+    "bytes": 2268,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank5.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank6.json",
+    "sha256": "10da500e4033b98c30203446888efa548a2237b69a1d4ad02a3d7f9f5da2895c",
+    "bytes": 9620,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank6.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank6.jsonl",
+    "sha256": "0709f09792734aad819618180e6aeb7a9b73458cb29fcf2c9a7d2b33e86d09bc",
+    "bytes": 2272,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank6.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank7.json",
+    "sha256": "86bffa707ad974da17fee2a5ad72e84303ad77b1737fcb73f91346a77069eb7d",
+    "bytes": 9618,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank7.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/rank7.jsonl",
+    "sha256": "87f8f42d5c8a914017667800348418c1264f37317a5d1d55aac9a03dbd2a7983",
+    "bytes": 2270,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/rank7.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/search_args.json",
+    "sha256": "a3497566ae2d040c8a9bff22545fcf85b4c7939144745b402a8f4ca7b1ac790f",
+    "bytes": 6167,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/search_args.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/search_summary.json",
+    "sha256": "e3bd592863098edf13756f8bfd37984ed09e7af811d070f22aded1c460cc99a2",
+    "bytes": 77,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/search_summary.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/search_timing.json",
+    "sha256": "1fe4ee844fd7bbe08acdb3c1399d9827272949c31e3837ab1232754b0b9d21d9",
+    "bytes": 635,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/search_timing.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/selected_candidate.json",
+    "sha256": "6d408a6dc23434cf3411fbe8413ba0965cf103e547c4397e4ff41cbc9e1a1b4b",
+    "bytes": 149,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/selected_candidate.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/selected_runtime.yaml",
+    "sha256": "1160bc0ae3546ddf167a4a7d4ef31abfc659fbedd20a5bdcf5810db94ee6bdfb",
+    "bytes": 5308,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/selected_runtime.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/space_definition.json",
+    "sha256": "21fcacd1d922d4ec8f18402a9b315d916633f0144577c04781f942eaa60b034f",
+    "bytes": 9063,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/space_definition.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/computation_000.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/computation_000.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/computation_000.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/computation_000.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/computation_001.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/computation_001.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/computation_001.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/computation_001.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_000.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_000.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_000.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_000.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_001.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_001.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_001.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_001.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_002.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_002.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_002.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_002.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_003.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_003.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_003.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_003.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_004.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_004.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_004.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_004.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_005.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_005.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_005.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_005.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_006.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_006.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_006.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_006.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_007.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_007.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_007.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_007.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_008.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_008.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_008.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_008.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_009.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_009.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_009.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_009.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_010.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_010.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_010.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_010.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_011.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_011.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_011.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_011.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_012.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_012.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_012.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_012.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_013.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_013.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_013.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_013.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_014.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_014.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_014.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_014.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_015.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_015.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_015.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_015.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_016.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_016.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_016.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_016.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_017.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_017.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/memory_017.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/memory_017.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/search.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/search.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/search.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/search.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/selected_training.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/selected_training.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/selected_training.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/selected_training.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/selected_training.gpu.csv",
+    "sha256": "5eec1b984d54e0dfabd9c7b414e4835a1aa65f1bc3fe9f6a5a5976cd7a035648",
+    "bytes": 1159232,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/selected_training.gpu.csv"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/selected_training.json",
+    "sha256": "548f0727eea987265c1b7fa8951a15f42a82b576706e2d2d558f27d1324ddabd",
+    "bytes": 1799,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/selected_training.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/stages/selected_training.log",
+    "sha256": "68a696aa114d1ae37aaa3defa44efb033d068229cb5e6f92d6cb04755145b57a",
+    "bytes": 20654,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/stages/selected_training.log"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/status.json",
+    "sha256": "0cb87b61f0afab118ac222a0af92bc06c579959aeea208461294d16becf11b39",
+    "bytes": 28,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/status.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/common/training_summary.json",
+    "sha256": "abf77fd87b436a32e4ca7eaeccf55fbeeaf00dcc4f9abbae47b6bdcfd7777b6d",
+    "bytes": 847,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/common/02/training_summary.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank0.json",
+    "sha256": "4289b9e45eb9d5bdad718b7408ddae8f1412df9dbc9386a58b86de674d18fa02",
+    "bytes": 18670486,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank0.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank1.json",
+    "sha256": "03dfa143e3aec4abb950e78d492a4e71f380dbcc6674a46e7635eac594736ff0",
+    "bytes": 18670563,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank1.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank2.json",
+    "sha256": "a331931f15cacfa9f90d3641852bf960bbe35539edc0440d58a68bed20ab898b",
+    "bytes": 18670525,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank2.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank3.json",
+    "sha256": "0d4a3566bd1368d6cd85ca138793d0eb85ceae0c3542020b5c15e9434f1ad0c4",
+    "bytes": 18670533,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank3.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank4.json",
+    "sha256": "37ccca86105a51a75b4b41a07871c558911c3ec7715c04b25e3908381604ddda",
+    "bytes": 18799225,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank4.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank5.json",
+    "sha256": "beec4eddb5ca48acc3515036f89a532cc486b4440781c845997023af47023ea5",
+    "bytes": 18799159,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank5.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank6.json",
+    "sha256": "16c2b87d40efad889c70875edf7a75a858e87199f154fae3b0ac6978dce9a511",
+    "bytes": 18799169,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank6.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/backend_rank7.json",
+    "sha256": "d07d23bcdaca71ec62ca49c394325dfc4de0058bae82f8dbaf2bd524abcc3293",
+    "bytes": 18799211,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/backend_rank7.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/contract.json",
+    "sha256": "bf36635f383ab6f26a022439f63278b0cbecbd044c5445d53e0e0f9e4b7f3a4d",
+    "bytes": 7557,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/contract.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/cp_execution_policy.json",
+    "sha256": "ea1b8428d370cf4c5b41bcf6c26dac7ef48ad587094a731cda5ccb4b2de05e34",
+    "bytes": 914,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/cp_execution_policy.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/first_step_ulysses_route_check.json",
+    "sha256": "3dbef34a4f2b7935f3d463abf1aff0027e4d2ff8b4dfd8f14fa98794fb18e51d",
+    "bytes": 2919,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/first_step_ulysses_route_check.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank0.json",
+    "sha256": "41a81e9348a49376d920226c2f1086d1308ca81a044b536540fedcc4897dd90e",
+    "bytes": 5341,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank0.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank1.json",
+    "sha256": "41a81e9348a49376d920226c2f1086d1308ca81a044b536540fedcc4897dd90e",
+    "bytes": 5341,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank1.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank2.json",
+    "sha256": "41a81e9348a49376d920226c2f1086d1308ca81a044b536540fedcc4897dd90e",
+    "bytes": 5341,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank2.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank3.json",
+    "sha256": "41a81e9348a49376d920226c2f1086d1308ca81a044b536540fedcc4897dd90e",
+    "bytes": 5341,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank3.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank4.json",
+    "sha256": "57e956de624f45b97546908f10819a8c17627cef921a43f778bbf26220d45db7",
+    "bytes": 5326,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank4.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank5.json",
+    "sha256": "57e956de624f45b97546908f10819a8c17627cef921a43f778bbf26220d45db7",
+    "bytes": 5326,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank5.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank6.json",
+    "sha256": "57e956de624f45b97546908f10819a8c17627cef921a43f778bbf26220d45db7",
+    "bytes": 5326,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank6.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/model_rank7.json",
+    "sha256": "57e956de624f45b97546908f10819a8c17627cef921a43f778bbf26220d45db7",
+    "bytes": 5326,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/model_rank7.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank0.json",
+    "sha256": "9a35f2454f832a47125d0a5302589f3cba60dd82d9aafa9e420237cb554f59e5",
+    "bytes": 24322,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank0.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank0.jsonl",
+    "sha256": "bc750a96d85f377a175409f47871c3b88913449190dff89caeb5bd5c54b6f460",
+    "bytes": 1854,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank0.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank1.json",
+    "sha256": "6c686340f0a03a57f4220d5c9abe0de9219c42e8c1346bb5366970d438d7544c",
+    "bytes": 24320,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank1.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank1.jsonl",
+    "sha256": "e5a28d2e95358f33bbe2e77043cd5fb3fc633e887aa2a4d62e9452be6681c40c",
+    "bytes": 1852,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank1.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank2.json",
+    "sha256": "08125c08d837e15b611448354b41d23469dc480220291c6611d2bd05380099a7",
+    "bytes": 24320,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank2.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank2.jsonl",
+    "sha256": "588d36a602309ef3342fa3041f51117b3b3a9417a2855c6cd292981a3e37ca62",
+    "bytes": 1852,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank2.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank3.json",
+    "sha256": "da678dd71510b9b6a78e4da94163d479b4540e5d61ecf4d56e23e3431cabb78b",
+    "bytes": 24323,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank3.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank3.jsonl",
+    "sha256": "1a43aae1beedffc8e59fd815d50ce200cf71cc3ca4af167b21823b0448965827",
+    "bytes": 1855,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank3.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank4.json",
+    "sha256": "5d214fe409f2468d6ee74c1fbd38cbaa908f4aed556bec5d3adea0a90a07a5fd",
+    "bytes": 24462,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank4.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank4.jsonl",
+    "sha256": "46a4014e48e0bdf8192affbf2bc1dca93d71cb82145869ada4fbd1a922c02bb7",
+    "bytes": 1994,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank4.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank5.json",
+    "sha256": "eba205cf099808353c15c465aa846e89de4630ce029c320580b24aed76c6b276",
+    "bytes": 24462,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank5.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank5.jsonl",
+    "sha256": "3470ef5feafa7bfa720f6954eb0f5af7f59bcbf524144f4aa4f60ef1812e4bcb",
+    "bytes": 1994,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank5.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank6.json",
+    "sha256": "ce0234fc077cd67dde302690051f7468e5dfb8ef37d1dee60bb8321dd08d2565",
+    "bytes": 24461,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank6.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank6.jsonl",
+    "sha256": "d6891952c3ae4db796cb83e801d1907a2cd2e04baddddfbdba32cc97741f9703",
+    "bytes": 1993,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank6.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank7.json",
+    "sha256": "5c567431f847a77bd1b2f9555b184e2e9a0b9424bdebf50bea763c28663fade4",
+    "bytes": 24459,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank7.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/rank7.jsonl",
+    "sha256": "6d35acf7964126a427d7d90171209678f1550f5ce1e715856b845e0843d592d3",
+    "bytes": 1991,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/rank7.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/search_timing.json",
+    "sha256": "3eae8d1b4f2ee52a3246f17c37b89d3c39df6318cccd60eea20cf2d6e60dea06",
+    "bytes": 179,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/search_timing.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/selected_candidate.json",
+    "sha256": "ebcef5b2a22d683204005253a5b1aabf2c226d5a9be7216054d1dd81527b9bb2",
+    "bytes": 414,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/selected_candidate.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/stages/selected_training.code/h20_retry_training.py",
+    "sha256": "429dc6a73c6c537a3c36f52772181016a08e71d5dad35ad16fe19477e363d46a",
+    "bytes": 1495,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/stages/selected_training.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/stages/selected_training.code/h20_training_evidence.py",
+    "sha256": "49e8b53fbcf811bdef16a2869bdd93803cc8f4d68eb289d3dfb954cc2556eb55",
+    "bytes": 4245,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/stages/selected_training.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/stages/selected_training.gpu.csv",
+    "sha256": "115ceab1ce868f05a046daafbaacf53809c67779001e2a455cc9d820bdbee9c7",
+    "bytes": 1685949,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/stages/selected_training.gpu.csv"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/stages/selected_training.json",
+    "sha256": "7a2b02095f2ca27cbe70fb5161f2574d008f38723203ef121f8d05f51644558f",
+    "bytes": 5045,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/stages/selected_training.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/stages/selected_training.log",
+    "sha256": "20284a860ae903c74be8d4ce05f285c6e625d9302140af916d176ceb6782e310",
+    "bytes": 468356,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/stages/selected_training.log"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/status.json",
+    "sha256": "b2460201587534b0e75cc135fd20e7d64cf3aa6aac3c5a8309dba1bb2b3c84fc",
+    "bytes": 55,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/status.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/training_summary.json",
+    "sha256": "9d494def2e6ce55b5ed0899ddccbb3d30e6420ed4ff4e579b3210c7cea6c0841",
+    "bytes": 848,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/training_summary.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/devastator/full/validation_audit.json",
+    "sha256": "5a2fa1f0499bb17a2c12a177e9ea22162d4a418f691dea05ec62c035e123e4d1",
+    "bytes": 7546,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/validation/qwen2_7b_32k/03be60f6ff9e/01/validation_audit.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/candidate_evaluations.jsonl",
+    "sha256": "02c0a2d278145b679691a49b8c2deae07c372acaebdc66d6cfd0bac8600c6460",
+    "bytes": 152746,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/candidate_evaluations.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/computation_jobs.json",
+    "sha256": "4b7f7a1454145ba9592d062c38c6d7b75b8c21d763f86b7e9183e851ffc5e85c",
+    "bytes": 2735,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_jobs.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/computation_processing.json",
+    "sha256": "ee020192e44862ebb74b4db5c604f44459beed320b7813d4dc774ff351668859",
+    "bytes": 40,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_processing.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/computation_profiler_args.json",
+    "sha256": "de9712f4999639f4c411490769a7571f3122462396605f59c4c27b247d41e783",
+    "bytes": 3269,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_profiler_args.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/computation_runtime.yaml",
+    "sha256": "6e7202d8bcd290fc558892e055bd50b699b547c571812b5be5ff526d453872fb",
+    "bytes": 5232,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/computation_runtime.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/contract.json",
+    "sha256": "5fe3f85ad094f8af5464db6100f3af6076e94f12e98e14910ad58c295fcb4acf",
+    "bytes": 14996,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/contract.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/memory_jobs.json",
+    "sha256": "d54655ffce182ccd38b71ed93934a7441a6d5a84ffc2e7b4863e9a91121571a9",
+    "bytes": 23385,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_jobs.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/memory_processing.json",
+    "sha256": "61b39b8dde079be03f241e5ba5a121a369804207cb18908a66433112d1942ec3",
+    "bytes": 38,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_processing.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/memory_profiler_args.json",
+    "sha256": "e3cee998f1548a2b21c51eb29d9dd6e769732a098419d1c15c019a57c5a07ff5",
+    "bytes": 3261,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_profiler_args.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/memory_runtime.yaml",
+    "sha256": "6e7202d8bcd290fc558892e055bd50b699b547c571812b5be5ff526d453872fb",
+    "bytes": 5232,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/memory_runtime.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank0.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank0.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank1.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank1.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank2.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank2.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank3.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank3.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank4.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank4.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank5.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank5.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank6.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank6.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_rank7.json",
+    "sha256": "976934b5e065bfca6d39044c123afd0614fd37773e68a75d2b71f87f56756604",
+    "bytes": 1241,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_rank7.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/model_template.yaml",
+    "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+    "bytes": 3,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/model_template.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/native_selected_result.json",
+    "sha256": "83a013fab333603f3f61511dfee64772cba21d5d09a54f8ef7a93587524ba744",
+    "bytes": 3757,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/native_selected_result.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank0.json",
+    "sha256": "51884d91a15ce6e5747866e8df54acec74b507a89f1dda89e9432956b34a7598",
+    "bytes": 9597,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank0.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank0.jsonl",
+    "sha256": "70106496433e6ee57aa2d6d00c1bc2054dafe142e6dfeff05a23e7a077a7e804",
+    "bytes": 2269,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank0.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank1.json",
+    "sha256": "139ef1afee8345fe848b2ff6b186b4558efb62e61e9056a0b1047fc4db83ffe3",
+    "bytes": 9595,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank1.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank1.jsonl",
+    "sha256": "5f1631f00754baf3b2d3feaedaa1ccfc0af25e87f2afe37ae608c34c6a76a414",
+    "bytes": 2267,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank1.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank2.json",
+    "sha256": "852f2b8ebdd239597a5a2b0f2c1e0c6a3859b79a647f9ed00e8ec47fc7e0e3ce",
+    "bytes": 9592,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank2.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank2.jsonl",
+    "sha256": "1157c9dfaafb6ce766848b77cd2590d38c7d96a56c0ed3c6fc9c38ec6fa87ab9",
+    "bytes": 2264,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank2.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank3.json",
+    "sha256": "40de303c45b5839cde14c1f34475c0f501378f09b59ad30a9149ee26a16ccca3",
+    "bytes": 9595,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank3.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank3.jsonl",
+    "sha256": "47a1250c48cd0f6c3dcfc69c0d04430a03b8287539c5a70c954f49f5ee18059e",
+    "bytes": 2267,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank3.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank4.json",
+    "sha256": "802e5d58721de66374e094ec679ee9be3a6f868a75c7e9a85f3f0b296c85afba",
+    "bytes": 9596,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank4.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank4.jsonl",
+    "sha256": "b8f51f1b5c4734fbb10e5c9720c548a5cfe8e9d292b0e93cf3306c13120fc14f",
+    "bytes": 2268,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank4.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank5.json",
+    "sha256": "d75248ff242f3cab0be2e9461d4e27c8bdeb13eb6fce6a6609d7a52f1f99e2e0",
+    "bytes": 9596,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank5.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank5.jsonl",
+    "sha256": "090661b86ea48057d61dd7c90c1ea7d75b046118ae7f7ed3d3ff9b0b31e68671",
+    "bytes": 2268,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank5.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank6.json",
+    "sha256": "bc7e7ceaf38d4c20a4ee90353abe4dce99323caf5d6727f8d0c31020b7785eaa",
+    "bytes": 9597,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank6.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank6.jsonl",
+    "sha256": "916dc3f627d5e9e95d525aaeb5c7b07979902d67cbcbe82abe75e10d60127f3f",
+    "bytes": 2269,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank6.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank7.json",
+    "sha256": "95efb0f079ec714860d7a79cfd606b08037cc46f71ddf53299baeea94b833b48",
+    "bytes": 9595,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank7.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rank7.jsonl",
+    "sha256": "08a58b6094b58202cb57e97cad739273224146bd6b06ad56e8d4a9e2a851f751",
+    "bytes": 2267,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rank7.jsonl"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/rope_dispatch.json",
+    "sha256": "6aff649809dad60b86d6409ff70fce5ed127a171c77a9924c9ff6a49589f560a",
+    "bytes": 37,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/rope_dispatch.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/search_args.json",
+    "sha256": "ed24bb25acd45adc996607416d59e61ef801af20b6712bb35977695f515f2701",
+    "bytes": 6159,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/search_args.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/search_summary.json",
+    "sha256": "0128dae7f5f3c7c5f81acb5483df308b8bef2c6ccf185bbb7825e2eb5599bc03",
+    "bytes": 77,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/search_summary.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/search_timing.json",
+    "sha256": "b21f9e9769cdfd7388b781bac940c8767407ac9b8960e826902f0fa40b16cb06",
+    "bytes": 636,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/search_timing.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/selected_runtime.yaml",
+    "sha256": "bd2e235cab73b7de85c4fd4c573c5e421fad070812814c585425c8a929f4531c",
+    "bytes": 5288,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/selected_runtime.yaml"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/space_definition.json",
+    "sha256": "ba85ff692e2e8d7a87e36325fb5ef33147464c69165a6977a6c6d1c91e33e436",
+    "bytes": 14915,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/space_definition.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/computation_000.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/computation_000.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/computation_000.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/computation_000.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/computation_001.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/computation_001.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/computation_001.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/computation_001.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_000.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_000.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_000.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_000.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_001.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_001.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_001.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_001.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_002.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_002.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_002.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_002.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_003.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_003.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_003.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_003.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_004.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_004.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_004.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_004.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_005.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_005.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_005.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_005.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_006.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_006.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_006.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_006.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_007.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_007.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_007.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_007.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_008.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_008.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_008.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_008.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_009.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_009.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_009.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_009.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_010.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_010.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_010.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_010.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_011.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_011.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_011.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_011.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_012.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_012.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_012.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_012.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_013.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_013.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_013.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_013.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_014.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_014.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_014.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_014.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_015.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_015.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_015.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_015.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_016.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_016.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_016.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_016.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_017.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_017.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/memory_017.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/memory_017.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/search.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/search.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/search.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/search.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/selected_training.code/h20_retry_training.py",
+    "sha256": "7cbde2764f2aec4a475e91f1149a51734a2e3ab8f146257df03f71664e6ef072",
+    "bytes": 1325,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/selected_training.code/h20_retry_training.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/selected_training.code/h20_training_evidence.py",
+    "sha256": "78c67c018de2ed677bd3073a39f543840c2b6161865021981878e4bb654a0d0c",
+    "bytes": 3638,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/selected_training.code/h20_training_evidence.py"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/selected_training.gpu.csv",
+    "sha256": "6ea3d47fdc23a588470ac57d8dc5b0d18f1e7e6797666685f220eba10c39052a",
+    "bytes": 1246133,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/selected_training.gpu.csv"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/selected_training.json",
+    "sha256": "f178c4223b70adf682691c8e8a94f3081a84abf2df3d696bed8a2f3a9ba8eae1",
+    "bytes": 1784,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/selected_training.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/stages/selected_training.log",
+    "sha256": "3eeb6925cf1f9cd7e5019f9d832b33bf5d569c37b425e9e0422eceafde5d67ba",
+    "bytes": 25307,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/stages/selected_training.log"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/status.json",
+    "sha256": "0cb87b61f0afab118ac222a0af92bc06c579959aeea208461294d16becf11b39",
+    "bytes": 28,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/status.json"
+  },
+  {
+    "path": "measurements/qwen2_7b_32k/galvatron/full/training_summary.json",
+    "sha256": "54a780e115b29bd7650e1186ff98909c594ac70476f4e06ea455651384618f8c",
+    "bytes": 850,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/qwen2_7b_32k/galvatron/full/01/training_summary.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/common/native_evidence/comm_data/profile_comm.json",
+    "sha256": "4588952d0e4160cc4bcb2f01d99071e4ff2416300ee8bf479550047b22cf3143",
+    "bytes": 1846,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-aligned-rerun-v8/runs/qwen2_7b_32k/devastator/common/03/native_evidence/comm_data/profile_comm.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/common/profile.json",
+    "sha256": "a7c0e3c4b6963c0fad4f1d2830b01ad760d3f78def245abf64d5d638be190bd5",
+    "bytes": 954,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-aligned-rerun-v8/runs/qwen2_7b_32k/devastator/common/03/native_evidence/calc_data/data.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/common/ranking.json",
+    "sha256": "40422ad0e857a7a63377bb031d88f69ae1cb8a58470855030ac16e1c976e9f02",
+    "bytes": 2710,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/bandwidth_target/qwen2_7b_32k-common-bandwidth30.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/common/search_input.json",
+    "sha256": "4e11ed99884f0737936fa307e2c5014d33de701b98ee5d2ccb4a6684d75fd5eb",
+    "bytes": 52496,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-aligned-rerun-v8/runs/qwen2_7b_32k/devastator/common/03/search.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/common/space_definition.json",
+    "sha256": "ae72bc75209fe0ab0b78864be4d30b55750fb68181d629d0da1676418c2686d7",
+    "bytes": 500,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-aligned-rerun-v8/runs/qwen2_7b_32k/devastator/common/03/space_definition.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/full/native_evidence/comm_data/profile_comm.json",
+    "sha256": "4588952d0e4160cc4bcb2f01d99071e4ff2416300ee8bf479550047b22cf3143",
+    "bytes": 1846,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/profile_recovery/qwen2_7b_32k/full/01/native_evidence/comm_data/profile_comm.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/full/profile.json",
+    "sha256": "29e50a781f4edc6110183da54db311af6d18c83321340e8e9ff09fdb78c6b9e5",
+    "bytes": 9353,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/profile_recovery/qwen2_7b_32k/full/01/operator_profile_snapshot.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/full/ranking.json",
+    "sha256": "7551a4afd140f9045f9c41d49d60333352d8ec72d01730e76a2c31081d05fc25",
+    "bytes": 95147,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/bandwidth_target/qwen2_7b_32k-full-bandwidth30.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/full/search_input.json",
+    "sha256": "2bc14f7c53555a5ac51579d6403255f1896e706d9efa21d42aa1ce3c624ab671",
+    "bytes": 2913804,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/profile_recovery/qwen2_7b_32k/full/01/search.json"
+  },
+  {
+    "path": "prediction/qwen2_7b_32k/full/space_definition.json",
+    "sha256": "de72a5d80d59b6deb1b5e1515896a4b62df1df2f4babc6bd63c5f1df4fe8d1fd",
+    "bytes": 20012,
+    "original_path": "/opt/hbv/trainir-h20-experiments/20260928-ranking-ablation-v10/profile_recovery/qwen2_7b_32k/full/01/space_definition.json"
+  }
+]

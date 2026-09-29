@@ -1,0 +1,58 @@
+[
+  {
+    "case": "llama7b_2k",
+    "archive": "evidence/llama7b_2k.tar.gz",
+    "sha256": "21201491fb368af09c95e427147cf9fca09aeb90094b834505d878fb067b9685",
+    "bytes": 2221914,
+    "members": 282
+  },
+  {
+    "case": "llama2_7b_4k",
+    "archive": "evidence/llama2_7b_4k.tar.gz",
+    "sha256": "f2436f7fba152c74e30b561ca6967399e02cc74b2fc4597be294243bd784db34",
+    "bytes": 3670513,
+    "members": 350
+  },
+  {
+    "case": "llama2_13b_4k",
+    "archive": "evidence/llama2_13b_4k.tar.gz",
+    "sha256": "eebe4c1761ddacf6b8c933bf481ab6cbba79c0817226b23d9d2e4abf8fa19e42",
+    "bytes": 11356618,
+    "members": 347
+  },
+  {
+    "case": "llama3_8b_8k",
+    "archive": "evidence/llama3_8b_8k.tar.gz",
+    "sha256": "4c85bd37482d58d7ab740a7df0a8e75a4f958ca5ec3bac5a10464c3aa387c54b",
+    "bytes": 1538733,
+    "members": 302
+  },
+  {
+    "case": "qwen2_1p5b_32k",
+    "archive": "evidence/qwen2_1p5b_32k.tar.gz",
+    "sha256": "6ee063a9726c7217b9792107673b06e30122151e44a3e4fda6fe9fcfb82f25dd",
+    "bytes": 1389921,
+    "members": 282
+  },
+  {
+    "case": "qwen2_7b_32k",
+    "archive": "evidence/qwen2_7b_32k.tar.gz",
+    "sha256": "b8e23c0041b541405bb04ba1d57eb4df800b4823689d84d9dc9556f01b259278",
+    "bytes": 3855044,
+    "members": 278
+  },
+  {
+    "case": "qwen25_14b_8k",
+    "archive": "evidence/qwen25_14b_8k.tar.gz",
+    "sha256": "db48fe9016fb281fd4de021ed93d1c552fe634cc36f47c1875ef06b4235691bd",
+    "bytes": 3519955,
+    "members": 330
+  },
+  {
+    "case": "qwen3_14b_4k",
+    "archive": "evidence/qwen3_14b_4k.tar.gz",
+    "sha256": "bea6deee6ef58ba7c33178f0908d441cf554e4f42487f57fedf94e885ea8ce65",
+    "bytes": 4413693,
+    "members": 363
+  }
+]

@@ -2,7 +2,7 @@
 
 目标：在**同一台单节点 8×H20 96GB** 上，先验证 Devastator/Megatron 与 Galvatron 的八卡训练，再以固定的八个完整模型运行公共空间和完整空间实验。
 
-**2026-09-28 实验已完成：** [八模型公共/完整空间结果与复现入口](reports/h20-eight-models-20260928/README.md)。32 行正式结果均已验收：30 项原设置训练成功，1 项原获选配置 OOM 经分配器调整后十步成功，1 项搜索无可行候选。原始失败和修复后数据分别留存，详见 [中文报告](reports/h20-eight-models-20260928/REPORT_CN.md) 和 [结果 CSV](reports/h20-eight-models-20260928/results.csv)。本轮使用官方 Galvatron v2.4.1（`cea12ffb146a220643c8f99f9cb84294755d29f8`）；下述源码包说明描述原始交接材料，实际 H20 环境见 [运行说明](docs/H20_CAMPAIGN_CN.md)。
+**当前唯一结果版本：** [八模型公共/完整空间 16 项对比（30 GiB/s 参数版）](reports/h20-final-20260929/README.md)。结果、配置、绘图 CSV 与原始证据均在该入口；旧版成绩不再作为当前结论，历史文件保留在 Git 历史。本轮使用官方 Galvatron v2.4.1（`cea12ffb146a220643c8f99f9cb84294755d29f8`）。
 
 **现已包含原服务器修改版 Megatron/Galvatron 的源码快照（2,331 文件），但不是已经在 H20 验收的一键训练包。** 见 [源码接收与使用](docs/SOURCE_RECEIPT_CN.md)。tokenizer 和训练数据通过私有渠道传输，不在公开仓库。不要直接运行 `reference/` 或源码里的旧 Slurm/训练脚本。
 

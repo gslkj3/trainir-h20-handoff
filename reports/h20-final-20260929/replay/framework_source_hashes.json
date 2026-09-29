@@ -1,0 +1,2870 @@
+{
+  "checked_utc": "2026-09-28T13:28:45Z",
+  "files": [
+    {
+      "system": "megatron",
+      "path": "megatron/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/__init__.py",
+      "sha256": "cdf5e08f9796cb222d63fe6ac98d4d46d1cb8fff950b8817adf887af77ad0669"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/activations.py",
+      "sha256": "b5e71c7d039a9454117aab0ef11c42d035960ea872c54d2450a941a73bc71408"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/config.py",
+      "sha256": "83e503648ab324be9e86428a6da568b5ce255f6556033dfa9b967482f010aa36"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/config_logger.py",
+      "sha256": "6c2fd097197e2f8dfcf2dd5685300bd5e773f504eac7ebd7ba5924e479cacf0a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/bert_dataset.py",
+      "sha256": "ea471882621a4b3aeccaad70faa7147fea27f98fef2b9047d55d6636066e876a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/blended_dataset.py",
+      "sha256": "552ccb66eb0b353b4a7362287de3a2d17b7b3758e5ebda398e34acff086d0ef5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/blended_megatron_dataset_builder.py",
+      "sha256": "fafaf1267175b6f00217733b70ac350e48f3bb71874f2351756953786d2f9870"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/blended_megatron_dataset_config.py",
+      "sha256": "f6d6146eaa955cde8631d9826b496652071286091e12baea80230b310787b36d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/gpt_dataset.py",
+      "sha256": "eb6c5100e3d5162cba39b70b3c04e8201d8adadaad9225c3d52f272f79439a93"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/helpers.py",
+      "sha256": "2cdd3ed8dc66831203568c36b8932149c2db837cbb37bc3ea7ed8461ffaa428a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/indexed_dataset.py",
+      "sha256": "28db72ffe488edf48babda712f362b3d2b1c7de02dca0e580e649418f50fd854"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/masked_dataset.py",
+      "sha256": "a6615ef4aea9f8283bd4a2ef522293fc7647bba3f2c73d2cfb78c31993d0dfae"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/megatron_dataset.py",
+      "sha256": "a7312b523c27a2e260f1344f26ed7f068bdb82a5f18223908bfd478b7e3db2cb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/megatron_tokenizer.py",
+      "sha256": "b389fa176f8916435c7af5e9fd35604ce51af3412542897da84590da3359c5ed"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/multimodal_dataset.py",
+      "sha256": "951a42e063a508496b0d339e138b15844e5601185fcd6998bebe85b97051fceb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/object_storage_utils.py",
+      "sha256": "d0cfea24d600298b113c468c8027b0ecb17dc8b4d69fcbe5c55444b01728b655"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/__init__.py",
+      "sha256": "a9131505b353875b4d885ddd6e8c4550f6f0aede76117d14d2bc6e84462352db"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/config/__init__.py",
+      "sha256": "21f7c2db3712081fd811506824a4e6b9c0a5f0082aff162480ebf7588c439809"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/config/bert_embedders.py",
+      "sha256": "7a3b2fbca3f9434cfef1929c0b6d1cf7c8d75bf8404d878bc7d1a3ef647a72ad"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/config/config.py",
+      "sha256": "1abd944e757037ba83ea39f0761e3a02c970e9904826e28b5833c8f481bb8218"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/config/gpt_chunk_datasets.py",
+      "sha256": "52ec2731fd15401a1b0a0007c95b9d6ebae8b04eb515007221a241decc6da369"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/config/tokenizers.py",
+      "sha256": "2801b83e49521de9d32c434b722436be7b17009e1f5aa0764cae4a309aa8e1e0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/db/__init__.py",
+      "sha256": "59d183b8db62279ffe1f6ef2c49c837c6c5d8040a4d24dc4fce88756e14ae383"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/db/build.py",
+      "sha256": "e40bedfb6243107cdc093eaffacb2586f14db2c693ed82ed4ad60f92b65cf924"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/db/dataset.py",
+      "sha256": "7e5088e17cd2eea026c6a5be64a546192160b6827dadd49a6bc3e76a5b90bbb7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/db/utils.py",
+      "sha256": "2416ef1b3e3f526119e9e7d4fd8014b4969076fecd1820f70fdef30fee0c2bdc"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/external_libs.py",
+      "sha256": "e61f08dc9781bf9774e0d2e1013afbda8f35c20a767801c87cd068b91997cf3e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/__init__.py",
+      "sha256": "866e7900ad451935afb9a36b8868355a0574f93d05f4d032801451eb54d384f3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/build.py",
+      "sha256": "f2bd4d955e0c8d7f583dcd2046f83155c600698ae002787b719cd0d18c22be1a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/factory.py",
+      "sha256": "27905c947b2a40bc33db883f0a50221e53d7dc6f724b418cb6fdf49d787e76bd"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/index.py",
+      "sha256": "50a07e5cfc2b9ac0bb0b34c5ea23529f9335ff143e3b751f86680f1355d198f9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/indexes/__init__.py",
+      "sha256": "61fb4efd9c61c4ecd6eb57c3d866b6f846f1ed4b7256bafb7561c3b783e81f84"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/indexes/faiss_base.py",
+      "sha256": "4c448fadb16b2990d8aa6e91a74551727d3302c79532d3812de20b1ce9e1c3f9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/indexes/faiss_par_add.py",
+      "sha256": "97e55f642c134d39897419a3823c997ec0bf3ad8d9fe2277e00409deb032d249"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/utils.py",
+      "sha256": "de62986f82e4e55f06958140d35b5d8ca3b9c4ca02537fb924d9c0e617e8414c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/index/validate.py",
+      "sha256": "efce59742da92349a57af74efb95f96f23ac8831807775026d140249dbc1fe38"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/query/__init__.py",
+      "sha256": "93f0af736cb14def771216e0a10021864ec23538c2ccb9bcb30b3ae898f9e67e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/query/gpt_chunk_dataset.py",
+      "sha256": "baa12b5cbae91a27b857e34bbdf6d86b20652c255e85c52664ef006383183820"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/query/multi_split_gpt_dataset.py",
+      "sha256": "031f9644de53b8cf21965e6d58a4983131952dcf96e14d36004ae587fd495504"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/query/query.py",
+      "sha256": "0ee78d52bf044e3f1bf8ad552bc4000e20249cbc79ba7434adba8a263adf7cb4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/query/retro_dataset.py",
+      "sha256": "a5c96ee503ccbf145360bc946d409228796ad5202288380248d05213d444b9c4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/query/utils.py",
+      "sha256": "09c42496b9766704c3397898992a438bfbc22ceeb5bdcd558ef2b92117ef486c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/retro/utils.py",
+      "sha256": "7fcb9d51122549d8366d9e93e75ccb1480cd764d0fe0313d031e191eeb38dec7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/t5_dataset.py",
+      "sha256": "7f02ccbd528ed7481c226a3a1abdd4ce0932689459c97a34de939048ae3aa5c5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/utils.py",
+      "sha256": "b0b7f4461623dbcd076e41ccf2de6d0214c4e9433c363c03daec6a5a060613c2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/datasets/utils_s3.py",
+      "sha256": "bd05fd9fbe6bcc441feeaf7690cdb5369f8ca14268be642bb01ec1589275b9f9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/__init__.py",
+      "sha256": "05804998a6f1135fa540da8cc086d3a6e7671c8907e7fa60c18ab26864a61ccd"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/core.py",
+      "sha256": "c7c67d98c147ba265f536b9df9172e2434caf390d13ecc6fbf162a53eab78580"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/dict_utils.py",
+      "sha256": "37139d43a57248bfd682d3df27cb5bbcfd1da09af4c10663b7a24bb96771117c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/exchange_utils.py",
+      "sha256": "cc4fd4e30348656808c61e2bb4b27255da4c029ea44537ac2bf9e58daf46f4d7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/mapping.py",
+      "sha256": "712d267f22f9b6a111120d81534bf591b95f5fb64af3a53ece094d2467001062"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/optimizer.py",
+      "sha256": "48e8f2533c07575d376d299b8fb79b89cdfabf0798bcd848286fd497231c4aa9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/serialization.py",
+      "sha256": "b33c82ef6672b99c4d3dd0b18ad372b4ec9e1690ebba9a12f0621ffceb16bf6e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/state_dict_utils.py",
+      "sha256": "7e8634d288a2fec72d79464a55d65a1ff6f78b44de8d8d09c2fc2b339e43880e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/__init__.py",
+      "sha256": "8d466e8957b5165c657761e671db8fe3be4cb68a8821479ff32add83f0e8bb25"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/async_utils.py",
+      "sha256": "dd06e297c68d6f2f9e5255e6e296daffa9b87649c5727bfeda008567fc1e03ad"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/base.py",
+      "sha256": "954e88c4f781f6bb6e95455c7009baccd01f47cdaa633b765e5a4f96651b3f43"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/cached_metadata_filesystem_reader.py",
+      "sha256": "804954e2ce15ab6f78a19999371ef8ca5911aad688a27ef72d54977c3fb1ac24"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/checkpointable.py",
+      "sha256": "7e568ce046b8450f245af86b5182dcaaa2a6678b93c4086f6aa551af164cafee"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/common.py",
+      "sha256": "fd1bf770ea9707686dbb06db4171cc76ec6e403f0f56cc25048892b93187014b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/filesystem_async.py",
+      "sha256": "6922b7ab3342df7e3f278af400769823600115a5e4ce95db8132dbf56cc2e248"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/fully_parallel.py",
+      "sha256": "da976df41e782d60a52423773b642b1c44402662c2913ff029d7509ecf84d3e1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/resharding.py",
+      "sha256": "80f39c7e3cc7b359f14c76b620114ec691c7324a4cee55681078d9159a7913cb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/state_dict_saver.py",
+      "sha256": "3b35f1e9cc1dd3a48827675c60508303bdd4bb285d78fb7d6fb56ec57ef2e69c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/tensorstore.py",
+      "sha256": "3133773b62656b4f066367eda576a1e67531a9499cdb0756ad0979a3fc0e336b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/torch.py",
+      "sha256": "62dd7a4dc50edfe072c16b68fa4e9e393cb09ab64a9ead5060e7f9cc6d6ef489"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/two_stage.py",
+      "sha256": "045a6e5501e5bab7217fd18ece93431dc28dd50acd158f87b8b2ccd2241497ae"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/strategies/zarr.py",
+      "sha256": "f8caa45c81d72e62fe143f6b5b323bb55e0a98501d4c3c691b1233ba7f70281d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/tensor_aware_state_dict.py",
+      "sha256": "36ba69f2ab4e8db614072b1fdd6fa4481296ee62800fbcc82a5db4ebb4532e9e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/utils.py",
+      "sha256": "87b9821b5f2b87f78a802980c6d97a461e57ddec95d28cc6cf459e86d3bcfb07"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/dist_checkpointing/validation.py",
+      "sha256": "b9c0a21d13648640116b095c4de2a4a61c1ec0335330dd5b0009452ad9b3f2c6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/__init__.py",
+      "sha256": "884074e2275f9c7d29960498fb9cf30342891f315edf68b5970445a51797db55"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/data_parallel_base.py",
+      "sha256": "2f2a2570d3b1f99555528903fc2d4a67ef29a99d5c542a2c2f8feeaaf5744f2a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/distributed_data_parallel.py",
+      "sha256": "e7eeb8db32c1521f64722b6f03c1c8221ed2d9dba938ac84295d48d60f767f7f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/distributed_data_parallel_config.py",
+      "sha256": "886c888edd0793557f6d770dd81494aad4cedb1ced12ef3e7ffcd6d17e66d4a9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/finalize_model_grads.py",
+      "sha256": "fec7e525298ab11cfe4ff42cbaa8fc09f76654aec73a8a42643deb004bda25b8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/__init__.py",
+      "sha256": "8645081f6b99eae688a9931814faef81b722b75682615ea6cd4ccce86b633e59"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/mcore_fsdp_adapter.py",
+      "sha256": "3d346a3baa277d629c4d2041fa2a51d9ea791d4b4bc6dd7af2bc1595c3485c6b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/__init__.py",
+      "sha256": "05b7a7dd9408434f37d08ddfbcf9dce2534d2b8319a0b0df44d85f2a887e68b8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/__init__.py",
+      "sha256": "d4978e65ef6a6b4736d80bf9c74cb1bf09cff2d5db8450c82c949cbf8afa40b2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/distributed_data_parallel_config.py",
+      "sha256": "29b3f942eb2f72a51fd3b9b24bbb7b07e6e2abe62f3106607e5b95f438172067"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/fully_shard.py",
+      "sha256": "6f4f6394beefa056c26a2c5f277e7529e33faf110929fd8f72f90e1f9fafc620"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/megatron_fsdp.py",
+      "sha256": "ec386a9af69b44d5feeee95b378fb50d49ac742372cddbcfc298d3429bba5f0d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/package_info.py",
+      "sha256": "c115bd57a1df06ef6653debc25a2c06b5816b972d65af7bcc22ead1603993807"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/param_and_grad_buffer.py",
+      "sha256": "03cbf9ec2a35d32429a51206b229b3d1224ef74209ccb146a3f32609db06aa97"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/uneven_dtensor.py",
+      "sha256": "164b33fcc54328a739dff2f89c852716bc032c00aadba78fd5f56f2b089cb125"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/fsdp/src/megatron_fsdp/utils.py",
+      "sha256": "37be19c804c7160dcc3819a1ae5e0350d30a1db5bb093ed816d0e0b7e0bf318c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/param_and_grad_buffer.py",
+      "sha256": "81d56d71244687316638845100598407a06345119e2635dc3ce9287601a646f3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/reduce_scatter_with_fp32_accumulation.py",
+      "sha256": "c1c4f92a5aa7e596f48ad08107ee53fe2f20aa601453bf0ed9814c5fdcd7390b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/torch_fully_sharded_data_parallel.py",
+      "sha256": "c01769a760b6aec501deb2617744d8b111aadd3eeac2f31b467e4903af1476c6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/distributed/torch_fully_sharded_data_parallel_config.py",
+      "sha256": "c797098b0309708898502796686938c3746bc6b33e560d025734cdef3210458c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/energy_monitor.py",
+      "sha256": "bded2ba8a0b9ec5f2f1af3bc09a24523a613b823eba9eadb6d750cb236f6d806"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/enums.py",
+      "sha256": "f0fd720ef12137a412601c116a10389ff196c0c348dd8704e98bc0c816ec7ac1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/data_type.py",
+      "sha256": "4db3207a61aef5c04836d09837814949697658408bff4812ec2d157be74d8100"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/export_config.py",
+      "sha256": "4cee42ad85bf35fc4e3a590df0c508d938c037dda1002420c97c3d44f8cca6d1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/model_type.py",
+      "sha256": "81a5d3c910e1bd8ee14659123b7debc0bc55e6861181dddc55ab4741f998ce56"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/engine_builder/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/engine_builder/trtllm_engine_builder.py",
+      "sha256": "72918e4a49377d7058a097ab487ab9dd395400f84027890b86d77bbfabd71d7e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/model_to_trllm_mapping/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/model_to_trllm_mapping/default_conversion_dict.py",
+      "sha256": "5a374dc33eef73fcc8f54e5ad348ee2b98e6b2d708c30ef2aab518157d22e52f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trt_model_config.py",
+      "sha256": "ec4456811a007856922a4c6eb5b4baa900370baa71c820cf832a0472c9d7f199"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trt_model_type.py",
+      "sha256": "13bf640c5991b757f6834838771ef7d170f2d87cff3cbd60fffa1b81062257ba"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trtllm_helper.py",
+      "sha256": "5e7ed99bcf778d07dc388e8375611b12f4c468a40cb19a8f840a676a4825f991"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trtllm_layers.py",
+      "sha256": "84a9f40fdc58217d49625d4e735c5853b2d3add22adf4e63203043575c7712b6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trtllm_weights_converter/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trtllm_weights_converter/distributed_trtllm_model_weights_converter.py",
+      "sha256": "da4058818bf5159933c0976065fe474b921e42cb9d95092aba44e4c5fd08c8b7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trtllm_weights_converter/single_device_trtllm_model_weights_converter.py",
+      "sha256": "c214d010833692d5e63e40987a0a93c01ec778b2dda41a4056bfeae22be9682f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/export/trtllm/trtllm_weights_converter/utils.py",
+      "sha256": "878b45ca464611ad9e2fde3a98494d105f1cb68f464c63b3b8c39afd6c205aba"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/extensions/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/extensions/kitchen.py",
+      "sha256": "e48a64273c1c0b384005a0edc464bee8504ab4952287ba56a51928a83d459260"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/extensions/transformer_engine.py",
+      "sha256": "8c414bbee5d93ee17dded9c8123ffcd4f04d7d30177f3e138edcd72630fec5a7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/extensions/transformer_engine_spec_provider.py",
+      "sha256": "79b9dd76e832d5ea168511e34fad3225e128100aeb44ea6eb50d214fcce5323a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fp4_utils.py",
+      "sha256": "6132ed79f32a552bd1ac6eb5aa3d192c9b90277283069f2f1386b81d3206c012"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fp8_utils.py",
+      "sha256": "af72ac502eac93d44a916ec6e95a8ea5b6a4d4d6199b8edc3dcdd7196b524a49"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/full_cuda_graph.py",
+      "sha256": "56dbb9e95835d83f01e7bcbabd2e48c95a76bf1bd711d5d0fd2d1eaa654167a3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_bias_dropout.py",
+      "sha256": "7687ea130f7f0244113719345f404925e35e13198b6ccf938e52c9b1ad2a42a3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_bias_geglu.py",
+      "sha256": "71c48456c8041f81ae9aaaa99ebbacb0f77c9c71b15962bad4a8e75effecde46"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_bias_gelu.py",
+      "sha256": "46c6d977058749c14f5ff23eb260d78e3e16bf604681b3ff09bdd7237c2b8aa3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_bias_swiglu.py",
+      "sha256": "5303680596749464c45f9c3ec65f94d1127fb6d49b2aa9ec3ba8c91b1141f08f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_cross_entropy.py",
+      "sha256": "edbfa9665e0ebcbf1bec1794818c1adf11589cbce1414c02d445fc7407d48268"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_indices_converter.py",
+      "sha256": "737ab23fd34a68f705c876918752046d3441b92148029db85460d65896bf9115"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_layer_norm.py",
+      "sha256": "e6016d82201c20fc527f936cffd687bfe32288660ae02ac2c0d3d1c181b65b00"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_mla_yarn_rope_apply.py",
+      "sha256": "2dedb6fd48911f70688be8874f3aa17207d8aac947c23785ffe6e2356e6712c5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_pad_routing_map.py",
+      "sha256": "9665094f55525c20a9ef18795ee37db1f92724e3b73146103111eb7e853a2b01"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_softmax.py",
+      "sha256": "a75dc9d23380ff5d2ccdbfaa335c050bc4d16039fe35797f96dc108bad011e68"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/fusions/fused_weighted_squared_relu.py",
+      "sha256": "90a2cf44d8083184342d4906cd528f11cff5587f3e7335ed9fb5273cd8dc4448"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/hyper_comm_grid.py",
+      "sha256": "0307c44a831934681b3ecd4d8344986ee97845d96e3ac1969e6231b061b6fe89"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/async_stream.py",
+      "sha256": "87030e2dffd959276e4adc5a2b7ee7d492099ca043a2c2827df3bf304ff7ccbc"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/common_inference_params.py",
+      "sha256": "e373f64b49eafc32b74be9496b1433f888d5c365edfb399e48983bdb79a42c66"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/communication_utils.py",
+      "sha256": "1059e9b47d2a2b4979065fd56277f4dabdec548b333acd3d76010ecef5254711"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/__init__.py",
+      "sha256": "870215dc64a2a714d7d21e860dabbcb6c6054e716de85a5a0d5db634dd60e3ec"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/attention_context/mamba_metadata.py",
+      "sha256": "5fe401974a8cd4b15fbbbea49c3869ba059fff728a342f412bf8791a30ac475a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/attention_context/metadata_base.py",
+      "sha256": "908a1e500a483ce8cb51cde74fe75cede1c2e54bd1814a986f2d34e53600afe9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/attention_context/mha_metadata.py",
+      "sha256": "7ee55303e70f190c8a9b65dd77c51b2387ed4e82663ec9a2a38449481b3c44f4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/base_context.py",
+      "sha256": "fbe0ae609f4524af5cedffdba7539b4ce00a543076173ae8cc447141b4386475"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/dynamic_block_allocator.py",
+      "sha256": "a584d45a7b7b8afb1b72d35500c6ac775bf04b7c0bd6ffd8730db5274d4ec865"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/dynamic_context.py",
+      "sha256": "90e7536fc9b1c0701a02479df19751fd77481d020a04f1a638d9ec7e51fdde05"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/fused_kv_append_kernel.py",
+      "sha256": "4fc4af03905525d356d19655900e44661f7eb88f029bf24ed25c013cde06caa9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/contexts/static_context.py",
+      "sha256": "035e28f523b4b353fc6660b89bb0a760ce1952e2ecc3850cb4412877751f53aa"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/data_parallel_inference_coordinator.py",
+      "sha256": "d9e0969d44d1d39f876857aa57b81cabc9fe4559f2ebc4c5f391858a4677a567"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/engines/__init__.py",
+      "sha256": "42df030d7289ef06afad72387d328c921b6605e7724aef2db79fa3156f110a7b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/engines/abstract_engine.py",
+      "sha256": "373984dace2694d1462373306d533ff87f44a0f01df68973bda8a8af6a2af1f3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/engines/dynamic_engine.py",
+      "sha256": "a715bcd6403440a32b2b4bbbb2def443a47041af588a27f8998102e55e119ad8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/engines/mcore_engine.py",
+      "sha256": "7359974889a6bff897fdc7b8da07c2b13dad37c2c8f9da9b3a30131d22d93c7f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/engines/static_engine.py",
+      "sha256": "05f3cd019cf396f3af4519ead51032cdb9239bb11f9b0992d211aeb0a0436feb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/headers.py",
+      "sha256": "126365d164b941bfa0c668f6cd4571c307b78ca8dfc6e36afe3ebcb217b1b38a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/inference_client.py",
+      "sha256": "7f41393c9a51f8bc9d9ccab4f13b6ce24523ed576286f45bbc89992f61594cb1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/inference_request.py",
+      "sha256": "f7d3dba1e7e526e3760b29c2b137195ef2a48d41800aabc3565d276e2631a448"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/abstract_model_inference_wrapper.py",
+      "sha256": "a144c5fdb5b8134f850c73c3a355a03cd3c0361cb3caf6a0faf24dd9b6e068a5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/gpt/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/gpt/gpt_inference_wrapper.py",
+      "sha256": "172805b1f714e8a1bf76e619e4a587ff53a03063e0fa05d8162389f491bd396e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/inference_wrapper_config.py",
+      "sha256": "a35c08c2eb1cad346d6c167fe5cbc7c8db40c236d29a5bd0045a90ffeeabc7d2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/multimodal/vlm_inference_wrapper.py",
+      "sha256": "53bf4cd78978bfd3bd2db540a6bbdf59410b6113492e3434032ec373b0cb7838"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/t5/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/model_inference_wrappers/t5/t5_inference_wrapper.py",
+      "sha256": "2b0c0e1a64369464b32448df20674b637e6a9a9986386079aa8d14cc54319825"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/sampling_params.py",
+      "sha256": "64cd6ba9bf93fe467723194315ba536885c1321b44006555ca87b05c1dc3dae4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/scheduler.py",
+      "sha256": "12d3a5e68bf03861cba03454988f0f14c2f2da8628f0c73b106efd0f847fe037"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_controllers/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_controllers/encoder_decoder_text_generation_controller.py",
+      "sha256": "6cb29da93ca57089c4ff322de7c7841390694e1fe8fbbf4f1b82db6ffdad51eb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_controllers/simple_text_generation_controller.py",
+      "sha256": "c5d13d19e5a2201c5c8a52d5f575587a9fe46e707b23cdc589222cd0b89f7323"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_controllers/text_generation_controller.py",
+      "sha256": "e3ce55afcefb944e293911ca0c6b3c1e96b96be44a758a451b0ef4a07769e65e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_controllers/vlm_text_generation_controller.py",
+      "sha256": "641d2709e86cdd1ccebf5c54e626fd2cc13ac328a1a56162cd6897e6a6fbdac8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_server/__init__.py",
+      "sha256": "1b3bcb80e21359f0e10598f86013575016458575317f835cf45962a266e67b4a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_server/endpoints/common.py",
+      "sha256": "36a9e910635aad5a396aa22c1a5318dda81f826dbde654c3df8889219e9767b7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_server/endpoints/completions.py",
+      "sha256": "94389f43e05053fdf4b15fcdc4ebbad4f186e30b8b61387a8b404c3fdb7e4e04"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_server/run_mcore_engine.py",
+      "sha256": "f2aeb380da6d2dd0811a3305814bde7ee5d5e4a8c432a550774c5c9f026cea2a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_server/text_generation_server.py",
+      "sha256": "5f828c035d0541177f08f708ee7ee8125482eba70c9796a9cc3e75e4d95240dc"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/text_generation_server/tokenization.py",
+      "sha256": "0f13a82c85b969b75dd20ae780437c452a1c867ac56267fda4c3a40e0ee423f0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/unified_memory.py",
+      "sha256": "c775402b7d3b3c645dad29204d26c2cfd13961653c4ef6f7f5f694c8dda86f10"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference/utils.py",
+      "sha256": "53bb3837b12a1c091ea121690c19fe2c26981847b19dd57ba5cef7f03597d517"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/inference_params.py",
+      "sha256": "73f837aea6f06ed47881ed28768ae9f218ccdac245ac38926d89a710165f485d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/jit.py",
+      "sha256": "7f0329378a9852409a8384a98f03d67d0eca0336e96c3facfee53e831d576011"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/model_parallel_config.py",
+      "sha256": "502ea02fd3fdfdf0e4bfdfacc546ddca206c63a3827216208ebbf67a5df094b1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/T5/__init__.py",
+      "sha256": "3e274136ac43817eec2155f4c26f655fa0070e904d255e7543fbc79770acf1ae"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/T5/t5_model.py",
+      "sha256": "118e33da13d3e3673e6072048cea4bb157ad36b6eed75828dabe8ad1b77a7dbb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/T5/t5_spec.py",
+      "sha256": "b6e46ac0dc56321a7747b25974b8b22b58e15e2ee7b98207fae8ed0011949d5f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/__init__.py",
+      "sha256": "3b3fe3576ee632788053c56a5535d19d7d0f19239c086a7218c02e7e7e49b247"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/backends.py",
+      "sha256": "46f7619b187c45c8af3436cb5db22cd120bc1a2fa4abeb63c2da745e478bcedb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/bert/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/bert/bert_layer_specs.py",
+      "sha256": "ea71516a70927de5f428eec746a8107c89a29d2a1a50426f9408999ac7948341"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/bert/bert_lm_head.py",
+      "sha256": "3b6bdf40ec1585d0bcf64017c1ac0d4969d4ae88b2299377820172c115b92c62"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/bert/bert_model.py",
+      "sha256": "c649fa960954ff610d7a88f5f5197b9aaf0a9818b690aae29e57a0aa93800453"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/bert/pooler.py",
+      "sha256": "f900286374fe48c0d4cf8a78b99f85bde174d5b3c1d9cc3d5b056d011ffcfa43"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/embeddings/__init__.py",
+      "sha256": "945c7a12d2a3eebdfb7c5ec0e60b023f455f56c871ede64261589a91e1101c3b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/embeddings/language_model_embedding.py",
+      "sha256": "5c2904229f556038dfdf14c531b0d7e91d643636f6bef2477b66f9f78ad8d1b5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/embeddings/relative_pos_embedding.py",
+      "sha256": "7e01e6639b6ecc1a39b19b21cea2da9b8d33b68c8d4dd52dc231fcb46558befc"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/embeddings/rope_utils.py",
+      "sha256": "d8b54a760a4e17631b2c11630bab8f721807bc40f38eb823a2708f6b885ba02f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/embeddings/rotary_pos_embedding.py",
+      "sha256": "6a484b7542b9df02b7fbfc1432611a538e56c8b5cffabe789082f8967ee9a1cd"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/embeddings/yarn_rotary_pos_embedding.py",
+      "sha256": "63a624d2be8a29402756c6146d2d61af56361f18b804e480eed6898c9704fb4e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/language_module/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/language_module/language_module.py",
+      "sha256": "a15dca31c63338ec49da3485770eeead9e39e6950a83178a125ecee807a8084e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/model_chunk_schedule_plan.py",
+      "sha256": "9b6a4e836c954b2012c350e362aa6fc284ec2fb7f4be9d0b07ab8fdd11da3f71"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/vision_module/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/common/vision_module/vision_module.py",
+      "sha256": "494c017c8b6b34a65d107b70fcd0824601743c1b1a057fe5a930273e90b8cc21"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/gpt/__init__.py",
+      "sha256": "56cda2cb431e2dfdc22129ec4226a6f55f7ae2969fefb6b41a25e0a0011566fc"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/gpt/fine_grained_callables.py",
+      "sha256": "bba0a8c40652796b5830a9facd926fb367a6dceda91b79d6bcc30adb9141151e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/gpt/gpt_layer_specs.py",
+      "sha256": "87d7acf7e407e3dfef1d05be015a47b35ba52eae1d779600d145ccc18f54f026"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/gpt/gpt_model.py",
+      "sha256": "75be26dea834eabf0422b82986b450f52f8349b98b451a58d8c788d5befb283b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/gpt/heterogeneous/heterogeneous_layer_specs.py",
+      "sha256": "14237a296471fbc9a4248f4dca35fc28371dd5adb47cfc3067b90badf9266726"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/gpt/moe_module_specs.py",
+      "sha256": "6850daa9d6a2fb1e845661ebce113f9cb0eba4e4ccafb1438764912cb09765a4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/huggingface/__init__.py",
+      "sha256": "9889426d1b27442f6a69566d99c12fdcbd6a8d950eef41021416dbed2b9826ec"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/huggingface/clip_model.py",
+      "sha256": "7a859952297dd1f9260600d3997d46890433d0bbe1673946c8ce80ac220e18d2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/huggingface/module.py",
+      "sha256": "6e681cfd04008112aab0bbedf9043d6d4010bc2e7b55b3ec8c30c712290dbbf3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/huggingface/qwen_model.py",
+      "sha256": "d410eb13f77e3cecd11c8d051012bf8c11b2982d0ac374edcf2b41a57613ead5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mamba/__init__.py",
+      "sha256": "70210053448c52032057b5ba3dbc8488fd54bc037e97457a1dc57b9069c7cbd8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mamba/mamba_layer_specs.py",
+      "sha256": "b2a8ff5aec0ced8398692c5db05de66519f9eb1dc9d215544fd8726d49d68a34"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mamba/mamba_model.py",
+      "sha256": "61afd252a0b29f41a2d1a22bc3b69b71507e2f0fb77ccb0ffe8af230093f042c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/__init__.py",
+      "sha256": "ea6a1bc4f8589b14d207281868714ea6fac2b9cfa78bb2aa6e8a6e6daf060ea5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/config/__init__.py",
+      "sha256": "ac1ada7c2323d4f63fbee13b16021b04aa8adc45cea13429fa1178c0a721fad2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/config/base_configs.py",
+      "sha256": "6acd35567c553fbc320785a332502572df0cefed9b9513490ab52dadbbc127f8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/model/__init__.py",
+      "sha256": "f5986506f1212d6ea9eb73b1f65d9538b31dd6185c485bb9cf42abaf5a28e083"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/model/base.py",
+      "sha256": "4b54023dd9deae1b65461f812fd39224951a8f754150faf763a3d94e99ee2d04"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/submodules/audio.py",
+      "sha256": "a5e6c984441025db714052bec180681bf5038a626fd636f67c0590facd703c36"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/submodules/base.py",
+      "sha256": "bc05871deed7b202e4aa61145740d0c5bc24e3aedef6d346108040b7aba228c4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/mimo/submodules/vision.py",
+      "sha256": "be47b849013b0533c70e0d51da33f93dc963ca389acb3c5cc446b235119fce69"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/multimodal/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/multimodal/context_parallel.py",
+      "sha256": "ad82c195ef77f287c065bf56c5377a6df904885b1453ba332d565db5255465d2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/multimodal/llava_model.py",
+      "sha256": "88dbe12ec1e8d1dccb5ee319f42594d9400ae3e15e6617d3e0c801961f47d222"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/multimodal/llava_spec.py",
+      "sha256": "0ea04a2ec0fee6a9af85079f413aa8617d6909a604af35ce41c1a336d87c597c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/__init__.py",
+      "sha256": "c01584cfd716b484f0c7fcd65fd357650327557a7a0039ba711f5b5df53ee7ac"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/base_attention.py",
+      "sha256": "f2feccf6e16b7b7d7c065dcf9c52b4c73f1960721c7b0ddd416980e8cec5c999"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/config.py",
+      "sha256": "55126b11b18aae7f59eeab92fa5c05b9494839686853f795aa099c7825dc5aac"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/decoder_attention.py",
+      "sha256": "1cfb48f2bd712f85b9ade55c0b08c3a5b493b0940c569290a996fdb55512f57e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/decoder_spec.py",
+      "sha256": "170991f5f95361c1d4edbb4bc54ab670a5bc114b5f344baf9d6f3bc0b47d6024"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/encoder_attention.py",
+      "sha256": "c68bffcaa114d187d46659745a4f1b747c3656545a308651dde5443c7ba203c9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/encoder_spec.py",
+      "sha256": "46ec7495a853050d1006819e44fa033b2735215178c7f39707d1b18bfd1c35ba"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/model.py",
+      "sha256": "aa393e94a64602cb92a8526d8ff68d1bcc3b1d118f2d0eb10e804ea8ae4999c4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/retro/utils.py",
+      "sha256": "ca12376f855c51139b52ac35fc8c3f1c827e10d301406daa8ee6d855ad0f00da"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/vision/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/vision/clip_vit_model.py",
+      "sha256": "6dec3474dbfb0b69eb20bca506b15443b4614b89ee165b8435e70d4f194b993b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/vision/multimodal_projector.py",
+      "sha256": "e71da91793ce5a88a3d6e4d38ea83bd88677aee4be605c23276e5523abcb259c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/vision/radio.py",
+      "sha256": "f4e4d85ceb0e969cffeeebc3872be071f28fb146baff4e955881692e979df451"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/models/vision/vit_layer_specs.py",
+      "sha256": "d3a0131ef635602a570df1e2e03078955cf63d2d9897e4b198650fa553aa2cfc"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/msc_utils.py",
+      "sha256": "334cbec0195857ea9b846a699dee908622dbe3b5c10fec21a797a56cf02752c8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/nccl_allocator.py",
+      "sha256": "824f41ab1b506cb6c872af87387ee78deaf94b8113388707bdba5ed5caa0901f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/num_microbatches_calculator.py",
+      "sha256": "8b53da48d50914598fc959a29284dcc4385116a6c59360fff0dc28c34fedc567"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/__init__.py",
+      "sha256": "fc64faad7b371292a665bfc1330c7ecb4ab93bc5494b19d7e4180c99da9fb251"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/clip_grads.py",
+      "sha256": "4fda229d51a19f267b6431b0e916a7631b84ef2670f9791ecc2f3ad8a2740a90"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/cpu_offloading/__init__.py",
+      "sha256": "b4b9274add85569ef7648f7ba8af416bcda15d16231254b93bc7cc65dac45fa5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/cpu_offloading/hybrid_optimizer.py",
+      "sha256": "6a3936bee23134cadfc84b9d3f82d37e3e6f57807ef1531c3cc77fd9dc803d17"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/distrib_optimizer.py",
+      "sha256": "6d82d6e3acbcbbb9b6ef77fa2157d13741394500bfee5504afb90402f0ec211b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/grad_scaler.py",
+      "sha256": "c2f341955c8333bd6e2554fcc7c34f74e776b0b1bd4ce4bcb53add9a54a05782"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/optimizer.py",
+      "sha256": "7d0af9df31d09439e256eec212a1db7f84ec3845d5356575201da1469b63070a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer/optimizer_config.py",
+      "sha256": "637efe23af35d21e741af2d29e7f1b413bf671005640c5e23f3fdcb7faed223d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/optimizer_param_scheduler.py",
+      "sha256": "3092f079626636b66584f64e935e9e3a2bd9fc88a8dcde1bfd29d6018ef71420"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/package_info.py",
+      "sha256": "3e4982ed8ad3b6bac47e478933ac1089d38c1873a3da9300edd9f8555be68fb6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/packed_seq_params.py",
+      "sha256": "5d96fada24912cfafc48bfe06d61f61cdc75689b50a105f2c9e55d3bda41933c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/parallel_state.py",
+      "sha256": "94e25846f2cbca3548be66b72957a6f44ee2ad022c2ed2b577e6374d7bbf97eb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/pipeline_parallel/__init__.py",
+      "sha256": "5bce08737fcd015f6cfd85ef80a69872fdbeb947744fc7bd64f6a54f43c0d703"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/pipeline_parallel/bridge_communicator.py",
+      "sha256": "75896ad5bdcb9d23f41ac05bcd7f61d300e9b4933eedc0c7edf9abcaca3e2626"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/pipeline_parallel/combined_1f1b.py",
+      "sha256": "7ec4872b9b2c0cdcad5af8c5692006d7f4bea918b9ecfac3be1316fad103ce0c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/pipeline_parallel/p2p_communication.py",
+      "sha256": "23110e250dbbc45cea9bf75d4dd159dab03226d61c1686fafc675e378871e6e2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/pipeline_parallel/schedules.py",
+      "sha256": "475d4c584fad16c32a562da3eee9e2b23962764f7d1bdc999ccca5ed91011c26"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/pipeline_parallel/utils.py",
+      "sha256": "a8201c3453f5565ed8ca83e9a12503d16ba3d313774ff98c89e0e3fe2878faa0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/__init__.py",
+      "sha256": "3b3fe3576ee632788053c56a5535d19d7d0f19239c086a7218c02e7e7e49b247"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/modelopt/__init__.py",
+      "sha256": "624cbe21e91046a816e36b4eea7a1849f8f774b3124faab86ff1513781cc4f73"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/modelopt/gpt/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/modelopt/gpt/model_specs.py",
+      "sha256": "c85a7eb670d5aeb5c91ea3cbb39c35f1bec241fcbfd9817bf88a81a4578eb8e0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/modelopt/gpt/state_dict_hooks.py",
+      "sha256": "2455cf0841b6d9848abd77e7d6ed168389e2871d195d8e39bf51a12de88e9771"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/modelopt/layers.py",
+      "sha256": "5bcda11208184b66db85e21521d1f745a8d95da8a5ace0aab448f1751e881753"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/modelopt/mamba/__init__.py",
+      "sha256": "3b3fe3576ee632788053c56a5535d19d7d0f19239c086a7218c02e7e7e49b247"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/post_training/modelopt/mamba/model_specs.py",
+      "sha256": "e21a082afdad4da3d1f45299ced30f66efc0ec259b32343305431096a498c325"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/process_groups_config.py",
+      "sha256": "c8c91deb586a5fe0e29ee7bdd8c346c4b525ee515fe62f8674826f3c04164688"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/quantization/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/quantization/quant_config.py",
+      "sha256": "191dda7909860b8dc88c780120b73c03e88bbc2dd4cd8e69c6c982c82af96270"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/quantization/utils.py",
+      "sha256": "799d8fe84b4111675a1755fa90891216e8073fde64f2b782dbe23530f4916011"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/rerun_state_machine.py",
+      "sha256": "0b8c8bb43adfab0d36455e0eb1c7ca7c2bd95de8fdbac57132056a299f1827d4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/safe_globals.py",
+      "sha256": "c583268656beb6c2488e51721d24ee792c5f361deebc88bc8bc76b844a63c9fe"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/__init__.py",
+      "sha256": "dbff02cbb6deebe0e7f1323adcd1c6dcc5e772e40b083f61f032034d393c889c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/mamba_block.py",
+      "sha256": "b96aaacda2f415a38b8c61b51c2b9c8e443fcac59614ea4297f5271d268ee95a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/mamba_context_parallel.py",
+      "sha256": "5401493ba68353222afef2acfad0481d903be3a0bd1b2b682d89c23a33cd6960"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/mamba_hybrid_layer_allocation.py",
+      "sha256": "e41040f8acc8dafcad426e1539f61ecf0f07913e1c36fd4cfb882b7db18068cf"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/mamba_layer.py",
+      "sha256": "c31f616c6632ac791f7d476b5650b73a67ae1c712abc7acc30c665351571dcaf"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/mamba_mixer.py",
+      "sha256": "0c12b4038cbba867ae536bbfa440919d887698cc112cbe88163b43f707054929"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/mlp_layer.py",
+      "sha256": "0b73b86f10aeb514bbbf7940266cf476739388b66f54fabf4a13654688efebaa"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/ssm/triton_cache_manager.py",
+      "sha256": "f13b9452080ff4239e6fefab7228cc87469bbd5d4e28eeeb1c3acc9ba44cc751"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tensor_parallel/__init__.py",
+      "sha256": "7a4b36abd156665201a6505bd438fe68135896f556311fc44d171290baa99f72"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tensor_parallel/cross_entropy.py",
+      "sha256": "6165711be6446d75a7b10cac479bfb6bc0bdb80cf1c95bd2c4cff728902f6ff6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tensor_parallel/data.py",
+      "sha256": "e696cd817e127632c146fbcef0dd41ea3d56ad8f4a8619ee6394d5316208c921"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tensor_parallel/layers.py",
+      "sha256": "d6c1fbd86f3e1d348cd036f9cbe5e1bf7fe29b562bc59d07b85b0e0aed3f8765"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tensor_parallel/mappings.py",
+      "sha256": "4dbbe88b381dc92d276cfda9c3ba30962ec475207ebc16bed14658a512dbb05d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tensor_parallel/random.py",
+      "sha256": "2c960e718793fbc44fd2760f5e65254121db0ebe0e3c969188290539745a6565"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tensor_parallel/utils.py",
+      "sha256": "931a35e7113d28b60ab71b56e98f034137707ef53f49215b0c936dd7eb74a1e9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/timers.py",
+      "sha256": "433a769db4d00f3444b2b98416b20dd68505ebbf59f9993334d4765363e4e27e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/__init__.py",
+      "sha256": "1211b132636c704fed5d6779e2e7cd49b3db30fdafca3696001f83d5a1482919"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/base_tokenizer.py",
+      "sha256": "70a224976b7aa8ba653c2136178de18f32a17710d46a1d58a6181cea1941cc18"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/megatron_tokenizer.py",
+      "sha256": "cf21edf3f5c1274103ea2dcebf79f5b88979948c71e45d6ac0e4b75a733ac18e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/__init__.py",
+      "sha256": "0b897d4571b7c3b07b554b0d04617088b628ffcef95f1445ebfd82c2eaca4280"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/__init__.py",
+      "sha256": "c5ec610bfa20c3f9fe67c39a57f373c385a0a53f96677bc1a7c868721f77a5c8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/abstract_tokenizer.py",
+      "sha256": "e9a3be72ac7d92eb27dc666304716ff75bf2d93d6a0578a3a3110c940e8df126"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/bytelevel_tokenizer.py",
+      "sha256": "f0deeb9141937b851e247839c3d906e336b7d8696ec465ea3796d0a5104cbb6d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/chat_template.py",
+      "sha256": "fe2681dac594fe23e539fdf9fefef308399807feab2108f7eb25abbb4f9f1bab"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/huggingface_tokenizer.py",
+      "sha256": "a12dc64432f080145bbce8c3f3bfaa774325a4ef7b56df16dbe5c836274e554a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/megatron_hf_tokenizer.py",
+      "sha256": "ce0a6f09875fd9604d7176a8811997b39236b2df7d2c68741f73439c33a2f35b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/null_tokenizer.py",
+      "sha256": "6ac9e729a8576de4d994aca32fd81b1de29318e5701135733250c7d5ae46295e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/sentencepiece_tokenizer.py",
+      "sha256": "fe28fe15357b0aae9426ae1fc06d25fc35f6003362febfdd6e5fdd0105d11777"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/libraries/tiktoken_tokenizer.py",
+      "sha256": "0eda77742da5a4e0f70f63bb76bc2945c94751f6c39222fd738182d44b8682af"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/models/__init__.py",
+      "sha256": "9ee1c460edad2aa0a20ac76e0dc3f4531ce0d2fb1d87cafaf08e791cf83f6e35"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/models/bert_tokenizer.py",
+      "sha256": "dbb5f924d63f7bd9803629ab94225011b2914a095f0188147c2b9fcc0013480b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/models/default_tokenizer.py",
+      "sha256": "c477dff6178b859e11ac7349aef7d5e98e12d1249a737575bf88b3861dde3629"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/models/gpt_tokenizer.py",
+      "sha256": "ae16486ecf376cdbf7e355e6ec9ac5addf28fbab2907da187e4d72ee863eb43e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/models/mamba_tokenizer.py",
+      "sha256": "2c2dde65203fe9052a6663be45eb457b81885a099b6ee4aa12b9f142b60bae64"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/models/retro_tokenizer.py",
+      "sha256": "8ab7c57fade007e354086688bc5004799ca2a02850af9e58a30be7907d10249a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/models/t5_tokenizer.py",
+      "sha256": "e1a41da257d73a8246523bf1c685fff49c3777bfbb180e8b4533dd6606330302"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/text_tokenizer.py",
+      "sha256": "58c6211624c1c0ec2c40cc33663c182a3ffbf56013e29bd58d46f52a90c52681"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/tokenizers/text/utils/build_tokenizer.py",
+      "sha256": "82528b5fd81927231cbe654343e9c9660c6bdce034ea1227bc3e2fded3a5a762"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/__init__.py",
+      "sha256": "b4a6d21da269e8fd7e4f0da0380bfc51bba70357c7e4a1b13fa839d7fce2e968"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/attention.py",
+      "sha256": "9d3fbc4a15d8ec9d0384c571d9a050d85a3758aca275d6ce1e76650b9cc67800"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/cuda_graphs.py",
+      "sha256": "fb9069bf0f715b2d270e9e803540e90eee03dabfb4cb5c5200004fc3d74c5a43"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/custom_layers/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/custom_layers/transformer_engine.py",
+      "sha256": "422bae98b9f8bd774fc17ed0a80189c20fc2c0592ee8343b65870c9d600e481d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/dot_product_attention.py",
+      "sha256": "c4424eea5ab54d8bd2123f6614091e5d099ec472da48bc3e0387b388bd4e47e9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/enums.py",
+      "sha256": "0a7b5029667ee5f6ce96e347961b50101b0a37e58184b1ab4f3baf0b40c1fde0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/fsdp_dtensor_checkpoint.py",
+      "sha256": "b7c12baea8909e97eebc1b37851e44e73f063c73abd3337bf8a381e59df016e5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/heterogeneous/heterogeneous_config.py",
+      "sha256": "6e0234278fd3b38bff0c7fbb0e63fa4e35685a43b1b60873b9adf88c6c53778c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/heterogeneous/linear_replacements.py",
+      "sha256": "ed27e19bb0feda7c548c78c69ac42c7346da4184d82ec978aa81ee6c3df22297"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/identity_op.py",
+      "sha256": "c37e50cb2d2598dfa1b8c261405f82ab6f51f604c87e49252a2e132ac5849b57"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/mlp.py",
+      "sha256": "f774e53337febdd1257e93f2b9e2b4d549baf34bfb235a103a1d95f5bbdab39f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/module.py",
+      "sha256": "3a79d3e6c6e2512a67f79f55225c397ddd170d40ba0d334385aba69d2f30acd7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/experts.py",
+      "sha256": "49dc28b1945d165313585c6d4c102f5ac40deaf728897da7e8a0c60b9cbf2bbe"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/fused_a2a.py",
+      "sha256": "b33ca26c98a0075c665301ad191d54f79799c11d0fe4e5c526c85f23d15694b5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/grouped_gemm_util.py",
+      "sha256": "198ce2adb4484d353345498e82c3fd5150054ac2f4515fc3782bbc2e9cc8c06e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/moe_layer.py",
+      "sha256": "0598a8527ba309c313f6aad50ece82e7bd6cd8e28f62473f0eba4c03f74c1e17"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/moe_utils.py",
+      "sha256": "a26371f6759d8f509c69c71a73f86f852b2deab6c94a958b8905a6d7c940dc3c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/router.py",
+      "sha256": "9cf9b7484a55a710e5cbc66b39afc3dad0f0528c8c91ea016f0c5bd0f291df36"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/shared_experts.py",
+      "sha256": "4e39a1b34800e6df00a4b14622d7e6c895a8eed9596d8cd470fbae5ff2754591"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/token_dispatcher.py",
+      "sha256": "8b2a845777cddb605334730b994be756f98c0a8158f2f2d054c5233484fc1606"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/moe/upcycling_utils.py",
+      "sha256": "b86cc577ee5be893627f5691b13ad97badb2e79871cf258b5cbf61ae3f6d7a25"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/multi_latent_attention.py",
+      "sha256": "53b0efdf98b177b5c6af4363f310ade8fe6d6f6ab05a7e4f27aa1572899fb2e1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/multi_token_prediction.py",
+      "sha256": "e17001ef4158a5b0df604a2827d5d5a0d3840d80f57774d39f1c70b856a0c33f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/pipeline_parallel_layer_layout.py",
+      "sha256": "80108536ffda210ec0c5f597ec3249b323da7d629a40cf83e34bbce5c0f38ff6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/spec_utils.py",
+      "sha256": "72adaee5d3606672481fc58ed35f6a1677db4923694753bc67d6cc0398426391"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/torch_layer_norm.py",
+      "sha256": "dbfe099b44dbff4b507612d447b7888f45e9ac7b0fd5912ff7f90017db56aae6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/torch_norm.py",
+      "sha256": "bbddb3cfad564a8507a02ced37374501cc99992e9dae1cf512c73a71c4c71889"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/transformer_block.py",
+      "sha256": "25245e21ecf6bc294d0a91246d1782ea9c04a8e4f525f65fa1449fa1517b2f92"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/transformer_config.py",
+      "sha256": "76854e4ac2f09c4d622590f50fa09dd502a30ea312b5dfddf3ac7094b071563e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/transformer_layer.py",
+      "sha256": "ce26d3acbd55e52663385bbc7676de9e4cf2cb5049927be24db77bf1f0a64532"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/transformer/utils.py",
+      "sha256": "39e0eee9a432c1f8cf82a1cb5edf2b57000e14b579c58fce787d62cf6ee44340"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/core/utils.py",
+      "sha256": "dcb2032d3aa147e19527c9c8388ae5ae7051cebc5294d57c58630af42e1093a6"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/autoaugment.py",
+      "sha256": "1e46c860ab05393d01318ac9e24818c3a8336d07622eb104a65f15ba5d4af381"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/biencoder_dataset_utils.py",
+      "sha256": "8695a1908707d138b48523cad388b0357985e1229020dab89f56ca491fcfbf0e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/data_samplers.py",
+      "sha256": "afecc71b26d07fe33fd4c87cb7867c2fb0ef113a6912d062680e9a453dce0ec2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/dataset_utils.py",
+      "sha256": "bb15b7c29f6e2592cbddfeb727a3cd883956f6790a9b20708cf5da2ffd0d47cd"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/ict_dataset.py",
+      "sha256": "e4203b97d222beef22d71ee14a7a53f31f0b0a4bd8ae55b7f8908626c644711a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/image_folder.py",
+      "sha256": "010319a9598e6ebbccf5661e760618c4c1571380171097f48cb447617fc7f419"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/multimodal_dataset.py",
+      "sha256": "ebfff26e5e364f04db4681f73fc9c58cf7a6ee9022e52ec01e2d6c5bac89d6e9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/orqa_wiki_dataset.py",
+      "sha256": "280990b018b403bf4ed944f6c2655662b0fa34921536b025e4c51869919d1428"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/realm_dataset_utils.py",
+      "sha256": "f68af700dfccf3e200994331f397d94eda7d4330cbefd358fcc7a5df9cd30194"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/realm_index.py",
+      "sha256": "b2ee5bc78868ed0a5a5c729ffe8b8fc4bb677cf45afbbd33a7644fe3b85f103f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/data/vit_dataset.py",
+      "sha256": "e3415e3ecc6de9f83e6db33f0b07af22cb45537436f5883505ea5f5d3945484e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/fp16_deprecated/loss_scaler.py",
+      "sha256": "c293d2e3662536b8e950b65a43d696159ea7fdd5bdc2ac7ff9edcf6d2566a89c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/fused_kernels/__init__.py",
+      "sha256": "2625944656248d3f1afb7f3213bd7097b1203d3dc4444b2c55b0a0d2cb38f9af"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/fused_kernels/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/fused_kernels/tests/test_fused_kernels.py",
+      "sha256": "619db26dcb154a9ac6cde5ac38e92a629ca7d0963cf186359e8653bb6da4ffc1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/indexer.py",
+      "sha256": "feb22538bdc89b03551e62cd966e3ec6e427e8d78f9e13f9cd748d1b5b00662c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/__init__.py",
+      "sha256": "83977838e4a9ddb797874dc3e8058df0eb84a55987420006f1cd01917c179c29"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/bert_model.py",
+      "sha256": "f3a8246f50ee07b59984bf76a49482ff8da309d7b9019a1ebbb613cf37da453c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/biencoder_model.py",
+      "sha256": "9fa17110393806ca1a340844c378ee1bb59a2092c8716cbc5d2cb7c7e62197e0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/classification.py",
+      "sha256": "d64beb444aca74deefae9beb3b7db4b4b36e1ccf55f0192e5eed427deaeabefa"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/enums.py",
+      "sha256": "260ce4609f1ccb6405bde06dde74d76f0319781827f4c48070339bc35022c423"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/fused_bias_gelu.py",
+      "sha256": "ff2ef30f69ac6c2c637789815a9e82593ec8eef7ce7be6180c5342e349e79c81"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/fused_layer_norm.py",
+      "sha256": "c6214c9eebf623f2bd151ebaedab6b1e51f24135dd9ad388214e8af8d8a282d5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/fused_softmax.py",
+      "sha256": "1ffcd1a3a91950a3d3c56d7aeb7d64c236dc0742b987d80615a551686ef8094d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/gpt_model.py",
+      "sha256": "5d52b4a6356d3c76a01a34b227dcc05563f8f9c4c42dc34e11d6ed71da13ddea"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/language_model.py",
+      "sha256": "a2bb2d5fc08d9766bf6e34d8813032f083a35c9c87ad3695f4421d15151dfd84"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/module.py",
+      "sha256": "a5e324851e5f604b26e1ad71daaed728f9efe4bc586fe729debc028f8e543de2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/multiple_choice.py",
+      "sha256": "6503037b67934ace4af931f97ddfbc55606faacd6ca5c2fc8684d804d7199897"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/realm_model.py",
+      "sha256": "286bb5ded32a2526a3fe13abdec323970df6028a13f93d3a5069ecb5b4eea5a8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/rms_norm.py",
+      "sha256": "6d0b94815dd0f37c7029cdd519b92e1c4286f08b90a4f59a4098a405a7fda4bb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/t5_model.py",
+      "sha256": "c07acb7205c92188882ec6be54d56d1451a42193d87cc7010001ce716812e3ba"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/transformer.py",
+      "sha256": "e88eef9a4a4bc3bb0cad0b1b87421affe98f35f63c3c5bf69682b3c602999ec1"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/utils.py",
+      "sha256": "13134216a419e3d5df628dcc961ab15a6605a44926fa133f9d69d80dac3f9a24"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/classification.py",
+      "sha256": "d2d831681bd6067caf1a303b6a22dbcadb04dea8f744da118a84337880c51f28"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/dino.py",
+      "sha256": "4b530c0ffb03b5c7184b142e4ab3a6851000c91b47f15c066a77064ea4f25b81"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/esvit_swin_backbone.py",
+      "sha256": "860590b6133725b404b0abffaf4dd1757e1810ef745d20281d095fc88f5717b5"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/inpainting.py",
+      "sha256": "8af191f2d4d3368cb159c00917d32dbb6c845139f2e9cd761c987c0902fae2c4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/knn_monitor.py",
+      "sha256": "c60adaeebbde9c3e04449d4b5286132fe2b37dfd7d01e782410c4b3d7746cf78"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/mit_backbone.py",
+      "sha256": "7057b2412bf60b6dde33c7f4f2413ef681ba4f692e4692b2ad7bbfb3777e9163"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/swin_backbone.py",
+      "sha256": "0d0b34c852d4d3be928fc0b237c1e83f30d3522962ab5605d3350e2f63d7ae5a"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/utils.py",
+      "sha256": "065e861b1a38ccaa1fc2b662c05f5df99d8ac7ea820a737a6902f9d09a59d3d3"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/model/vision/vit_backbone.py",
+      "sha256": "100f608cd6b5142ac1177cec464e9bfb88ae017dd09ba42851fc52852e1a8fd0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/mpu/tests/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/mpu/tests/commons.py",
+      "sha256": "399a99b7d31649d933aaf51933abfd18696015119c92dadb5be4048dec83a817"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/mpu/tests/test_cross_entropy.py",
+      "sha256": "db51d1776a6bbc0bc1dede70f39fcbf7a22d6128d95374a682ab741a19f11825"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/mpu/tests/test_data.py",
+      "sha256": "b6a6bc23947fe93e4a27a38f99a2bb0015bf78ae7fd41b786b9e162eef522f95"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/mpu/tests/test_initialize.py",
+      "sha256": "2206d7794e3b251c12b8b90826037eebbbaa1dffddd2c01a8b2be0c6681844eb"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/mpu/tests/test_layers.py",
+      "sha256": "d19c0ad8d08df9ec148054de10819e14f7597d19b53b23df14002482e24f3fca"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/legacy/mpu/tests/test_random.py",
+      "sha256": "04258c15b4c0e962895615a3dcda7c1d749f788203d1b05b828995060efddfd9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/algos/__init__.py",
+      "sha256": "2a3670002806b9dd36b8288355207d26467b20945ecddc1feeeae5088640a972"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/algos/distillation.py",
+      "sha256": "5a50796bedefb5302a87b1c983baaa42539c877d5ed04429c9da77e630b5af31"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/arguments.py",
+      "sha256": "6fe466064769e47e04f84127b8794438a6618c1897c2ced7f49fa4f7e1a9f779"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/checkpointing.py",
+      "sha256": "abd244209a40545fc67546ea46f7eb18231e2b39d2f0bccd474f84c9d2b5d87f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/generate.py",
+      "sha256": "3585876cf380fc08708345e6dbcaf8fbc2c10af881cf9c486466313b618bdfad"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/loss_func.py",
+      "sha256": "a9919f3813d4cca3549d44c7f2bf31ce9c9b6ad870bac5be0ff7f0ff9077033b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/model_builder.py",
+      "sha256": "5c56dd25dfdfd3ca8cef78a2f1d440b1ab8726dd74cb2a89de6c777cf38029d9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/non_loss_data_func.py",
+      "sha256": "73bd0bfbca94a909b4ce3972cc5ab616156896f2cae032c8bcf589fa0a40571e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/post_training/utils.py",
+      "sha256": "39911e08e4843b451fe3c570a940d80a9addd39daa26b54fd2e2f27ed03ccb90"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/__init__.py",
+      "sha256": "1ba3d1e91eafca4d68afb7a9c3a5d830068804b509ea1903acfe87b0180e6c5d"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/agent/__init__.py",
+      "sha256": "2be763de4ce0edce88e78fd613247370a383b6b18b17c3c128da8600a0c6a1b0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/agent/api.py",
+      "sha256": "acbade5d4c63c153e287cd413f6bd8f5b55081305c7c6eade1b2ce2eef829a8f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/agent/pass_at_evaluation_agent.py",
+      "sha256": "dba0c129131acd163b7fef373ee7d60643e0d524203a21d5800f81b0cbf5dadd"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/agent/remote_agent.py",
+      "sha256": "0fcae203fd5ac1c123720db06a97c8c63cde75dc573cdaa4a2247d30a97f2c7e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/agent/reward_only_agent.py",
+      "sha256": "d124d123381423c08e3e274cc0ae77b9589fe522be1a2859268bf6ff9db088b4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/agent/weighted_multi_task.py",
+      "sha256": "edd8952fefb9b5ff936888dd461c7a1f322fa320e6b3edf3747f0b153329d419"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/inference/__init__.py",
+      "sha256": "9a12723f81751d4c1995cc64443ae9144c3e649a91ab9af7bab9c875a4eca951"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/inference/api.py",
+      "sha256": "5656517cd1f241ac67524c1ee0e1293a40758dbffd757e9b9fee92af1b7973b7"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/inference/chat_templates.py",
+      "sha256": "09e31298e366e69135cd1a7ab08e47316ef7ce5097b4d65594aa37c2c6eedc3f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/inference/inference_interface.py",
+      "sha256": "878645eb710feefda75266d40c4af89f51a515af21a6bf19302e10c77c9120a8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/inference/megatron.py",
+      "sha256": "e884a46192872da6307363c1e077cb615fdd1ecf19881f3cfcdf972824accb49"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/logging.py",
+      "sha256": "1e341d4d2981ff4fbdf4375409ccc113a6326b18fddc77a7ef2fdab01bb22e7e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/rl_utils.py",
+      "sha256": "6eba107e00971e4521bc509af32761bc1c28cc5481f6c5773dd10cd5cc8ee9ae"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/server/__init__.py",
+      "sha256": "4881b4e9ae8c114f463508f61ddac39d0879f25de3eafab117f39c2a02316646"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/server/agent/__init__.py",
+      "sha256": "82734155ea4fc02074d329a336180a014dac26f78610cf9d20f740e530b36683"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/server/agent/fastapi_env_server.py",
+      "sha256": "8701d886048c7ce8ec1ddb8ddb986f6df1ec4b81d84e70018a074b4300e780e2"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/server/api.py",
+      "sha256": "41077769afe2074953b288eea96252b65b6b6e36c637165b0f9947ad8cb9d201"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/server/inference/__init__.py",
+      "sha256": "82734155ea4fc02074d329a336180a014dac26f78610cf9d20f740e530b36683"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/rl/server/inference/inference_interface_server.py",
+      "sha256": "e4658719d89e0851446e9b3ebb847f1b4a228c935ec452d4bee153451a825172"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/__init__.py",
+      "sha256": "a26e978de54f50d5aed518f074d66ce0cb45261c5ed0c9f9d207ced27ebf5d6f"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/arguments.py",
+      "sha256": "49cd1ee48af0c8aaa97701ea8583162cf2fb57a61efc42b41f55dc1ba2524271"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/async_utils.py",
+      "sha256": "f5f41b9d202814c4ee3ca587f160e6ba353c0879d3dab56f190a77f8e710d8c9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/checkpointing.py",
+      "sha256": "e8481c5857e99dbca649a1b5b77e6a590ecac9ca5b16716972ad741a7f7cc56c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/datasets/__init__.py",
+      "sha256": "3b3fe3576ee632788053c56a5535d19d7d0f19239c086a7218c02e7e7e49b247"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/datasets/sft_dataset.py",
+      "sha256": "3ba7ae567af302dda49517deb4df81f3351c49af11544a39dd6c30e956c0a010"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/dist_signal_handler.py",
+      "sha256": "b6574d7a0a6d961f0b91391e8e6dea62a03afd40d1ce5322febad5f30bb7735c"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/ft_integration.py",
+      "sha256": "14b7e6e32b117f04dfed49989c7775d4b4c2730f8ff80b1501834646bc15cd09"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/global_vars.py",
+      "sha256": "3c90fb696ef2993b41a92f751d487a595c3e29d570d5dbc9b882b3783ae7c788"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/initialize.py",
+      "sha256": "8c34c5cbe2366c108ddd173e5cd322af06fcc05f4b004139f656337e39351e61"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/inprocess_restart.py",
+      "sha256": "f009d53b82baeb562845fc8ed08ffdc3e018c8b90d9dc0896866b67e51e20704"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/log_handler.py",
+      "sha256": "25249378653ae0bffbf2d2943f619d244c0fd667c65b8b2adb86b15c2114ace9"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/one_logger_utils.py",
+      "sha256": "b1b72a09a81c0078261ec059c62a361037df526f3eae7c49d5ca0c206e65bfe0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/theoretical_memory_usage.py",
+      "sha256": "1e37e22b91339b08bad5c1d72165ff23f9a1a2f25194af1f03a9a52956f9adb4"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/tokenizer/__init__.py",
+      "sha256": "039b7157ee60bfe8c026fed6fb9420612fd9fab8ec6f7602f34758aa38e9e40e"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/tokenizer/bert_tokenization.py",
+      "sha256": "0704246587093c5c2ef2ca6ef1b968f6cf9ac5872ca4f48a24c7e2abc7184804"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/tokenizer/gpt2_tokenization.py",
+      "sha256": "df8138777c992a164a1d420e62c2b234bc2446e309f5d5b59f332d8033cd7706"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/tokenizer/multimodal_tokenizer.py",
+      "sha256": "5ca79bee4cdb1944e00bc66d6db938781ff5f671d47cd46e401660978b638784"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/tokenizer/sft_tokenizer.py",
+      "sha256": "61f08cb04062797df9457fd0638ac4813e73ef529e999ebc6c9f4692e00f6fa8"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/tokenizer/tokenizer.py",
+      "sha256": "5514e3a5731b4cff41c1a131f15d665d12fda3b02172c4f85cccc5ff7b2b2492"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/training.py",
+      "sha256": "4cfb3d30713c0c0aac7e1aa75c6617d1dd69cd12c717c7e54e338818dd1e9d6b"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/utils.py",
+      "sha256": "c235a19ef52d5c94055659440f27ff515881bd3e9b84065baabd69250140f8ce"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/wandb_utils.py",
+      "sha256": "c55e7af6030435b0b248b4cd325f4717d1b8c51500e801ef3464313a0334c3a0"
+    },
+    {
+      "system": "megatron",
+      "path": "megatron/training/yaml_arguments.py",
+      "sha256": "a3c6c72b6d0e90ac0e2817eea857b328c6b6b4a65abd22fc20dd64c3f42ce2c7"
+    },
+    {
+      "system": "megatron",
+      "path": "pretrain_gpt.py",
+      "sha256": "de8b66e0bd34cab7aedcf5759ed2d67aa4fac95ba1742e2f2d016a9ec3ca66d2"
+    },
+    {
+      "system": "megatron",
+      "path": "test_parallel_model.py",
+      "sha256": "6946386d5a49b3c5080e103628a003b44717949d2b78db381cc454bfd44efa7f"
+    },
+    {
+      "system": "megatron",
+      "path": "dtsir_collect.py",
+      "sha256": "ae531ef9cf72611bd74a80851b7aa65a19b1bd380406f63c53ae50b0d8fa48fe"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/__init__.py",
+      "sha256": "d9639cc9495030dbbc35ca9292ffc4f20ead6844ebb3ab42172a90f0f9b905f0"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/args_schema.py",
+      "sha256": "22acf849b6beedb28b06d9a62494ccc801216162ad08ceb62dae4683cc7eb1e8"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/arguments.py",
+      "sha256": "9e5210a12853d5570c495b3c58220e114bcde4a069cf7a1f651e3f8db8084dd4"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/cost_model/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/cost_model/components/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/cost_model/components/embedding_lmhead_cost.py",
+      "sha256": "09df8676208751304cab529fa0f306e105337e182997e1cc09738c0acacd720a"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/cost_model/components/layer_cost.py",
+      "sha256": "72cf434adfd0e5ace84fa297d40b863830d464994a1c9cbb7d742c82a2d180e9"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/cost_model/cost_model_args.py",
+      "sha256": "8341dcb051492fa60a464e75c1a43e74dd3ba3c5abdfbb14298266d751ae7bbd"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/cost_model/cost_model_handler.py",
+      "sha256": "38bdf43da25a7a74146b25e179d64210d26be658ecb656be97db668ae562c5f2"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/__init__.py",
+      "sha256": "ccdde88837cc7d9659546f470d8d39c9f1b151a50852a8dfaf789da6d84790d4"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/args_schema.py",
+      "sha256": "6761f9725614b0cfb72d79a0e29fe5da893102068e93d62ffaa1d5c791bead7a"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/arguments.py",
+      "sha256": "daaf85ba5b7ae1bc05eea85c56c6972f8fccab993a83f16240f919f8dfd8d07b"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/base_profiler.py",
+      "sha256": "125786e4fbb28f9471abc46a32b47904d2311cb3c6bc6954a9605e9481c5838d"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/hardware_profiler.py",
+      "sha256": "bde8d8a23bf458bb5e65a2927dc28d63c45dd496a105a9557d19e73b0d9ce991"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/model_profiler.py",
+      "sha256": "6c14cd07df2b44dd2018289812939e0d62cae09967ec7ed5106c6d5adb20d26c"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/runtime_profiler.py",
+      "sha256": "6d8a676a23786be76ad3870943b5edf5ae6132c4d430ff119fa969112c9b1169"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/profiler/utils.py",
+      "sha256": "cfebef0a86e7b06ceb1b1c9dbbfb9d0fb19567630edef7560cad096469db2827"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/__init__.py",
+      "sha256": "8ec4afcd5bb3b8b57bd3bf7ab801c0543e019ddb1caaaa9605e9a6cf6e562fca"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/args_schema.py",
+      "sha256": "2a1d388da4c9bf52b74eb257223cb4b261b16796897c6cba5a60214313f090c9"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/checkpoint/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/checkpoint/gpt_adapter.py",
+      "sha256": "fefd192d80d06cf986f4948618489b0034558c5baf48992abb4a2482789b7100"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/checkpoint/llama_adapter.py",
+      "sha256": "9a733e959768a43d793f35b4ad9dc2d0652016aacf0961c38909c841c88246d4"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/checkpoint/moe_adapter.py",
+      "sha256": "f55e1b5562d99027fd96046147887d260aee9537300ba09a331f30dfd435abef"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/comm_groups.py",
+      "sha256": "b0d9c4199ce15275d4f2ffc623fb539c383b624b9b410c8b0d0eb3e6cfc5ae43"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/dataloader.py",
+      "sha256": "ceb2f286a9ccaaa618a2e48f948fce9cd265905d1267ed67e9b45c29fc40ed35"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/__init__.py",
+      "sha256": "09db4b0144d8c3600f933cf6b42619c12405423d26a30eaa445d7a1714c9e683"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/blended_dataset.py",
+      "sha256": "e30a0efaad5ea224af75a43c9e850ca293e12fdc7cd5007b24c5d2456966cad5"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/blended_megatron_dataset_builder.py",
+      "sha256": "b5aa3c89d6218a42619ee9bc57cf745e9481aefd82079582f0fbbdb5b48c9ff1"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/blended_megatron_dataset_config.py",
+      "sha256": "067033f33d810f7795dd88c3bfc59f6a427ae150ed8fbca1769a427101669242"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/gpt_dataset.py",
+      "sha256": "179c97e5393bf5664c5a8e17febfcd7081c1136b04ad219cb2222328cc6539c5"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/helpers.py",
+      "sha256": "d1d6a38f5b89c5f51de4001a61ec42eb69313f899166684edde8dc252eb961dd"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/indexed_dataset.py",
+      "sha256": "6e15cf521a08a04caabe9b0482c7d7de4776fafdcc7251469eff0497bd704cd7"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/megatron_dataset.py",
+      "sha256": "c1f93c6ed08b25dc3de1a5878f259266ebeb3acc00678b7b918abacb6c7de739"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/megatron_tokenizer.py",
+      "sha256": "ec3ade4e85ca0a2546d8fb8b353c71feba5aa87a6147db97616143ced6ace669"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/tokenizer.py",
+      "sha256": "96e27066779c30f3492e692dfc1fa2eae6c7eb390daaedb82c4d0670d6de81ee"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/utils.py",
+      "sha256": "006ec19f0bc1c7f8442e99dd44cd68f9126f925fcf53c867ae01394bfeafc62d"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/megatron/utils_s3.py",
+      "sha256": "995fa8e7e03d4cba26573d904e52cf3d1effa531440518bea1839ef97ae5d404"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/datasets/random_dataset.py",
+      "sha256": "83dcd4c1fcf9ddb1f01bada0d641c47efa23f0ce28acb14a73026e2eea0c9cf6"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/hybrid_parallel_config.py",
+      "sha256": "db5e0eee37329db3c5f18f8eb36eec6025a64ca4d34444fc40f3bd675322ff2b"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/hybrid_parallel_model.py",
+      "sha256": "f11a31427d212ede76c9b2978eaccfa4ae1625f0f0b81885d46febb497abcee9"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/initialize.py",
+      "sha256": "41ef11035d343ad2e9ee0c4e369f4d24e0fea03491549614df090e7482759c92"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/models/arch.py",
+      "sha256": "234c4f075b9bb40b82c547822a3f42de1f07689a0a2a23e9219a9911e1d9def0"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/models/builder.py",
+      "sha256": "6e367eab6f26f3fc1211d4ef85753de49113270938ce89519ce68b6e5a926a06"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/models/modules.py",
+      "sha256": "76ff38a7e968dee76dde3a42b2d80294efa851455c80dc22fcc520e996e3fdf1"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/models/moe_modules.py",
+      "sha256": "4cd9bb3e9a8b3c1d3bdbd7e8ff3ad13968f0d7dab471744168cb268aeecc1c0d"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/fused_a2a.py",
+      "sha256": "05d54c0af5364e0c6a6501183791334f19e9ae846c9e251b5789a4cbb32748c8"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/fused_kernels.py",
+      "sha256": "c17b6fdee5eff6734f7059e4c787a9b0110e94d0de00932a3d66559a2ba28a4e"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/grouped_gemm_util.py",
+      "sha256": "198ce2adb4484d353345498e82c3fd5150054ac2f4515fc3782bbc2e9cc8c06e"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/mlp.py",
+      "sha256": "d59eac56ae4d4d92899a9ee567c395a187bf93573e767ac95fc4cd39186dd79b"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/moe_utils.py",
+      "sha256": "9364dca7bbb4e752a69e08eb19d92566062831d32fe9b85ed35061b0a795691f"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/router.py",
+      "sha256": "9291065f85983034323ff968ef17e98038bd5108714f7d43bbd597f15b312d23"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/moe/token_dispatcher.py",
+      "sha256": "e928e40dccca680b8d5b1c24838f529d38fca409859c407cd2090f2803c16fed"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/optimizer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/optimizer/clip_grads.py",
+      "sha256": "a6200f2bad894bc87c0e40349d68c0a7349bc035018c106b0a8bb5d8780ad56c"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/optimizer/num_microbatches_calculator.py",
+      "sha256": "8b53da48d50914598fc959a29284dcc4385116a6c59360fff0dc28c34fedc567"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/optimizer/param_scheduler.py",
+      "sha256": "7ed430d45b4ef3ef7c4221a16a1e2f2c8ba7650b66e3d7741f59db783fdfd163"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/optimizer/utils.py",
+      "sha256": "018ce0e9eb49e65a07338ed4382472678acb19d4cca308b4e6cb417a26609bca"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/parallel.py",
+      "sha256": "3483cb02f3f35e07218d293a417c031c2d0e71277634418cf3675c12486f5b91"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/parallel_state.py",
+      "sha256": "b63f9aeea82f07b3887a975c6b9d688c66863d3e9d2b0e6bfd295acf522420b9"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/pipeline/__init__.py",
+      "sha256": "6ed065166e238f298a960f77eabb7eaa65515b395960fcbd462260eaf4d04606"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/pipeline/grad_reduce.py",
+      "sha256": "9eabb281bd40223479be207d5b9e1d4b3d5801e25601e3ca5dbe204da5bd0d32"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/pipeline/pipeline.py",
+      "sha256": "2464fb4387c1946648d96ef05e1a72169975790f954bbee6573429091c59b1fc"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/pipeline/sp_grad_reduce.py",
+      "sha256": "d972119fb208f0e9b4163466c1a9ff702bc04fe9ccd1e884e9d20bcdae91f5e2"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/pipeline/utils.py",
+      "sha256": "3e1e78166a1bd577175050504e8641e75e005cb03c6cad2e92ae7dd82968941a"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/redistribute.py",
+      "sha256": "eb6baefcffa1074a7d9e4c5b85da66334aa261c1377fd2cd6aeaec933c03772d"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/tensor_parallel/__init__.py",
+      "sha256": "caa3757d8b3eff1967318a46da721980f6153af0842a9b4e32211fbf68719a0f"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/tensor_parallel/layers.py",
+      "sha256": "0a966dee9f412c0309329e2b42a344487bc9ea7c9de878686b72e1fdcd986c5c"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/tensor_parallel/mappings.py",
+      "sha256": "52ba35310102a8966fafe919eb1614b2bd965fa11d9e6f9541e1973999c4adfc"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/tensor_parallel/random.py",
+      "sha256": "db8190a2c8c85ebb284d30afa403233b24d300880cbbab43219985adcab26792"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/tensor_parallel/reset.py",
+      "sha256": "f3d873b8e73e4d29be74a0bd0f5d24c923536c357632fef0ef9e590385b313ba"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/tensor_parallel/triton_cross_entropy.py",
+      "sha256": "0739831fa8ea643942ffc57692c1db88d958eadb7cec5b274e0662c8a2d849ef"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/tensor_parallel/utils.py",
+      "sha256": "2324591d5cbda22ff63797d6f4cec6b89d449a5b998ba69f6834e24027c42f94"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/attention.py",
+      "sha256": "d1ffb060331a8bc0422c11ae8366e2875628480c0b037c4f004fdc9206261446"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/attention_impl.py",
+      "sha256": "c78643a08e89a8f0fba00fb326b30c1249645da9b1825e04c809e80905948673"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/fused_kernels.py",
+      "sha256": "80e30bbeadbca6875b993467d870bb1255e86e48859d07af92183932834293d2"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/inference.py",
+      "sha256": "238367c8273ec019fc329460fef475be88c92186908c26f882ecf2d386e8d525"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/mlp.py",
+      "sha256": "0681f4e419591b2a0b08ea6637031a4c0382f1bd12168ae5cefe6f9d00063435"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/norm.py",
+      "sha256": "fa65538863051babf1b3513885913b37f5133b59641b16141f795638aa892046"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/rope_utils.py",
+      "sha256": "05e18354ddd30e3c8159b3add37eb82a6f1c0e757848cc46c3b43366bbb2f6ee"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/rotary_pos_embedding.py",
+      "sha256": "b2bf353230210cd8c10b32e0536bea98ee616da0d5c9aa870bead371b1c3d9ef"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/spec_utils.py",
+      "sha256": "72adaee5d3606672481fc58ed35f6a1677db4923694753bc67d6cc0398426391"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/transformer/utils.py",
+      "sha256": "5e152a3fac1874eb6f051ac8ebff6d9ee1557c532a159d9b9f34ab821963ef19"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/utils/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/utils/rerun_state_machine.py",
+      "sha256": "14080d6891c594ac3e1668a3a8c633e67e84a9eacee1ba4c2bfa487e4e6db354"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/runtime/utils/utils.py",
+      "sha256": "0df9a2b75e705a7c546908062db10b648b4db98dab17002c1a37cfa5fa190d3f"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/search_engine/__init__.py",
+      "sha256": "ba6999dea65ac8794834759636bb3af08b1da4022f813654b71d2fdbe8f55bc2"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/search_engine/args_schema.py",
+      "sha256": "0ee56e9746bc9ae00cf7eef27239534640953650fa31fba2cbfa6e17943ed500"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/search_engine/dynamic_programming.py",
+      "sha256": "1c8c80cae834bab96fcff806f747d9945dbc3572bc1560de49a5476ed9969948"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/search_engine/search_engine.py",
+      "sha256": "7b742cbf6cd159459db43971eba31e8e83ea2db33d90d0bc19fcd828419c7d13"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/core/search_engine/utils.py",
+      "sha256": "a226284a6188b17709d6c0903984ade36038941c7b4fded436b83767b817c179"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/models/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/models/gpt/__init__.py",
+      "sha256": "9a9d769f1c7b7ca333a2820a790b753ef1fb6545951b23d3456b23e69e793f2f"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/models/gpt/profiler.py",
+      "sha256": "795521fb3b0153a86602fda88f4a67ccc12c6d83ade9d9c85855a3fba871ffad"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/models/gpt/search_dist.py",
+      "sha256": "90e281158b556f9ef0246d1e2a0d74bd32800804cac929a4d6f2a29cbeb7de12"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/models/gpt/train_dist.py",
+      "sha256": "b082b985aba884fa1b9f75aeb253ce43b4ca1db4607120a1e6758b1f0566df8a"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/models/moe/train_dist.py",
+      "sha256": "b58744425dca7c3dd2fa761a7d37a0ad90e7d7deea1b3f3ca3a5bd02366c3524"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/profile_hardware/profile_all2all.py",
+      "sha256": "3b0c546f6479a43008f46ff8ef97e96ed85cf2c42861d970d8c32b86fe939d96"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/profile_hardware/profile_allreduce.py",
+      "sha256": "49df215e2d94c9f1d2e5ca20846dca72c76c8ad9cb578c0d38331f636fa27042"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/profile_hardware/profile_hardware.py",
+      "sha256": "2d3c75a94cc73699f2b310790fa560df3a00807fbc2971bb72d922085415a8bd"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/profile_hardware/profile_overlap.py",
+      "sha256": "ba8accac0d527ef686cb132dff2197370f8268f88c22ce812b175f5548b15c2d"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/profile_hardware/profile_p2p.py",
+      "sha256": "15139ed8f8b029e79b77f843db0eb6ab3cd2bd6396437db9b464cea3ad0820ce"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/scripts/accuracy_alignment/upload_curves_to_wandb.py",
+      "sha256": "de8538843bbef28d901918c72a632eb657983857f1ed79d0abd9e95e284b342b"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/tools/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/tools/args_schema.py",
+      "sha256": "12dccd8473b4affcb28adda65f4f85d463f32ced881ceb44baacabe45d8d2bbe"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/tools/checkpoint_convert_g2h.py",
+      "sha256": "f0c425faff0b993682edc69c1e69cf37c9851bb6771bf02018262a37078f2c14"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/tools/checkpoint_convert_h2g.py",
+      "sha256": "768ab35eaae312cd7cec279ded166852bc458153476cb22bdaf3a3cab4dcd112"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/utils/__init__.py",
+      "sha256": "d2dd1648190644a45ff07d0c556bf88aad8420e7088570d08b4505008fe630b8"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/utils/config_utils.py",
+      "sha256": "5f46e9ef3294ce28211dd1a681bd43c07ad6fe412e729e8e4b48898d320b2b2d"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/utils/hf_config_adapter.py",
+      "sha256": "fe52628d4f6dcf282578514611ace0f1ec0c1d902ead4349a4989c0e44a0d781"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/utils/memory_utils.py",
+      "sha256": "05df9ad5ad816076fe01c8c5939154636f7c9a5b5defc9f3cc1776716c400bd8"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/utils/print_utils.py",
+      "sha256": "3ebf6bbf507a9fa2b6fde7a19d37788060120200314eb1d88f8686e90fb2464a"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/utils/strategy_utils.py",
+      "sha256": "48e09e759add27fa5f6277a55ccb1ae396fe5aea8fbb3505aa7a0a445d1afe11"
+    },
+    {
+      "system": "galvatron",
+      "path": "galvatron/utils/training_utils.py",
+      "sha256": "c9fc136ff2a689ff661ff5838da636dc3e02b5c30a92d5973d338349be6ae4b0"
+    }
+  ]
+}

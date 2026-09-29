@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "comparison_rows": 16,
+  "result_rows": 32,
+  "rank_step_rows": 2560,
+  "exact_measurement_matches": 13,
+  "common_cross_framework_reuse": 3,
+  "source_sha256": "9811c5eab8fe8f75d0fb008942db5825f3af4cbc96143fcb65ce2961280b71e6",
+  "new_training_runs": 0,
+  "new_end_to_end_search_timing_available": false
+}

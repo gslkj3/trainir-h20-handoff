@@ -1,0 +1,32 @@
+{
+  "case": "qwen2_7b_32k",
+  "space": "common",
+  "parallel": [
+    1,
+    2,
+    1,
+    1,
+    4,
+    4,
+    1,
+    1,
+    64
+  ],
+  "strategy": {
+    "ReCompute": [
+      null,
+      null
+    ],
+    "DistributedOptimizer": false,
+    "VirtualPipe": null,
+    "Hybrid_MHA_MQA": [
+      true,
+      4
+    ]
+  },
+  "predicted_seconds": 414.47318602944864,
+  "candidates": 1,
+  "source_sha256": "9811c5eab8fe8f75d0fb008942db5825f3af4cbc96143fcb65ce2961280b71e6",
+  "input_sha256": "4e11ed99884f0737936fa307e2c5014d33de701b98ee5d2ccb4a6684d75fd5eb",
+  "profile_sha256": "a7c0e3c4b6963c0fad4f1d2830b01ad760d3f78def245abf64d5d638be190bd5"
+}

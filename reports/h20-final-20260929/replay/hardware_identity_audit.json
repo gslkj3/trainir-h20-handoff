@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "expected_uuids": [
+    "21246b42-bec3-a0f2-e596-b1ea00c30a3f",
+    "2d3d10e9-19ce-9a0c-ec26-7e81955d6384",
+    "39d70af0-4f75-9cbe-340b-652473c7521b",
+    "4617106e-a09a-7d36-5817-1592f8590c39",
+    "58020f80-5271-099b-9104-6a13d3a01bd7",
+    "89407c31-9dce-128d-c67f-cc3d0e43b9c3",
+    "8f9bcef5-b1d7-28b0-979a-ccee4551fca4",
+    "99a152ce-6f3f-643c-98de-df130dd3c020"
+  ],
+  "observed": [
+    {
+      "index": "0",
+      "uuid": "GPU-4617106e-a09a-7d36-5817-1592f8590c39",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    },
+    {
+      "index": "1",
+      "uuid": "GPU-21246b42-bec3-a0f2-e596-b1ea00c30a3f",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    },
+    {
+      "index": "2",
+      "uuid": "GPU-99a152ce-6f3f-643c-98de-df130dd3c020",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    },
+    {
+      "index": "3",
+      "uuid": "GPU-8f9bcef5-b1d7-28b0-979a-ccee4551fca4",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    },
+    {
+      "index": "4",
+      "uuid": "GPU-58020f80-5271-099b-9104-6a13d3a01bd7",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    },
+    {
+      "index": "5",
+      "uuid": "GPU-89407c31-9dce-128d-c67f-cc3d0e43b9c3",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    },
+    {
+      "index": "6",
+      "uuid": "GPU-2d3d10e9-19ce-9a0c-ec26-7e81955d6384",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    },
+    {
+      "index": "7",
+      "uuid": "GPU-39d70af0-4f75-9cbe-340b-652473c7521b",
+      "name": "NVIDIA H20",
+      "memory.total [MiB]": "97871 MiB",
+      "driver_version": "610.43.02"
+    }
+  ],
+  "note": "Same eight GPU UUIDs as original calibration/protocol. NVML total memory differs from Torch accessible memory; cap remains 85 GiB."
+}
