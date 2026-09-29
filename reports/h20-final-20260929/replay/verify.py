@@ -25,4 +25,10 @@ for r in pairs:
  assert d['mean_iteration_s']==r['devastator_iteration_s'] and g['mean_iteration_s']==r['galvatron_iteration_s']
  assert math.isclose(r['speedup'],g['mean_iteration_s']/d['mean_iteration_s'],rel_tol=1e-10)
  if r['equal_by_reuse']:assert d['evidence_id']==g['evidence_id'] and r['speedup']==1
-print('PASS: one version, 16 comparisons, 32 rows, all files and archive members verified.')
+timings=read(p/'search_timing.json');assert len(timings)==32
+for r in timings:
+ f=p/r['evidence'];assert sha(f.read_bytes())==r['evidence_sha256']
+ t=read(f);assert t['search_e2e_seconds']==r['search_e2e_seconds']>0
+ row=next(x for x in results if (x['case'],x['space'],x['system'])==(r['case'],r['space'],r['system']))
+ assert row['search_e2e_seconds']==r['search_e2e_seconds']
+print('PASS: 16 comparisons, 32 result rows, 32 measured search timings, all files and archives verified.')

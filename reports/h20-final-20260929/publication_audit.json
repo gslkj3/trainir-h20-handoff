@@ -7,5 +7,9 @@
   "common_cross_framework_reuse": 3,
   "source_sha256": "9811c5eab8fe8f75d0fb008942db5825f3af4cbc96143fcb65ce2961280b71e6",
   "new_training_runs": 0,
-  "new_end_to_end_search_timing_available": false
+  "new_end_to_end_search_timing_available": false,
+  "existing_search_timing_records": 32,
+  "devastator_search_timing_records": 16,
+  "galvatron_search_timing_records": 16,
+  "search_timing_policy": "Reuse existing measured workflow wall time across bandwidth parameter choices; not predicted training cost; no new profiling requested after clarification."
 }

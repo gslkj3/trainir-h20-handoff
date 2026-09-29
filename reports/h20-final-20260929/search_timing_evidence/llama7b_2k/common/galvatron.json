@@ -1,0 +1,11 @@
+{
+  "search_e2e_seconds": 679.4876208305359,
+  "method": "Reconstructed from original driver stdout log birth to selected-training stdout log birth",
+  "outcome": "selected",
+  "start_log": "/opt/hbv/trainir-h20-experiments/20260927-v1/llama7b-galv-common-01.log",
+  "end_log": "/opt/hbv/trainir-h20-experiments/20260927-v1/runs/llama7b_2k/galvatron/common/01/stages/selected_training.log",
+  "start_birth_utc": "2026-09-27 15:29:13.876717668 +0000",
+  "end_birth_utc": "2026-09-27 15:40:33.364338726 +0000",
+  "scope": "All elapsed workflow time between these boundaries; includes profile/search startup and preparation/processing. Excludes earlier communication calibration and later selected training.",
+  "precision_note": "Filesystem creation boundaries, not original monotonic instrumentation. Logs were created immediately before subprocess launch; tiny launch-boundary offsets remain."
+}

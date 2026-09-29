@@ -1,0 +1,11 @@
+{
+  "search_e2e_seconds": 1426.4308670731261,
+  "method": "Linux process start ticks to pre-training boundary",
+  "start_boot_ticks": 763482358,
+  "clock_ticks_per_second": 100,
+  "end_boot_seconds": 7636250.010867073,
+  "driver_pid": 862990,
+  "outcome": "selected",
+  "scope": "All workflow wall time from driver process start through ready-to-launch selected training. Includes imports, configuration, profile generation, compute/memory Profile, processing, process startup, native search and selected configuration validation/export. Communication calibration and selected training excluded.",
+  "end_utc": "2026-09-27T22:59:35Z"
+}

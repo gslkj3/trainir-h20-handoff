@@ -24,7 +24,7 @@
     "peak_allocated_bytes": 86409140736,
     "peak_reserved_bytes": 87560290304,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 45.03265844658017,
     "parallel": [
       4,
       1,
@@ -49,7 +49,11 @@
       ]
     },
     "predicted_seconds": 77.38088911980489,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 0.7505443074430028,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama7b_2k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama7b_2k",
@@ -80,7 +84,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"16,16\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 1, \"world_size\": 8}",
     "pp": 2,
     "chunks": 64,
-    "kv_heads": 32
+    "kv_heads": 32,
+    "search_e2e_minutes": 11.32479368050893,
+    "search_timing_method": "Reconstructed from original driver stdout log birth to selected-training stdout log birth",
+    "search_timing_evidence": "search_timing_evidence/llama7b_2k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama7b_2k",
@@ -107,7 +115,7 @@
     "peak_allocated_bytes": 74762865152,
     "peak_reserved_bytes": 78861303808,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 185.08296073880047,
     "parallel": [
       4,
       1,
@@ -132,7 +140,11 @@
       ]
     },
     "predicted_seconds": 70.57932998674015,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 3.0847160123133412,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama7b_2k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama7b_2k",
@@ -163,7 +175,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 8, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0\", \"embed_sdp\": 1, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 1, \"world_size\": 8}",
     "pp": 1,
     "chunks": 8,
-    "kv_heads": 32
+    "kv_heads": 32,
+    "search_e2e_minutes": 22.945368844053398,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama7b_2k/full/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_7b_4k",
@@ -190,7 +206,7 @@
     "peak_allocated_bytes": 86477306368,
     "peak_reserved_bytes": 87625302016,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 50.153895761817694,
     "parallel": [
       4,
       1,
@@ -215,7 +231,11 @@
       ]
     },
     "predicted_seconds": 157.38120222032268,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 0.8358982626969615,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama2_7b_4k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_7b_4k",
@@ -246,7 +266,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}",
     "pp": 1,
     "chunks": 64,
-    "kv_heads": 32
+    "kv_heads": 32,
+    "search_e2e_minutes": 12.498666449387867,
+    "search_timing_method": "Reconstructed from original driver stdout log birth to selected-training stdout log birth",
+    "search_timing_evidence": "search_timing_evidence/llama2_7b_4k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_7b_4k",
@@ -273,7 +297,7 @@
     "peak_allocated_bytes": 74831026688,
     "peak_reserved_bytes": 78928412672,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 246.38094685040414,
     "parallel": [
       4,
       1,
@@ -298,7 +322,11 @@
       ]
     },
     "predicted_seconds": 143.63194931063848,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 4.106349114173402,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama2_7b_4k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_7b_4k",
@@ -329,7 +357,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0\", \"embed_sdp\": 1, \"global_bsz\": 256, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 1, \"world_size\": 8}",
     "pp": 1,
     "chunks": 16,
-    "kv_heads": 32
+    "kv_heads": 32,
+    "search_e2e_minutes": 23.773847784552103,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama2_7b_4k/full/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_13b_4k",
@@ -356,7 +388,7 @@
     "peak_allocated_bytes": 68377708544,
     "peak_reserved_bytes": 74283220992,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 40.695765947923064,
     "parallel": [
       1,
       4,
@@ -381,7 +413,11 @@
       ]
     },
     "predicted_seconds": 554.9368714948264,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 0.6782627657987177,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama2_13b_4k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_13b_4k",
@@ -412,7 +448,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 256, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 512, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"20,20\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}",
     "pp": 2,
     "chunks": 256,
-    "kv_heads": 40
+    "kv_heads": 40,
+    "search_e2e_minutes": 12.770049343118444,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama2_13b_4k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_13b_4k",
@@ -439,7 +479,7 @@
     "peak_allocated_bytes": 87898371584,
     "peak_reserved_bytes": 92880764928,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 239.57032284047455,
     "parallel": [
       4,
       1,
@@ -464,7 +504,11 @@
       ]
     },
     "predicted_seconds": 484.0477427601506,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 3.992838714007909,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama2_13b_4k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama2_13b_4k",
@@ -495,7 +539,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 256, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 512, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"20,20\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 1, \"vtp\": 2, \"world_size\": 8}",
     "pp": 2,
     "chunks": 256,
-    "kv_heads": 40
+    "kv_heads": 40,
+    "search_e2e_minutes": 27.89061870647905,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama2_13b_4k/full/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama3_8b_8k",
@@ -522,7 +570,7 @@
     "peak_allocated_bytes": 57321347072,
     "peak_reserved_bytes": 80348184576,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 89.5657270392403,
     "parallel": [
       2,
       1,
@@ -547,7 +595,11 @@
       ]
     },
     "predicted_seconds": 94.3050947337874,
-    "reused_equal_common_config": true
+    "reused_equal_common_config": true,
+    "search_e2e_minutes": 1.4927621173206718,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama3_8b_8k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama3_8b_8k",
@@ -578,7 +630,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}",
     "pp": 1,
     "chunks": 16,
-    "kv_heads": 8
+    "kv_heads": 8,
+    "search_e2e_minutes": 19.762734772296003,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama3_8b_8k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama3_8b_8k",
@@ -605,7 +661,7 @@
     "peak_allocated_bytes": 67690485248,
     "peak_reserved_bytes": 71263322112,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 391.2321050623432,
     "parallel": [
       4,
       1,
@@ -630,7 +686,11 @@
       ]
     },
     "predicted_seconds": 89.81583006829123,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 6.520535084372386,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama3_8b_8k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "llama3_8b_8k",
@@ -661,7 +721,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"32\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}",
     "pp": 1,
     "chunks": 16,
-    "kv_heads": 8
+    "kv_heads": 8,
+    "search_e2e_minutes": 28.442094930447638,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/llama3_8b_8k/full/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_1p5b_32k",
@@ -688,7 +752,7 @@
     "peak_allocated_bytes": 53314600960,
     "peak_reserved_bytes": 62964891648,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 32.26987288147211,
     "parallel": [
       2,
       2,
@@ -713,7 +777,11 @@
       ]
     },
     "predicted_seconds": 189.58381283432294,
-    "reused_equal_common_config": true
+    "reused_equal_common_config": true,
+    "search_e2e_minutes": 0.5378312146912019,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_1p5b_32k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_1p5b_32k",
@@ -744,7 +812,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 32, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"14,14\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 2, \"world_size\": 8}",
     "pp": 2,
     "chunks": 32,
-    "kv_heads": 2
+    "kv_heads": 2,
+    "search_e2e_minutes": 11.836218744593983,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_1p5b_32k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_1p5b_32k",
@@ -771,7 +843,7 @@
     "peak_allocated_bytes": 83177248256,
     "peak_reserved_bytes": 92008349696,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 606.9779185066,
     "parallel": [
       4,
       1,
@@ -796,7 +868,11 @@
       ]
     },
     "predicted_seconds": 153.16911588339292,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 10.116298641776666,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_1p5b_32k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_1p5b_32k",
@@ -827,7 +903,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 16, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"28\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1\", \"vsp\": 1, \"vtp\": 2, \"world_size\": 8}",
     "pp": 1,
     "chunks": 16,
-    "kv_heads": 2
+    "kv_heads": 2,
+    "search_e2e_minutes": 13.898317935395365,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_1p5b_32k/full/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_7b_32k",
@@ -854,7 +934,7 @@
     "peak_allocated_bytes": 61015549952,
     "peak_reserved_bytes": 71431094272,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 32.63333495799452,
     "parallel": [
       1,
       2,
@@ -879,7 +959,11 @@
       ]
     },
     "predicted_seconds": 414.47318602944864,
-    "reused_equal_common_config": true
+    "reused_equal_common_config": true,
+    "search_e2e_minutes": 0.5438889159665753,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_7b_32k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_7b_32k",
@@ -910,7 +994,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"14,14\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}",
     "pp": 2,
     "chunks": 64,
-    "kv_heads": 4
+    "kv_heads": 4,
+    "search_e2e_minutes": 12.41368124911872,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_7b_32k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_7b_32k",
@@ -937,7 +1025,7 @@
     "peak_allocated_bytes": 90964048896,
     "peak_reserved_bytes": 94543806464,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 430.2447550930083,
     "parallel": [
       1,
       2,
@@ -962,7 +1050,11 @@
       ]
     },
     "predicted_seconds": 405.30372822232147,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 7.170745918216805,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_7b_32k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen2_7b_32k",
@@ -993,7 +1085,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 32, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"28\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 1, \"vtp\": 4, \"world_size\": 8}",
     "pp": 1,
     "chunks": 32,
-    "kv_heads": 4
+    "kv_heads": 4,
+    "search_e2e_minutes": 16.065104405814782,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen2_7b_32k/full/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen25_14b_8k",
@@ -1020,7 +1116,7 @@
     "peak_allocated_bytes": 76283723776,
     "peak_reserved_bytes": 79951822848,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 52.59423773176968,
     "parallel": [
       1,
       2,
@@ -1045,7 +1141,11 @@
       ]
     },
     "predicted_seconds": 181.1633361506141,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 0.876570628862828,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen25_14b_8k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen25_14b_8k",
@@ -1076,7 +1176,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"24,24\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}",
     "pp": 2,
     "chunks": 64,
-    "kv_heads": 8
+    "kv_heads": 8,
+    "search_e2e_minutes": 10.97066535440584,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen25_14b_8k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen25_14b_8k",
@@ -1103,7 +1207,7 @@
     "peak_allocated_bytes": 85215546368,
     "peak_reserved_bytes": 89617596416,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 209.16334809549153,
     "parallel": [
       2,
       2,
@@ -1128,7 +1232,11 @@
       ]
     },
     "predicted_seconds": 172.29534121293014,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 3.4860558015915255,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen25_14b_8k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen25_14b_8k",
@@ -1159,7 +1267,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 32, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 64, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"48\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}",
     "pp": 1,
     "chunks": 32,
-    "kv_heads": 8
+    "kv_heads": 8,
+    "search_e2e_minutes": 22.621919643040748,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen25_14b_8k/full/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen3_14b_4k",
@@ -1186,7 +1298,7 @@
     "peak_allocated_bytes": 76917224448,
     "peak_reserved_bytes": 82483085312,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 71.31288822554052,
     "parallel": [
       1,
       2,
@@ -1211,7 +1323,11 @@
       ]
     },
     "predicted_seconds": 163.2247826844143,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 1.188548137092342,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen3_14b_4k/common/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen3_14b_4k",
@@ -1242,7 +1358,11 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 0, \"global_bsz\": 128, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 1, \"pp_division\": \"40\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 0, \"vtp\": 4, \"world_size\": 8}",
     "pp": 1,
     "chunks": 64,
-    "kv_heads": 8
+    "kv_heads": 8,
+    "search_e2e_minutes": 18.18534178690364,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen3_14b_4k/common/galvatron.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen3_14b_4k",
@@ -1269,7 +1389,7 @@
     "peak_allocated_bytes": 69393840640,
     "peak_reserved_bytes": 74104963072,
     "timing_scope": "CUDA-synchronized native whole step including batch preparation, forward, backward, optimizer and zero_grad; max over ranks; excludes parameter evidence sampling and post-step logging/barrier.",
-    "search_e2e_seconds": null,
+    "search_e2e_seconds": 232.21250591706485,
     "parallel": [
       2,
       1,
@@ -1294,7 +1414,11 @@
       ]
     },
     "predicted_seconds": 154.5507591348293,
-    "reused_equal_common_config": false
+    "reused_equal_common_config": false,
+    "search_e2e_minutes": 3.8702084319510806,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen3_14b_4k/full/devastator.json",
+    "search_timing_reused": true
   },
   {
     "case": "qwen3_14b_4k",
@@ -1325,6 +1449,10 @@
     "selected_strategy": "{\"checkpoint\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"chunks\": 64, \"default_dp_type\": \"ddp\", \"dp_types_enc\": \"1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"embed_sdp\": 1, \"global_bsz\": 128, \"pipeline_type\": \"pipedream_flush\", \"pp_deg\": 2, \"pp_division\": \"20,20\", \"tp_consecutive_flags\": \"1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1\", \"tp_sizes_enc\": \"2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2\", \"use_sp\": \"0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0\", \"vsp\": 1, \"vtp\": 2, \"world_size\": 8}",
     "pp": 2,
     "chunks": 64,
-    "kv_heads": 8
+    "kv_heads": 8,
+    "search_e2e_minutes": 29.933747730326527,
+    "search_timing_method": "Linux process start ticks to pre-training boundary",
+    "search_timing_evidence": "search_timing_evidence/qwen3_14b_4k/full/galvatron.json",
+    "search_timing_reused": true
   }
 ]
