@@ -1,0 +1,120 @@
+{
+  "frozen_utc": "2026-10-12T06:40:55Z",
+  "pilot_not_in_formal_results": true,
+  "pilot_results": [
+    {
+      "variant": "full",
+      "elapsed_s": 17.61571986787021,
+      "completed": 6
+    },
+    {
+      "variant": "no_inc",
+      "elapsed_s": 17.278271049261093,
+      "completed": 6
+    },
+    {
+      "variant": "no_profile",
+      "elapsed_s": 226.60129294544458,
+      "completed": 6
+    },
+    {
+      "variant": "naive",
+      "elapsed_s": 227.2333326023072,
+      "completed": 6
+    }
+  ],
+  "budget_rule": "max(300, ceil(2*maximum pilot wall seconds /60)*60); checkpoints15,30,60,120,240,max. Determined from pilot duration only, never training quality.",
+  "max_budget_seconds": 480,
+  "checkpoints_seconds": [
+    15,
+    30,
+    60,
+    120,
+    240,
+    480
+  ],
+  "variant_order": [
+    "full",
+    "no_inc",
+    "no_profile",
+    "naive"
+  ],
+  "candidate_list_digest": "571cc9294906f554bbbc8d5bdcaf6e8a1660081a627008a0aaf55b2d4e045c62",
+  "predictor_sha256": "b0a9d9f7d59405547a5b2ec348338a7a493afe37fedbaa2b402b713248fda27b",
+  "files": {
+    "scripts/run_search_arm.py": "20338071b9c20f481afbcab652595ac9b9418f313621a7e9b0be67c601eee859",
+    "scripts/ablation_core.py": "3ef3f25d44f6f5b331eaee9b292837a6c683891b41cabef58c70e5849d86cb14",
+    "source/test_parallel_model.py": "b0a9d9f7d59405547a5b2ec348338a7a493afe37fedbaa2b402b713248fda27b",
+    "candidate_list.json": "f2d80e90bca40c553072e93d1a28529626c6013e7254e158bd6de6fda5e34f86",
+    "candidate_space.json": "dc402f9662e4ad304c10bef347b3187281c1ada6cb004ee9b66a56a6bc12bce6",
+    "base_args.json": "847aa1c49ffb5b0bfafba5dcb330fcf536f8810668c984ebb09c7bb0f553118a"
+  },
+  "selection_rule": "Minimum predicted training microseconds among completed feasible candidates; ties broken by config_hash.",
+  "timing": "CLOCK_BOOTTIME elapsed from Linux process start tick; includes imports, initialization, candidate generation/dedup/sort, model construction, analysis, profile queries/measurements, selection and per-run bookkeeping. Communication calibration and later training excluded.",
+  "deadline_rule": "Finish/selection timestamp must be <= checkpoint. In-flight candidate may finish after maximum; retained in raw log but excluded.",
+  "caches": "Each arm new process and empty operator cache; profile_seed_from_existing=False. Full/No-Inc reuse only same-run measurements. Shared premeasured communication calibration only.",
+  "incremental_behavior": "Native structural and memory-template caches; native numeric event/schedule caches usable only when profiles are reusable. Profile-off invalidates numeric caches to force actual measurement while retaining structural/memory incremental reuse.",
+  "same_predictor_for_all": true,
+  "search_profile_gpu": "physical GPU1; analytic target is world_size8; eight GPU Megatron training validation",
+  "training": "Only timepoint winners deduplicated across all arms and budgets. Reuse exact Megatron evidence or one10-step run; maxrank synchronized step then meansteps6\u201310; throughput256/mean. OOM/failure retained, no fallback winner.",
+  "space": {
+    "model": "llama7b_2k",
+    "world_size": 8,
+    "gbs": 256,
+    "seq": 2048,
+    "native_kv_heads": 32,
+    "dp": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "tp": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "pp": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "microbatch": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "recompute": [
+      null,
+      "selective MLP"
+    ],
+    "distributed_optimizer": [
+      false,
+      true
+    ],
+    "vpp_layers_per_virtual_stage": [
+      null,
+      1,
+      2,
+      4,
+      8
+    ],
+    "sp_rule": "sp_degree=tp; sequence_parallel enabled when TP>1 in training",
+    "cp": 1,
+    "up": 1,
+    "ep": 1,
+    "memory_limit_gib": 85,
+    "legal_rules": [
+      "dp*tp*pp=8",
+      "gbs divisible by dp*mbs",
+      "chunks>=pp",
+      "VPP:pp>1; layers divisible by pp*vpp; at least two virtual stages;chunks divisible by pp"
+    ],
+    "order": "sort SHA256 of 20261012:config_hash, independent of measured or predicted performance",
+    "candidates": 480,
+    "candidate_list_digest": "571cc9294906f554bbbc8d5bdcaf6e8a1660081a627008a0aaf55b2d4e045c62"
+  }
+}

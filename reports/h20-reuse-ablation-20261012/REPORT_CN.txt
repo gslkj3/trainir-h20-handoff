@@ -1,0 +1,67 @@
+Devastator 复用机制消融：LLaMA-7B，序列2048，GBS256，8×H20
+
+候选数480；原生KV32；显存预算85GiB；共同时间点[15, 30, 60, 120, 240, 480]秒。
+四组串行、各一次连续搜索；单进程在物理GPU1做原生算子微测量，预测目标和训练执行均为8卡。独立空算子缓存；仅预先采集的通信标定共享。
+
+variant | budget_s | completed | feasible | strategy_combinations | selected_hash | measured_step_s | status
+full | 15 | 5 | 3 | 4 | 486d56a4a2d53e913191e850286d380fa484aed03e620baba269c5bf2ce4fb8c | 29.966664146259426 | completed
+full | 30 | 16 | 14 | 13 | 6729163341fc6e85134d42370b6c2f21340268bb35513ecba5ac7ebfb1facfe0 | 25.462503436207772 | completed
+full | 60 | 122 | 106 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+full | 120 | 480 | 410 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+full | 240 | 480 | 410 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+full | 480 | 480 | 410 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+no_inc | 15 | 5 | 3 | 4 | 486d56a4a2d53e913191e850286d380fa484aed03e620baba269c5bf2ce4fb8c | 29.966664146259426 | completed
+no_inc | 30 | 16 | 14 | 13 | 6729163341fc6e85134d42370b6c2f21340268bb35513ecba5ac7ebfb1facfe0 | 25.462503436207772 | completed
+no_inc | 60 | 115 | 99 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+no_inc | 120 | 419 | 354 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+no_inc | 240 | 480 | 410 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+no_inc | 480 | 480 | 410 | 20 | f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040 | 24.99091089479625 | completed
+no_profile | 15 | 1 | 0 | 1 | None | None | no_feasible
+no_profile | 30 | 1 | 0 | 1 | None | None | no_feasible
+no_profile | 60 | 1 | 0 | 1 | None | None | no_feasible
+no_profile | 120 | 3 | 2 | 3 | 486d56a4a2d53e913191e850286d380fa484aed03e620baba269c5bf2ce4fb8c | 29.966664146259426 | completed
+no_profile | 240 | 6 | 4 | 5 | 486d56a4a2d53e913191e850286d380fa484aed03e620baba269c5bf2ce4fb8c | 29.966664146259426 | completed
+no_profile | 480 | 12 | 10 | 11 | 6729163341fc6e85134d42370b6c2f21340268bb35513ecba5ac7ebfb1facfe0 | 25.462503436207772 | completed
+naive | 15 | 1 | 0 | 1 | None | None | no_feasible
+naive | 30 | 1 | 0 | 1 | None | None | no_feasible
+naive | 60 | 1 | 0 | 1 | None | None | no_feasible
+naive | 120 | 3 | 2 | 3 | 486d56a4a2d53e913191e850286d380fa484aed03e620baba269c5bf2ce4fb8c | 29.966664146259426 | completed
+naive | 240 | 6 | 4 | 5 | 486d56a4a2d53e913191e850286d380fa484aed03e620baba269c5bf2ce4fb8c | 29.966664146259426 | completed
+naive | 480 | 12 | 10 | 11 | 6729163341fc6e85134d42370b6c2f21340268bb35513ecba5ac7ebfb1facfe0 | 25.462503436207772 | completed
+
+训练：只验证时间点的预测获选配置，合并去重后每个配置最多一次独立训练；第6–10步，每步取8rank同步整步耗时最大值，然后求五步均值；吞吐=256/均值。OOM/失败保留，无事后候补。
+去重获选3个；成功3个；失败0个；复用Megatron证据0个。
+
+解释：下述为单次搜索和每配置一次训练的观测，不作为统计显著性结论。仅按当时已完成候选的预测代价选优，不按实测训练时间改选，不平滑曲线。
+15s: Full覆盖5，no_inc覆盖5；Full相对no_inc的实测步时加速0.00%（正值表示Full更快）
+15s: Full覆盖5，no_profile覆盖1；无法比较（尚无可行配置或训练失败）
+15s: Full覆盖5，naive覆盖1；无法比较（尚无可行配置或训练失败）
+30s: Full覆盖16，no_inc覆盖16；Full相对no_inc的实测步时加速0.00%（正值表示Full更快）
+30s: Full覆盖16，no_profile覆盖1；无法比较（尚无可行配置或训练失败）
+30s: Full覆盖16，naive覆盖1；无法比较（尚无可行配置或训练失败）
+60s: Full覆盖122，no_inc覆盖115；Full相对no_inc的实测步时加速0.00%（正值表示Full更快）
+60s: Full覆盖122，no_profile覆盖1；无法比较（尚无可行配置或训练失败）
+60s: Full覆盖122，naive覆盖1；无法比较（尚无可行配置或训练失败）
+120s: Full覆盖480，no_inc覆盖419；Full相对no_inc的实测步时加速0.00%（正值表示Full更快）
+120s: Full覆盖480，no_profile覆盖3；Full相对no_profile的实测步时加速19.91%（正值表示Full更快）
+120s: Full覆盖480，naive覆盖3；Full相对naive的实测步时加速19.91%（正值表示Full更快）
+240s: Full覆盖480，no_inc覆盖480；Full相对no_inc的实测步时加速0.00%（正值表示Full更快）
+240s: Full覆盖480，no_profile覆盖6；Full相对no_profile的实测步时加速19.91%（正值表示Full更快）
+240s: Full覆盖480，naive覆盖6；Full相对naive的实测步时加速19.91%（正值表示Full更快）
+480s: Full覆盖480，no_inc覆盖480；Full相对no_inc的实测步时加速0.00%（正值表示Full更快）
+480s: Full覆盖480，no_profile覆盖12；Full相对no_profile的实测步时加速1.89%（正值表示Full更快）
+480s: Full覆盖480，naive覆盖12；Full相对naive的实测步时加速1.89%（正值表示Full更快）
+
+获选配置：parallel顺序为DP、PP、CP、UP、TP、SP、EP、microbatch、microbatch数量；VPP数值表示每个虚拟stage的层数。
+486d56a4a2d53e913191e850286d380fa484aed03e620baba269c5bf2ce4fb8c: parallel=[4, 1, 1, 1, 2, 2, 1, 8, 8]; strategy={'ReCompute': ['selective', ['mlp']], 'DistributedOptimizer': False, 'VirtualPipe': None, 'Hybrid_MHA_MQA': [False, 32]}; step_s=29.966664146259426; samples/s=8.542826080024495; status=completed
+6729163341fc6e85134d42370b6c2f21340268bb35513ecba5ac7ebfb1facfe0: parallel=[4, 2, 1, 1, 1, 1, 1, 2, 32]; strategy={'ReCompute': [None, None], 'DistributedOptimizer': True, 'VirtualPipe': 1, 'Hybrid_MHA_MQA': [False, 32]}; step_s=25.462503436207772; samples/s=10.053999625031649; status=completed
+f118bd83a37e06107189c6203c10537c01215e15a85e929c92e7101c70c38040: parallel=[4, 1, 1, 1, 2, 2, 1, 8, 8]; strategy={'ReCompute': [None, None], 'DistributedOptimizer': True, 'VirtualPipe': None, 'Hybrid_MHA_MQA': [False, 32]}; step_s=24.99091089479625; samples/s=10.243724251496001; status=completed
+
+实现与一致性：同一最终30GiB/s预测器和原项目Full/no_inc/no_profile/naive开关。修正Profile关闭时标量代价缓存绕过重测的问题：Profile关闭时不得复用包含测量值的event/schedule成本，但继续启用结构/内存模板增量分析。补充原生候选子集评估接口用于固定顺序逐候选截止计时；未换用简化模型。补丁见source/ablation_correctness.patch。
+固定算子值消除测量噪声后，4组×480候选的可行性、峰值显存及预测代价一致；该一致性专用历史数值fixture不用于正式搜索。原始检查见consistency/。
+真实重新profile存在测量波动，不要求各组不同测量值下代价恰好相等。分析计时与Profile计时按逐候选实际记录，runtime内部inclusive计时不能直接相加。
+最大预算前开始但预算后才完成的候选保留原日志，所有该预算汇总排除；完全遍历后覆盖保持平台。runtime.json的总计数包含完成于截止时间之后的候选；截止统计以timepoint_summary为准。
+训练启动器用DTSIR_MEASURE_CANDIDATE_JSON在分布式初始化前应用策略；实际生效参数在每个rank.json的effective字段，不能仅从基础argv判断策略。VPP实际虚拟stage数和优化器组件类型也已核查。
+
+文件索引：frozen_protocol.json与candidate_space.json为冻结协议；candidate_list.json为480候选；formal/*/candidates.jsonl与profile_events.jsonl为原始日志；final_timepoints.csv与candidate_metrics.csv便于绘图；training_results.json与configuration_training_map.csv为配置证据映射；training/为新训练；历史证据路径记录在映射中；environment_audit.json、environment_packages.txt、input_audit.json和source/保存环境/代码依据；reuse_ablation.pdf/svg/png与scripts/plot_results.py为图和可编辑源码。
+启动：scripts/run_pilot.py进行预测试；scripts/freeze_protocol.py冻结预算；scripts/run_formal.py四组串行搜索；scripts/train_selected.py获选去重验证；scripts/plot_results.py绘图；scripts/audit_completion.py验收。已有输出不覆盖，复现实验必须使用新的目录。

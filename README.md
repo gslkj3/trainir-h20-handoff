@@ -6,6 +6,8 @@
 
 **现已包含原服务器修改版 Megatron/Galvatron 的源码快照（2,331 文件），但不是已经在 H20 验收的一键训练包。** 见 [源码接收与使用](docs/SOURCE_RECEIPT_CN.md)。tokenizer 和训练数据通过私有渠道传输，不在公开仓库。不要直接运行 `reference/` 或源码里的旧 Slurm/训练脚本。
 
+**新增独立消融：** [Devastator 复用机制：有限搜索时间下的覆盖与训练性能](reports/h20-reuse-ablation-20261012/README.md)（LLaMA-7B，8×H20；四组搜索、3 个获选配置训练验证）。
+
 ## 接手顺序
 
 1. 阅读 [交接文档](docs/HANDOFF_CN.md) 和 [H20 agent 首条任务](docs/AGENT_START_CN.md)。

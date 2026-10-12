@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "variants": [
+    {
+      "variant": "full",
+      "completed_within_budget": 480,
+      "actual_measurements": 176,
+      "profile_queries": 11427,
+      "exhausted": true
+    },
+    {
+      "variant": "no_inc",
+      "completed_within_budget": 480,
+      "actual_measurements": 176,
+      "profile_queries": 120130,
+      "exhausted": true
+    },
+    {
+      "variant": "no_profile",
+      "completed_within_budget": 12,
+      "actual_measurements": 3223,
+      "profile_queries": 3223,
+      "exhausted": false
+    },
+    {
+      "variant": "naive",
+      "completed_within_budget": 12,
+      "actual_measurements": 3223,
+      "profile_queries": 3223,
+      "exhausted": false
+    }
+  ],
+  "unique_selected": 3,
+  "training_completed": 3,
+  "training_failed": 0,
+  "training_reused": 0,
+  "formal_only": true,
+  "no_hindsight_selection": true,
+  "no_profile_reuse_does_actual_measurement": true
+}
